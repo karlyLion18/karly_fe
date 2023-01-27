@@ -1,3 +1,8 @@
+
+<div align="center">
+
+<img src="https://user-images.githubusercontent.com/83333217/215041892-e7ce6ffe-ec1d-4c73-897c-645eaf084e7c.png" width="400" />
+
 # 💜칼리 (Karly)
 멋쟁이사자처럼 18조 '칼리' 프로젝트입니다🦁
 
