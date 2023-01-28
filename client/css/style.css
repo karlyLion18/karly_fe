@@ -1,0 +1,47 @@
+:root {
+  --black: rgb(0 0, 0);
+  --secondary: rgb(189 118, 255);
+  --white: rgb(255 255, 255);
+  --primary: rgb(95 0, 128);
+  --content: rgb(51 51, 51);
+  --gray-50: rgb(249 249, 249);
+  --gray-100: rgb(225 225, 225);
+  --gray-200: rgb(196 196, 196);
+  --gray-300: rgb(166 166, 166);
+  --gray-400: rgb(137 137, 137);
+  --gray-500: rgb(107 107, 107);
+  --gray-600: rgb(86 86, 86);
+  --gray-700: rgb(64 64, 64);
+  --gray-800: rgb(43 43, 43);
+  --gray-900: rgb(21 21, 21);
+  --accent-yellow: rgb(250 98, 47);
+  --blue-100: rgb(204 224, 255);
+  --blue-200: rgb(153 194, 255);
+  --blue-300: rgb(102 163, 255);
+  --blue-400: rgb(51 133, 255);
+  --blue-500: rgb(0 102, 255);
+  --blue-600: rgb(0 82, 204);
+  --blue-700: rgb(0 61, 153);
+  --blue-800: rgb(0 41, 102);
+  --blue-900: rgb(0 20, 51);
+  --info-error: rgb(240 63, 64);
+
+  --fontSize-xs: 0.75rem; /* 12px */
+  --fontSize-sm: 0.875rem; /* 14px */
+  --fontSize-base: 1rem; /* 16px */
+  --fontSize-md: 1.125rem; /* 18px */
+  --fontSize-lg: 1.25rem; /* 20px */
+  --fontSize-xl: 1.5rem; /* 24px */
+  --fontSize-xxl: 2rem; /* 32px */
+
+  --spacing_xs: 0.5rem; /* 8px */
+  --spacing_sm: 0.75rem; /* 12px */
+  --spacing_base: 1rem; /* 16px */
+  --spacing_md: 1.25rem; /* 20px */
+  --spacing_lg: 1.5rem; /* 24px */
+  --spacing_xl: 2rem; /* 32px */
+}
+
+ol, ul, li {
+  list-style-type: none;
+}

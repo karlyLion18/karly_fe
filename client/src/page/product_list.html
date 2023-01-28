@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/client/css/style.css" />
+    <link rel="stylesheet" href="/client/css/style_product_list.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="./js/main.js" type="module"></script> -->
+    <title>PRODUCT LIST</title>
+  </head>
+
+  <body>
+    <section class="topbanner">top banner</section>
+
+    <header class="header">header</header>
+
+    <main>
+      <h3 class="product_best">
+        베스트
+      </h3>
+
+      <section class="product_group">
+        <nav class="left_nav">
+          <div class="filter_nav">
+            <span>필터</span>
+            <button>
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.78 3.96303C12.504 2.16973 10.4086 1 8.04 1C4.15192 1 1 4.15192 1 8.04C1 11.9281 4.15192 15.08 8.04 15.08C11.9281 15.08 15.08 11.9281 15.08 8.04" stroke="#666" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="round"></path><path d="M14.4933 1L14.4933 4.52H10.9733" stroke="#666" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="round"></path></svg>
+              <span>초기화</span>
+            </button>
+          </div>
+          <div class="sub_nav">
+            <div class="category_sub_nav">
+              <button class="category_sub_button">
+                <div>
+                  카테고리
+                  <span>1</span>
+                </div>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#999" xmlns="http://www.w3.org/2000/svg" class="css-innaj4 e1frj59j6" style="transform: rotate(0deg);"><path d="M5 11L9 7L13 11" stroke="#999" stroke-width="1.2"></path></svg>
+              </button>
+              <ul class="category_sub_ui">
+                <li>
+                  <a href="#" class="category_sub1">
+                    <button><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                    <span>샐러드·간편식</span>
+                    <span>66</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="category_sub1">
+                    <button><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="#5f0080"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                    <span>국·반찬·메인요리</span>
+                    <span>46</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="category_sub1">
+                    <button><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                    <span>정육·계란</span>
+                    <span>39</span>
+                  </a>
+                </li>
+                <button>
+                  카레고리 더보기
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#999" xmlns="http://www.w3.org/2000/svg" class="css-jbgpyq e1frj59j0"><path d="M5 11L9 7L13 11" stroke="#999" stroke-width="1.2"></path></svg>
+                </button>
+              </ul>
+            </div>
+            <div class="brand_sub_nav">
+              <button>
+                <div>
+                  브랜드
+                  <span>1</span>
+                </div>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#999" xmlns="http://www.w3.org/2000/svg" class="css-innaj4 e1frj59j6" style="transform: rotate(0deg);"><path d="M5 11L9 7L13 11" stroke="#999" stroke-width="1.2"></path></svg>
+              </button>
+              <ul>
+                <menu class="brand_menu_nav">
+                  <li class="brand_menu_nav_order1">
+                    <button>가나다 순</button>
+                  </li>
+                  <li class="brand_menu_nav_order2">
+                    <button>상품많은 순</button>
+                  </li>
+                </menu>
+                <li>
+                  <a href="#" class="brand_sub1">
+                    <button><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                    <span>감자밭</span>
+                    <span>1</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="brand_sub1">
+                    <button><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                    <span>강남면옥</span>
+                    <span>3</span>
+                  </a>
+                </li>
+                <button>
+                  브랜드 더보기
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#999" xmlns="http://www.w3.org/2000/svg" class="css-jbgpyq e1frj59j0"><path d="M5 11L9 7L13 11" stroke="#999" stroke-width="1.2"></path></svg>
+                </button>
+              </ul>
+            </div>
+            <div class="price_sub_nav">
+              <button>
+                <div>
+                  가격
+                  <span>1</span>
+                </div>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#999" xmlns="http://www.w3.org/2000/svg" class="css-innaj4 e1frj59j6" style="transform: rotate(0deg);"><path d="M5 11L9 7L13 11" stroke="#999" stroke-width="1.2"></path></svg>
+              </button>
+              <ul>
+                <li>
+                  <a href="#" class="price_sub1">
+                    <button><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                    <span>6,980원 미만</span>
+                    <span>34</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="price_sub1">
+                    <button><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                    <span>6,980원 ~ 10,500원</span>
+                    <span>55</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="benefit_sub_nav">
+              <button>
+                <div>
+                  혜택
+                  <span>1</span>
+                </div>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#999" xmlns="http://www.w3.org/2000/svg" class="css-innaj4 e1frj59j6" style="transform: rotate(0deg);"><path d="M5 11L9 7L13 11" stroke="#999" stroke-width="1.2"></path></svg>
+              </button>
+              <ul>
+                <li>
+                  <a href="#" class="benefit_sub1">
+                    <button><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                    <span>할인상품</span>
+                    <span>100</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="benefit_sub1">
+                    <button><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                    <span>한정수량</span>
+                    <span>3</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="type_sub_nav">
+              <button>
+                <div>
+                  유형
+                  <span>1</span>
+                </div>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#999" xmlns="http://www.w3.org/2000/svg" class="css-innaj4 e1frj59j6" style="transform: rotate(0deg);"><path d="M5 11L9 7L13 11" stroke="#999" stroke-width="1.2"></path></svg>
+              </button>
+              <ul>
+                <li>
+                  <a href="#" class="type_sub1">
+                    <button><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                    <span>Kurly Only</span>
+                    <span>111</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="type_sub1">
+                    <button><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                    <span>희소가치 프로젝트</span>
+                    <span>3</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="ban_sub_nav">
+              <button>
+                <div>
+                  특정상품 제외
+                  <span>1</span>
+                </div>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="#999" xmlns="http://www.w3.org/2000/svg" class="css-innaj4 e1frj59j6" style="transform: rotate(0deg);"><path d="M5 11L9 7L13 11" stroke="#999" stroke-width="1.2"></path></svg>
+              </button>
+              <ul>
+                <li>
+                  <a href="#" class="ban_sub1">
+                    <button><svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.5 12C23.5 18.3513 18.3513 23.5 12 23.5C5.64873 23.5 0.5 18.3513 0.5 12C0.5 5.64873 5.64873 0.5 12 0.5C18.3513 0.5 23.5 5.64873 23.5 12Z" stroke="#ddd"></path><path d="M7 12.6667L10.3846 16L18 8.5" stroke="#ddd" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+                    <span>반려동물 상품</span>
+                    <span>2</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="product_list">
+          <menu class="ordered_product_menu">
+            <span class="ordered_num">총 277건</span>
+            <ul class="ordered_sub">
+              <li>추천순</li>
+              <li>신상품순</li>
+              <li>판매량순</li>
+            </ul>
+          </menu>
+          <div class="all_product_list">
+            <article class="show1">
+              <figure>
+                <img src="\client\assets\tangtang\thumbnail.jpg" alt="" />
+                <figcaption></figcaption>
+              </figure>
+              <div class="product_info">
+                <span>샛별배송</span>
+                <span>[풀무원] 탱탱쫄면 (4개입)</span>
+                <div class="product_info_price">
+                  <div>10% 4,500원</div>
+                  <div>5000원</div>
+                </div>
+                <span>튀기지 않아 부담없는 매콤함</span>
+                <div class="product_info_badge">
+                  <span>
+                    Karly Only
+                  </span>
+                  <span>
+                    한정수량
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="show2">
+              <figure>
+                <img src="\client\assets\tangtang\thumbnail.jpg" alt="" />
+                <figcaption></figcaption>
+              </figure>
+              <div class="product_info">
+                <span>샛별배송</span>
+                <span>[풀무원] 탱탱쫄면 (4개입)</span>
+                <div class="product_info_price">
+                  <div>10% 4,500원</div>
+                  <div>5000원</div>
+                </div>
+                <span>튀기지 않아 부담없는 매콤함</span>
+                <div class="product_info_badge">
+                  <span>
+                    Karly Only
+                  </span>
+                  <span>
+                    한정수량
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="show3">
+              <figure>
+                <img src="\client\assets\tangtang\thumbnail.jpg" alt="" />
+                <figcaption></figcaption>
+              </figure>
+              <div class="product_info">
+                <span>샛별배송</span>
+                <span>[풀무원] 탱탱쫄면 (4개입)</span>
+                <div class="product_info_price">
+                  <div>10% 4,500원</div>
+                  <div>5000원</div>
+                </div>
+                <span>튀기지 않아 부담없는 매콤함</span>
+                <div class="product_info_badge">
+                  <span>
+                    Karly Only
+                  </span>
+                  <span>
+                    한정수량
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="show4">
+              <figure>
+                <img src="\client\assets\tangtang\thumbnail.jpg" alt="" />
+                <figcaption></figcaption>
+              </figure>
+              <div class="product_info">
+                <span>샛별배송</span>
+                <span>[풀무원] 탱탱쫄면 (4개입)</span>
+                <div class="product_info_price">
+                  <div>10% 4,500원</div>
+                  <div>5000원</div>
+                </div>
+                <span>튀기지 않아 부담없는 매콤함</span>
+                <div class="product_info_badge">
+                  <span>
+                    Karly Only
+                  </span>
+                  <span>
+                    한정수량
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="show5">
+              <figure>
+                <img src="\client\assets\tangtang\thumbnail.jpg" alt="" />
+                <figcaption></figcaption>
+              </figure>
+              <div class="product_info">
+                <span>샛별배송</span>
+                <span>[풀무원] 탱탱쫄면 (4개입)</span>
+                <div class="product_info_price">
+                  <div>10% 4,500원</div>
+                  <div>5000원</div>
+                </div>
+                <span>튀기지 않아 부담없는 매콤함</span>
+                <div class="product_info_badge">
+                  <span>
+                    Karly Only
+                  </span>
+                  <span>
+                    한정수량
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="show6">
+              <figure>
+                <img src="\client\assets\tangtang\thumbnail.jpg" alt="" />
+                <figcaption></figcaption>
+              </figure>
+              <div class="product_info">
+                <span>샛별배송</span>
+                <span>[풀무원] 탱탱쫄면 (4개입)</span>
+                <div class="product_info_price">
+                  <div>10% 4,500원</div>
+                  <div>5000원</div>
+                </div>
+                <span>튀기지 않아 부담없는 매콤함</span>
+                <div class="product_info_badge">
+                  <span>
+                    Karly Only
+                  </span>
+                  <span>
+                    한정수량
+                  </span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+          <div class="page_info">
+              <a href="javascript:void(0);" class="page_info1">
+                <img src="\client\assets\page\left_arrow_end.jpg" alt="" />
+              </a>
+              <a href="javascript:void(0);" class="page_info2">
+                <img src="\client\assets\page\left_arrow_step.jpg" alt="" />
+              </a>
+              <a href="javascript:void(0);" class="page_info3">1</a>
+              <a href="javascript:void(0);" class="page_info4">2</a>
+              <a href="javascript:void(0);" class="page_info5">3</a>
+              <a href="javascript:void(0);" class="page_info6">
+                <img src="\client\assets\page\right_arrow_step.jpg" alt="" />
+              </a>
+              <a href="javascript:void(0);" class="page_info7">
+                <img src="\client\assets\page\right_arrow_end.jpg" alt="" />
+              </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">footer</footer>
+  </body>
+</html>
