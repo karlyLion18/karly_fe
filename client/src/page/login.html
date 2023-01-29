@@ -215,11 +215,68 @@
         <a href="#">뷰티칼리</a>
       </div>
 
+      <!-- WHAT : form요소 전송시 input:submit이 좋을지 button이 좋을지 고민 -->
       <form action="#" method="get">
-        <input type="search" placeholder="검색어를 입력하세요"/>
-        <input type="submit" value=""/>
+        <input type="search" placeholder="검색어를 입력하세요" />
+        <button type="submit" value="">
+          <img src="../../assets/icons/Icon/search.svg" alt="검색 버튼" />
+        </button>
       </form>
+
+      <section>
+        <a href="#"><img src="../../assets/icons/Icon/locate.svg" alt="현재위치" /></a>
+        <a href="#"><img src="../../assets/icons/Icon/Heart.svg" alt="좋아요" /></a>
+        <a href="#"><img src="../../assets/icons/Icon/cart_line.svg" alt="장바구니" /></a>
+      </section>
+
+      <section>
+        <li><a href="/">회원가입</a></li>
+        <li><span>|</span><a href="/">로그인</a></li>
+        <li><span>|</span><a href="/">고객센터</a><span>▼</span></li>
+      </section>
+
+      <nav>
+        <!-- 같이 마크업 고민해주세요! -->
+        <li>카테고리</li>
+        <ul>
+          <li>신상품</li>
+          <li>베스트</li>
+          <li>알뜰쇼핑</li>
+          <li>특가/혜택</li>
+        </ul>
+        <li><a href="#">샛별·낯 배송안내</a></li>
+      </nav>
     </header>
+
+    <main>
+      <section>
+        <form action="" method="post">
+          <fieldset>
+            <legend>로그인 폼</legend>
+
+            <div>
+              <label for="userId">아이디</label>
+              <input type="text" id="userId" name="userId" placeholder="아이디를 입력해주세요" />
+            </div>
+
+            <div class="user-pw">
+              <label for="userPw">비밀번호</label>
+              <input type="password" id="userPw" name="userPw" placeholder="비밀번호를 입력해주세요" required />
+            </div>
+
+            <div class="find-box">
+              <ul class="find">
+                <li><a href="/">아이디 찾기</a></li>
+                <li><a href="/">비밀번호 찾기</a></li>
+              </ul>
+            </div>
+
+            <button type="submit">로그인</button>
+            <a href="#">회원가입</a>
+          </fieldset>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
 >>>>>>> c7a906a (Design : 로그인 페이지 마크업중)
