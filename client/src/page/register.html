@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+  </head>
+  <body>
+    <article>
+      <a href="">지금 가입하고 인기상품 100원에 받아가세요!</a>
+      <button type="button"><img src="../../assets/icons/Icon/close.png" alt="닫기버튼" /></button>
+    </article>
+
+    <header>
+      <div>
+        <a href="#"><img src="../../assets/icons/Icon/logo.svg" alt="칼리 로고" /></a>
+        <a href="#">마켓칼리</a>
+        <a href="#">뷰티칼리</a>
+      </div>
+
+      <!-- WHAT : form요소 전송시 input:submit이 좋을지 button이 좋을지 고민 -->
+      <form action="#" method="get">
+        <input type="search" placeholder="검색어를 입력하세요" />
+        <button type="submit" value="">
+          <img src="../../assets/icons/Icon/search.svg" alt="검색 버튼" />
+        </button>
+      </form>
+
+      <section>
+        <a href="#"><img src="../../assets/icons/Icon/locate.svg" alt="현재위치" /></a>
+        <a href="#"><img src="../../assets/icons/Icon/Heart.svg" alt="좋아요" /></a>
+        <a href="#"><img src="../../assets/icons/Icon/cart_line.svg" alt="장바구니" /></a>
+      </section>
+
+      <section>
+        <li><a href="/">회원가입</a></li>
+        <li><span>|</span><a href="/">로그인</a></li>
+        <li><span>|</span><a href="/">고객센터</a><span>▼</span></li>
+      </section>
+
+      <nav>
+        <!-- 같이 마크업 고민해주세요! -->
+        <li>카테고리</li>
+        <ul>
+          <li>신상품</li>
+          <li>베스트</li>
+          <li>알뜰쇼핑</li>
+          <li>특가/혜택</li>
+        </ul>
+        <li><a href="#">샛별·낯 배송안내</a></li>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>회원가입</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>회원가입 폼</legend>
+
+            <div>
+              <label for="userId">아이디</label>
+              <input type="text" id="userId" name="userId" placeholder="아이디를 입력해주세요" required />
+              <button type="button">중복확인</button>
+            </div>
+
+            <div>
+              <label for="userPw">비밀번호</label>
+              <input type="password" id="userPw" name="userPw" placeholder="비밀번호를 입력해주세요" required />
+            </div>
+
+            <div>
+              <label for="userPwConfirm">비밀번호 확인</label>
+              <input
+                type="password"
+                id="userPwConfirm"
+                name="userPwConfirm"
+                placeholder="비밀번호를 한번 더 입력해주세요"
+                required />
+            </div>
+
+            <div>
+              <label for="userName">이름</label>
+              <input type="text" id="userName" name="userName" placeholder="이름을 입력해주세요" required />
+            </div>
+
+            <div>
+              <label for="userEmail">이메일</label>
+              <input type="email" id="userEmail" name="userEmail" placeholder="예) marketkarly@karly.com" required />
+              <button type="button">중복확인</button>
+            </div>
+
+            <div>
+              <label for="userPhone">휴대폰</label>
+              <input type="number" id="userPhone" name="userPhone" placeholder="숫자만 입력해주세요." required />
+              <button type="submit">인증번호 받기</button>
+            </div>
+
+            <div>
+              <label for="userAddress">주소</label>
+              <!-- how  -->
+              <button type="button" required>주소검색</button>
+              <span>배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
+            </div>
+
+            <div>
+              <label for="userSex">성별</label>
+              <label><input name="userSex" type="radio" />여자</label>
+              <label><input name="userSex" type="radio" />남자</label>
+              <label><input name="userSex" type="radio" />선택안함</label>
+            </div>
+
+            <div>
+              <label for="userBirth">생년월일</label>
+              <input type="text" placeholder="YYYY / MM / DD" />
+            </div>
+
+            <div>
+              <label for="userMore">추가입력 사항</label>
+              <label><input name="userMore" type="radio" />친구초대 추천인 아이디</label>
+              <label><input name="userMore" type="radio" />참여 이벤트명</label>
+            </div>
+
+            <div style="display: flex; flex-direction: column">
+              <label for="termsOfUse">이용약관동의</label>
+              <label><input name="userMore" type="checkbox" />전체 동의합니다</label>
+              <span> 선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다. </span>
+              <label><input name="userMore" type="checkbox" required />이용약관 동의(필수)</label
+              ><a href="#">약관보기 ></a>
+              <label><input name="userMore" type="checkbox" required />개인정보 수집·이용 동의(필수)</label
+              ><a href="#">약관보기 ></a>
+              <label><input name="userMore" type="checkbox" />무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)</label
+              ><a href="#">약관보기 ></a>
+              <label><input name="userMore" type="checkbox" required />본인은 만 14세 이상입니다.(필수)</label
+              ><a href="#">약관보기 ></a>
+            </div>
+
+            <button type="submit">가입하기</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <h2>고객행복센터</h2>
+        <span>1644-1107</span>
+        <span>월~토요일 오전 7시 - 오후 6시</span>
+
+        <div>
+          <h3>카카오톡 문의</h3>
+          <span>월~토요일 | 오전 7시 - 오후 6시</span>
+          <span>일/공휴일 | 오전 7시 - 오후 1시</span>
+        </div>
+
+        <div>
+          <h3>1:1 문의</h3>
+          <span>365일</span>
+          <span>고객센터 운영시간에 순차적으로 답변드리겠습니다.</span>
+        </div>
+
+        <div>
+          <h3>대량주문 문의</h3>
+          <span>월~금요일 | 오전9시 - 오후 6시</span>
+          <span>점심시간 | 낮 12시 - 오후 1시</span>
+        </div>
+
+        <span>비회원 문의 :<a href="mailto:help@karlycorp.com">help@karlycorp.com</a></span>
+        <span>비회원 대량주문 문의 : :<a href="mailto:help@karlycorp.com">help@karlycorp.com</a></span>
+      </div>
+
+      <div>
+        <ul>
+          <li><a href="#">칼리소개</a></li>
+          <li><a href="#">칼리소개영상</a></li>
+          <li><a href="#">인재채용</a></li>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이용안내</a></li>
+        </ul>
+
+        <!-- semantic tag 다시 생각 -->
+        <div>
+          <span>법인명 (상호) : 주식회사 컬리</span>
+          <span>사업자등록번호 : 261-81-23567</span>
+          <span>사업자정보 확인</span>
+          <span>통신판매업 : 제 2018-서울강남-01646 호</span>
+          <span>개인정보보호책임자 : 이원준</span>
+          <span>주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동)리</span>
+          <span>대표이사 : 김슬아</span>
+          <span>입점문의 : 입정문의하기</span>
+          <span>제휴문의 : <a href="mailto:business@karlycorp.com">business@karlycorp.com</a></span>
+          <span>채용문의 : <a href="mailto:recruit@karlycorp.com">recruit@karlycorp.com</a></span>
+          <span>팩스 : 070 - 7500 - 6098</span>
+
+          <div>
+            <!-- WHAT 이미지 어떻게 넣을지 생각해보겟슴다 -->
+            <img src="../../assets/icons/Icon/SNS.png" alt="sns" />
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <img src="../../assets/icons/footer/logo_isms.png" alt="isms 로고" />
+            <span>[인증범위] 마켓칼리 쇼핑몰 서비스 개발 운영(심사받지 않은 물리적 인프라 제외)</span>
+            <span>[유효기간] 2022.01.19 ~ 2025.01.18</span>
+          </div>
+
+          <div>
+            <img src="../../assets/icons/footer/logo_privacy.png" alt="프라이버시 로고" />
+            <span>개인정보보호 우수 웹사이트</span>
+            <span>개인정보처리시스템 인증 (ePRIVACY PLUS)</span>
+          </div>
+
+          <div>
+            <img src="../../assets/icons/footer/logo_tosspayments.png" alt="토스페이먼츠 로고" />
+            <span>토스페이먼츠 구매안전(에스크로) 서비스를 이용하실 수 있습니다.</span>
+          </div>
+
+          <div>
+            <img src="../../assets/icons/footer/logo_wooriBank.png" alt="우리은행 로고" />
+            <span
+              >고객님이 현금으로 결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고
+              있습니다.</span
+            >
+          </div>
+        </div>
+
+        <div>
+          <p>
+            마켓칼리에서 판매되는 상품 중에는 마켓칼리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이
+            포함되어 있습니다. 마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가
+            아닙니다. 컬리는 해당 상품의 주문, 품질, 교환/환불 등 의무와 책임을 부담하지 않습니다.
+          </p>
+          <span>&copy;karly corp. all rights reserved</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
