@@ -1,0 +1,113 @@
+/* font */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+/* Accessibility Styles */
+.a11yHidden, legend {
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+
+/* Base Style */
+body,
+body::before,
+body::after,
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+[class] {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body, button {
+  font: inherit;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    sans-serif;
+  background-color: #fff;
+}
+
+
+/* 유연한 미디어 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+:root {
+
+
+  /* 컬러 */
+  --black: rgb(0 0,0);
+  --secondary: rgb(189 118,255);
+  --white: rgb(255 255,255);
+  --primary: rgb(95 0,128);
+  --content: rgb(51 51,51);
+
+  --gray-50: rgb(249 249,249);
+  --gray-100: rgb(225 225,225);
+  --gray-200: rgb(196 196,196);
+  --gray-300: rgb(166 166,166);
+  --gray-400: rgb(137 137,137);
+  --gray-500: rgb(107 107,107);
+  --gray-600: rgb(86 86,86);
+  --gray-700: rgb(64 64,64);
+  --gray-800: rgb(43 43,43);
+  --gray-900: rgb(21 21,21);
+
+  --accent-yellow: rgb(250 98,47);
+
+  --blue-100: rgb(204 224,255);
+  --blue-200: rgb(153 194,255);
+  --blue-300: rgb(102 163,255);
+  --blue-400: rgb(51 133,255);
+  --blue-500: rgb(0 102,255);
+  --blue-600: rgb(0 82,204);
+  --blue-700: rgb(0 61,153);
+  --blue-800: rgb(0 41,102);
+  --blue-900: rgb(0 20,51);
+
+  --info-error: rgb(240 63,64);
+  
+
+  /* 폰트 사이즈 */
+  --heading-small: 0.625rem;
+  --heading-medium: 1rem;
+  --heading-large: 1.25rem;
+  --heading-xl: 1.75rem;
+  --heading-xxl: 2.375rem;
+  --heading-xxxl: 3.125rem;
+
+  --label-small: 0.75rem;
+  --label-medium: 1rem;
+  --label-large: 1.25rem;
+  --label-xl: 1.75rem;
+  --label-xxl: 2.375rem;
+  
+  --paragraph-small: 0.75rem;
+  --paragraph-medium: 1rem;
+  --paragraph-large: 1.25rem;
+  --paragraph-xl: 1.75rem;
+  
+  /* 박스 섀도우 */
+  --below-medium: 0px 8px 36px rgba(0, 0, 0, 0.2);
+}
