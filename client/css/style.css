@@ -1,1 +1,126 @@
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+/* 공통 */
+.recommend-list,
+.event-banner {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+
+/* 메인 배너 */
+.main-banner {
+  width: 100%;
+  height: 370px;
+  background-color:#87CEEB;
+}
+
+
+/* 추천 리스트 */
+.recommend-list {
+  height: 600px;
+  background-color: #FEC6D0;
+  padding: 40px 0 40px 0;
+}
+
+.recommend-list__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 27px;
+  color: var(--content);
+  font-size: var(--heading-xl);
+  /* background-color: green; */
+}
+
+
+/* 이벤트 배너 */
+.event-banner {
+  height: 220px;
+  padding: 40px 0;
+  background-color: #FFA500;
+}
+
+
+/* 광고 팝업 */
+.ad-popup {
+  width: 440px;
+  height: 672px;
+  margin: 30px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--below-medium);
+}
+
+.ad-popup__button-list {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  margin: 0 auto;
+  z-index: 9999;
+}
+
+.ad-popup__button {
+  background-color: var(--white);
+  font-size: var(--paragraph-medium);
+  font-weight: 400;
+  width: 220px;
+  height: 86px;
+  border: none;
+}
+
+.ad-popup__button:hover {
+  cursor: pointer;
+}
+
+.ad-popup__button--block {
+  border-right: 1px solid var(--gray-100);
+}
+
+.ad-popup__button--close {
+  /* 임시 */
+  overflow: auto; 
+}
+
+
+/* 장바구니 팝업 */
+.cart-popup {
+  padding: 20px;
+  margin: 30px;
+  width: 396px;
+  height: 292px;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: var(--below-medium);
+}
+
+.cart-popup__button-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+  z-index: 9999;
+  width: 356px;
+}
+
+.cart-popup__button {
+  align-self: stretch;
+  height: 54px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: var(--label-medium);
+  border: none;
+  width: 50%;
+}
+
+.cart-popup__button--cancel {
+  color: var(--content);
+  border: 1px solid var(--gray-400);
+}
+
+.cart-popup__button--add {
+  color: var(--white);
+  background-color: var(--primary);
+}
