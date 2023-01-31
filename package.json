@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "all": "run-p serve start",
+    "all": "run-s serve start",
     "serve": "npx json-server server/db/data.json",
     "start": "npx live-server client --host=localhost --port=3000 --no-browser"
   },
