@@ -16,7 +16,6 @@ body {
   justify-content: space-between;
   margin: 0px;
   padding: 0px;
-  gap: 0;
 }
 
 /* 썸네일 */
@@ -33,7 +32,7 @@ body {
   width: 600px;
   height: 240px;
   margin-bottom: 0px;
-  background-color: azure;
+  /* background-color: azure; */
 }
 
 /* 배송유형 */
@@ -88,18 +87,233 @@ body {
 
 /* 제품 정보표 */
 .productDetail-information {
-  background-color: grey;
+  /* background-color: grey; */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+
   margin-left: auto;
   margin-top: 20px;
+  padding: 0px;
   width: 600px;
   height: 480px;
 }
 
-.productDetail-information__delivery {
+.productDetail-information__delivery,
+.productDetail-information__seller,
+.productDetail-information__package,
+.productDetail-information__unit,
+.productDetail-information__weight,
+.productDetail-information__origin,
+.productDetail-information__allergy,
+.productDetail-information__sellect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid var(--gray-100);
+  border-bottom: 1px solid var(--gray-100);
+  padding: 16px 0px;
+  width: 600px;
+  /* background-color: aquamarine; */
 }
 
-/* 가격 및 수량 조정 */
-.productDetail-information__sellect {
-  background-color: blanchedalmond;
-  width: 560px; 
+.productDetail-information-delivery__normal,
+.productDetail-information-seller__company,
+.productDetail-information-package__type,
+.productDetail-information-unit__sell,
+.productDetail-information-weight__unit,
+.productDetail-information-origin__land,
+.productDetail-information-allergy__info,
+.productDetail-information-sellect__item {
+  width: 120px;
+  padding: 0px;
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-500);
 }
+
+.productDetail-information-delivery__guide {
+  padding-right: 79px;
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.productDetail-information-seller__name { 
+  padding-right: 451px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.productDetail-information-package__guide {
+  padding-right: 238px;
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.productDetail-information-unit__item {
+  padding-right: 458px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.productDetail-information-weight__item {
+  padding-right: 422px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.productDetail-information-origin__page {
+  padding-right: 378px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.productDetail-information-allergy__list {
+  padding-left: 56px;
+  padding-right: 30px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+/* 수량 조정 */
+.productDetail-infromation-sellect__number {
+  border: 1px solid var(--gray-100);
+  padding: 12px 16px;
+  margin-right: 50px;
+  width: 432px;
+}
+
+.productDetail-infromation-sellect-number__name {
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-500);
+}
+
+.productDetail-information-sellect-number__totalPrice {
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--black);
+  
+  position: absolute;
+  translate: 360px -12px;
+  width: 45px;
+  /* background-color: aliceblue; */
+}  
+
+.productDetail-information-sellect__calc {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--gray-200);
+  padding: 5px;
+  margin-top: 12px;
+  width: 84px;
+  height: 30px;
+}
+
+.productDetail-infromation-sellect-calc__number {
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--black);
+  margin-top: 1px;
+}
+
+.productDetail-information-sellect-calc__minusBtn {
+  border: 0px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 1px;
+  background: url(/client/image/minus.png) no-repeat 50% 49%;
+}
+
+.productDetail-information-sellect-calc__plusBtn {
+  border: 0px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 2px;
+  background: url(/client/image/plus.png) no-repeat 50% 50%;
+}
+
+/* 총 액 */
+.productDetail__total {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  margin-left: auto;
+}
+
+.productDetail-total__bill {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  width: 200px;
+  height: 43px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  /* background-color: antiquewhite; */
+}
+
+.productDetail-total-bill__totalPrice {
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--black);
+  margin-right: 17px;
+}
+
+.productDetail-total-bill__number {
+  font-size: var(--label-xl);
+  font-weight: 600;
+  color: #333333;
+
+  margin-right: 4px;
+}
+
+.productDetail-total-bill__won {
+  font-size: var(--heading-medium);
+  font-weight: 700;
+  color: #333333;
+}
+
+.productDetail-total-bill__guide {
+  justify-content: center;
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--black);
+  margin-top: 10px;
+  /* background-color: aliceblue; */
+}
+
+.productDetail-total-bill-guide__mile {
+  background-color: #fa622f;
+  border-radius: 12px;
+  padding: 4px 8px;
+  position: absolute;
+  translate: -170px 29px;
+  
+  font-size: var(--heading-small);
+  font-weight: 400;
+  color: var(--white);
+}
+
+.productDetail__basket {
+  background-color: aqua;
+}
+
+
+
