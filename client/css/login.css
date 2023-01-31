@@ -1,0 +1,20 @@
+@import url('./theme.css');
+
+.article__ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  background-color: var(--primary);
+}
+
+.article__ad > a {
+  color: var(--white);
+}
+
+.article__ad > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
