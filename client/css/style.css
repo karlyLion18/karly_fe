@@ -1,6 +1,7 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
-@import url("./normalize.css");
-@import url("./reset.css");
+@import url('./reset.css');
+@import url('./normalize.css');
+@import url('./theme.css');
 
 /* Accessibility Styles */
 .a11yHidden,
@@ -13,7 +14,6 @@ legend {
   height: 1px;
   margin: -1px;
 }
-
 
 /* Base Style */
 body,
@@ -36,96 +36,191 @@ a {
 
 body {
   font: inherit;
-  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
-    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
-    "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI',
+    'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     sans-serif;
   background-color: #fff;
+  color: var(--black);
 }
 
-
-/* 유연한 미디어 */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-video {
-  width: 100%;
-  height: auto;
-}
-
-:root {
-
-
-  /* 컬러 */
-  --black: rgb(0 0, 0);
-  --secondary: rgb(189 118, 255);
-  --white: rgb(255 255, 255);
-  --primary: rgb(95 0, 128);
-  --content: rgb(51 51, 51);
-
-  --gray-50: rgb(249 249, 249);
-  --gray-100: rgb(225 225, 225);
-  --gray-200: rgb(196 196, 196);
-  --gray-300: rgb(166 166, 166);
-  --gray-400: rgb(137 137, 137);
-  --gray-500: rgb(107 107, 107);
-  --gray-600: rgb(86 86, 86);
-  --gray-700: rgb(64 64, 64);
-  --gray-800: rgb(43 43, 43);
-  --gray-900: rgb(21 21, 21);
-
-  --accent-yellow: rgb(250 98, 47);
-
-  --blue-100: rgb(204 224, 255);
-  --blue-200: rgb(153 194, 255);
-  --blue-300: rgb(102 163, 255);
-  --blue-400: rgb(51 133, 255);
-  --blue-500: rgb(0 102, 255);
-  --blue-600: rgb(0 82, 204);
-  --blue-700: rgb(0 61, 153);
-  --blue-800: rgb(0 41, 102);
-  --blue-900: rgb(0 20, 51);
-
-  --info-error: rgb(240 63, 64);
-
-
-  /* 폰트 사이즈 */
-  --heading-small: 0.625rem;
-  --heading-medium: 1rem;
-  --heading-large: 1.25rem;
-  --heading-xl: 1.75rem;
-  --heading-xxl: 2.375rem;
-  --heading-xxxl: 3.125rem;
-
-  --label-small: 0.75rem;
-  --label-medium: 1rem;
-  --label-large: 1.25rem;
-  --label-xl: 1.75rem;
-  --label-xxl: 2.375rem;
-
-  --paragraph-small: 0.75rem;
-  --paragraph-medium: 1rem;
-  --paragraph-large: 1.25rem;
-  --paragraph-xl: 1.75rem;
-
-}
-
+/* header */
 header {
-  height: 247px;
-  width: 1920px;
-  background-color: #5F0080;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  /* height: 197px; */
+  width: 100%;
+  margin-top: 35px;
+  padding: 0 435px;
+  background: #ffffff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 35px;
+}
+
+/* header : 주요부분 */
+.header__switch {
+  display: flex;
+  align-items: center;
+  width: 267px;
+  font-size: var(--paragraph-large);
+  font-weight: 600;
+  color: var(--gray-500);
+}
+
+.header__switch > h2:active,
+.header__switch > h2:hover {
+  color: var(--primary);
+}
+
+.header__switch > h2:nth-child(1)::after {
+  display: inline-block;
+  padding: 0 8px 0 8px;
+  content: '|';
+  color: var(--gray-200);
+  font-weight: 400;
+}
+
+.header__form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  height: 50px;
+  padding-left: 20px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+}
+
+.header__form > fieldset {
+  padding: 0;
+}
+
+.header__form-input {
+  width: 320px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+.header__form-button {
+  width: 30px;
+  height: 30px;
+  top: 3px;
+  margin: 5px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+
+/* header : icon */
+.header__icon-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__icon-button {
+  border: none;
+  cursor: pointer;
+}
+
+.header__icon_button > img:hover {
+  color: red;
+}
+
+/* header : 고객 서비스 */
+.header__customerService {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 435px;
+  padding: 5px;
+  font-size: var(--paragraph-small);
+  color: var(--gray-700);
+}
+
+.header__customerService > li,
+.header__customerService > li:active {
+  display: inline-block;
+  padding: 5px;
+}
+
+.header__customerService > li::after {
+  display: inline-block;
+  content: '|';
+  padding: 0 0 0 10px;
+}
+
+.header__customerService > li:nth-child(3)::after {
+  display: inline-block;
+  content: normal;
+  padding-top: 5px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 72px;
+  margin: 0 auto;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: var(--gray-700);
+  font-size: var(--paragraph-medium);
+  font-weight: 600;
+}
+
+.nav__item-category {
+  margin-right: 15%;
+  border: none;
+  outline: none;
+}
+
+.nav__item:hover {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset : 8px;
+}
+
+.nav__link {
+  padding: 10px 15px;
+}
+
+.nav__item-delinoti {
+  margin-left: 15%;
+  padding: 6px 16px;
+  border: 1px solid var(--gray-100);
+  border-radius: 30px;
+  font-size: var(--paragraph-small);
+}
+
+.delinoti-primary {
+  color: var(--primary);
 }
 
 main {
-  width: 1920px;
+  /* width: 1920px; */
 }
 
 footer {
-  width: 1920px;
+  /* width: 1920px; */
   height: 629px;
-  background-color: #E1E1E1;
+  background-color: #e1e1e1;
 }
 
 .cartTitle {
@@ -185,7 +280,7 @@ footer {
   display: flex;
 }
 
-.selectWrapper>div {
+.selectWrapper > div {
   margin-right: 8px;
 }
 
@@ -197,7 +292,6 @@ table {
   padding: 0px 9.5px;
 }
 
-
 /* ------------- 배송지 부분 -----------------*/
 .deliveryWrapper {
   width: 284px;
@@ -205,15 +299,15 @@ table {
 
 .deliveryInfoWrapper {
   padding: 20px;
-  border: 1px solid #E1E1E1;
+  border: 1px solid #e1e1e1;
 }
 
-.deliveryInfo>li:nth-child(1)::before {
+.deliveryInfo > li:nth-child(1)::before {
   content: url(../image/Location.png);
   vertical-align: middle;
 }
 
-.deliveryInfo>li:nth-child(1) {
+.deliveryInfo > li:nth-child(1) {
   display: inline-block;
   font-weight: 600;
   font-size: var(--label-medium);
@@ -222,7 +316,7 @@ table {
   height: 36px;
 }
 
-.deliveryInfo>li:nth-child(2) {
+.deliveryInfo > li:nth-child(2) {
   font-weight: 600;
   font-size: var(--label-medium);
   margin-bottom: 12px;
@@ -233,7 +327,7 @@ table {
   width: 246px;
 }
 
-.deliveryInfo>li:nth-child(3) {
+.deliveryInfo > li:nth-child(3) {
   /* display: inline-block; */
   /* inline-block 하면 여백이 생김.. */
   /*   width: 42px;
@@ -245,7 +339,7 @@ table {
   /* background-color: orange; */
 }
 
-.deliveryInfo>li:nth-child(4) {
+.deliveryInfo > li:nth-child(4) {
   color: var(--primary);
   font-weight: 600;
   font-size: var(--label-medium);
@@ -268,7 +362,7 @@ table {
   border-bottom: 1px dashed var(--gray-100);
 }
 
-.priceInfo>li {
+.priceInfo > li {
   display: flex;
   justify-content: space-between;
   font-weight: 400;
@@ -277,12 +371,12 @@ table {
   line-height: 26px;
 }
 
-.priceInfo>li:nth-child(1),
-.priceInfo>li:nth-child(2) {
+.priceInfo > li:nth-child(1),
+.priceInfo > li:nth-child(2) {
   margin-bottom: 16px;
 }
 
-.priceInfo>li:nth-child(3) {
+.priceInfo > li:nth-child(3) {
   margin-bottom: 24px;
 }
 
