@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/client/css/productDetail.css">
   <title>productDetail</title>
 </head>
 <body>
@@ -12,22 +13,25 @@
     <figure class="productDetail-main__photo">
       <img class="productDetail-main-photo__img" src="/client/assets/tangtang/thumbnail.jpg" alt="상품 썸네일입니다.">
     </figure>
+    <div>
     <div class="productDetail-title">
+      <h2 class="productDetail-title__delivery">샛별배송</h2>
       <h1 class="productDetail-title__name">[풀무원]탱탱쫄면(4개입)</h1>
       <h2 class="productDetail-title__explain">튀기지 않아 부담 없는 매콤함</h2>
       <h2 class="productDetail-title__price">
-        <span class="productDetail-title-price__number">4,800</span>
+        <span class="productDetail-title-price__number">4,980</span>
        <span class="productDetail-title-price__won">원</span>
-     </h2>
+      </h2>
+      <h2 class="productDetail-title__notice">로그인 후, 적립 혜택이 제공됩니다.</h2>
 
      <!-- 물품 설명  -->
     </div>
     <div class="productDetail-information">
       <dl class="productDetail-information__delivery">
-        <dt>배송</dt>
+        <dt class="productDetail-information-delivery__normal">배송</dt>
         <dd>
           <p>샛별배송</p>
-          <p>23시 전 주문 시 내일 아침 7시 전 도착(대구 부산 울산 샛별배송 운영시간 별도 확인</p>
+          <p>23시 전 주문 시 내일 아침 7시 전 도착(대구 부산 울산 샛별배송 운영시간 별도 확인)</p>
         </dd>
       </dl>
       <dl class="productDetail-information__seller">
@@ -74,23 +78,24 @@
           </p>
         </dd>
       </dl>
-
+      
       <!-- 수량설정 -->
-      <dl class="productDetail-information__sellect">
-        <dt>상품선택</dt>
-        <dd>
-          <h3>[풀무원]탱탱쫄면(4개입)</h3>
-          <p>
-            <div>
-              <button class="productDetail-information-sellect__minusBtn" type="button"></button>
-              <h3>1</h3>
-              <button class="productDetail-information-sellect__plusBtn" type="button"></button>
-            </div>
-          </p>
-        </dd>
-      </dl>
+      <div class="productDetail-information__sellect">
+        <dl>
+          <dt>상품선택</dt>
+          <dd>
+            <h3>[풀무원]탱탱쫄면(4개입)</h3>
+            <p>
+              <div>
+                <button class="productDetail-information-sellect__minusBtn" type="button"></button>
+                <h3>1</h3>
+                <button class="productDetail-information-sellect__plusBtn" type="button"></button>
+              </div>
+            </p>
+          </dd>
+        </dl>
+      </div>
     </div>
-
     <!-- 좋아요, 알람, 장바구니 -->
     <div class="productDetail__bill">
       <h2 class="productDetail-bill__totalPrice">총 상품금액:</h2>

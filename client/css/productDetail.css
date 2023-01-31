@@ -1,0 +1,106 @@
+@import url(/client/css/theme.css);
+@import url(/client/css/reset.css);
+@import url(/client/css/normalize.css);
+
+body {
+  width: 1050px;
+  margin: 0 auto;
+}
+/* 프로덕트디테일 상단 */
+.productDetail {
+  background-color: aqua;
+  width: 1050px;
+  height: 1000px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  gap: 0;
+}
+
+/* 썸네일 */
+.productDetail-main__photo {
+  width: 400px;
+  height: 515px;
+  margin-top: 44px;
+  margin-bottom: auto;
+  padding: 0px;
+}
+
+/* 제품명 */
+.productDetail-title {
+  width: 600px;
+  height: 240px;
+  margin-bottom: 0px;
+  background-color: azure;
+}
+
+/* 배송유형 */
+.productDetail-title__delivery {
+  font-size: var(--heading-large);
+  font-weight: 700;
+  color: var(--gray-700);
+  
+  padding-top: 44px;
+  padding-bottom: 16px;
+
+}
+
+/* 제품 세부사항 */
+.productDetail-title__name {
+  line-height: 150%;
+  font-weight: 600;
+  font-size: var(--label-xl);
+  color: var(--black);
+}
+
+.productDetail-title__explain {
+  line-height: 160%;
+  font-weight: 400;
+  font-size: var(--paragraph-medium);
+  color: var(--gray-400);
+}
+
+.productDetail-title__price {
+  padding-top : 16px;
+}
+
+.productDetail-title-price__number {
+  font-size: var(--label-xl);
+  font-weight: 600;
+  color: var(--black)
+}
+
+.productDetail-title-price__won {
+  font-size: var(--heading-medium);
+  font-weight: 700;
+  color: var(--black);
+}
+
+.productDetail-title__notice {
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--primary);
+
+  padding-top: 16px;
+}
+
+/* 제품 정보표 */
+.productDetail-information {
+  background-color: grey;
+  margin-left: auto;
+  margin-top: 20px;
+  width: 600px;
+  height: 480px;
+}
+
+.productDetail-information__delivery {
+  font-size: ;
+}
+
+/* 가격 및 수량 조정 */
+.productDetail-information__sellect {
+  background-color: blanchedalmond;
+  width: 560px; 
+}
