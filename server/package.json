@@ -1,7 +1,7 @@
 {
   "name": "karly",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "license": "MIT",
   "scripts": {
     "all": "run-p serve start",
