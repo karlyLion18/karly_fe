@@ -107,6 +107,7 @@ main {
 /* 하위 리스트 확인 */
 
 .karly-sub-nav__naming > div {
+  width: 220px;
   border-bottom: 1px solid var(--gray-100);
 }
 
@@ -337,10 +338,28 @@ main {
   gap: 24px 18px;
 }
 
-.karly-product-visual__image {
+.karly-product-a__visual {
   display: block;
   width: 249px;
   height: 320px;
+  position: relative;
+  cursor:pointer
+}
+
+.karly-product-a__visual-button {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  left: 189px;
+  top: 258px;
+  padding: 0;
+  z-index: 999;
+  background-color: transparent;
+  cursor:pointer
+}
+
+..karly-product-a__visual-button:hover {
+  background-color: red;
 }
 
 .karly-product-info {
@@ -559,6 +578,8 @@ main {
   height: 18px;
   background: -8px -86px url(/assets/img/product_list/arrow_directions.svg) no-repeat;
 }
+
+/* image */
 
 .karly__img-arrow--left-end {
   width: 9px;
