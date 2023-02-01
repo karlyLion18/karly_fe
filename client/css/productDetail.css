@@ -470,7 +470,7 @@
 
 .productDetail-main__service::before {
   position: absolute;
-  translate: 0 10px;
+  translate: 0 25px;
   display:block;
   content: '';
   width: 1050px;
@@ -480,8 +480,392 @@
 }
 
 .productDetail-main-service__checkPoint {
+  font-size: var(--heading-xxxl);
+  font-weight: 700;
+  color: var(--content);
+  background-color: var(--white);
+
   position: relative;
   display: inline-block;
   z-index: 10;
-  background-color: var(--white);
+  padding: 0px 16px;
+  margin-bottom: 68px;
+}
+
+.productDetail-main-service-checkPoint__Karly {
+  width: 1010px;
+  margin-left: auto;
+  margin-bottom: 96px;
+}
+
+/* 제품 영양성분표 */
+.productDetail-main-service-checkPoint__information{
+  width: 1050px;
+  margin-bottom: 72px;
+}
+
+.productDetail-main__five {
+  /* background-color: antiquewhite; */
+  border-top: 1px solid var(--gray-100);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 1050px;
+  height: 810px;
+  margin-left: auto;
+  margin-bottom: 52px;
+  padding: 72px 0px 84px;
+  gap: 35px;
+}
+
+.productDetail-main-five__title {
+  /* background-color: #fa622f; */
+  padding: 0px 442px;
+  
+
+  font-size: var(--heading-xl);
+  font-weight: 700;
+  color: var(--content);
+}
+
+/* 깐깐한 상품위원회 */
+.productDetail-main-five__one {
+  /* background-color: #fa622f; */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 24px 0px 0px;
+  margin-top: 35px;
+  width: 315px;
+  height: 272px;
+}
+
+.productDetail-main-five__one::before {
+  margin-bottom: 16px;
+
+  content: '';
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: url(https://res.kurly.com/pc/ico/1910/01_check.svg) no-repeat 50% 50%;
+}
+
+.productDetail-main-five-one__committee {
+  font-size: var(--label-large);
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 24px;
+}
+
+.productDetail-main-five-one__guide {
+  width: 245px;
+  height: 104px;
+
+  font-size: var(--paragraph-medium);
+  font-weight: 400;
+  color: var(--content);
+  line-height: 160%;
+  text-align: center;
+}
+
+/* 차별화된 Karly Only 상품 */
+.productDetail-main-five__two {
+  /* background-color: #fa622f; */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 24px 0px 0px;
+  margin-top: 35px;
+  width: 315px;
+  height: 272px;
+}
+
+.productDetail-main-five__two::before {
+  margin-bottom: 16px;
+
+  content: '';
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: url(https://res.kurly.com/pc/ico/1910/02_only.svg) no-repeat 50% 50%;
+}
+
+.productDetail-main-five-two__diff {
+  font-size: var(--label-large);
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 24px;
+}
+
+.productDetail-main-five-two__guide {
+  width: 264px;
+  height: 104px;
+
+  font-size: var(--paragraph-medium);
+  font-weight: 400;
+  color: var(--content);
+  line-height: 160%;
+  text-align: center;
+}
+
+/* 풀 콜드체인 배송 */
+.productDetail-main-five__three {
+  /* background-color: #fa622f; */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 24px 0px 0px;
+  margin-top: 35px;
+  width: 315px;
+  height: 272px;
+}
+
+.productDetail-main-five__three::before {
+  margin-bottom: 16px;
+
+  content: '';
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: url(https://res.kurly.com/pc/ico/1910/02_only.svg) no-repeat 50% 50%;
+}
+
+.productDetail-main-five-three__fresh {
+  font-size: var(--label-large);
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 24px;
+}
+
+.productDetail-main-five-three__guide {
+  width: 285px;
+  height: 104px;
+
+  font-size: var(--paragraph-medium);
+  font-weight: 400;
+  color: var(--content);
+  line-height: 160%;
+  text-align: center;
+}
+
+/* 최선의 가격 */
+.productDetail-main-five__four {
+  /* background-color: #fa622f; */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 24px 0px 0px;
+  margin-top: 35px;
+  width: 315px;
+  height: 272px;
+}
+
+.productDetail-main-five__four::before {
+  margin-bottom: 16px;
+
+  content: '';
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: url(https://res.kurly.com/pc/ico/1910/04_price.svg) no-repeat 50% 50%;
+}
+
+.productDetail-main-five-four__price {
+  font-size: var(--label-large);
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 24px;
+}
+
+.productDetail-main-five-four__guide {
+  width: 252px;
+  height: 104px;
+
+  font-size: var(--paragraph-medium);
+  font-weight: 400;
+  color: var(--content);
+  line-height: 160%;
+  text-align: center;
+}
+
+/* 지속 가능한 유통 */
+.productDetail-main-five__five {
+  /* background-color: #fa622f; */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 24px 0px 0px;
+  margin-top: 35px;
+  width: 315px;
+  height: 272px;
+}
+
+.productDetail-main-five__five::before {
+  margin-bottom: 16px;
+
+  content: '';
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: url(https://res.kurly.com/pc/ico/1910/05_eco.svg) no-repeat 50% 50%;
+}
+
+.productDetail-main-five-five__retail {
+  font-size: var(--label-large);
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 24px;
+}
+
+.productDetail-main-five-five__guide {
+  width: 250px;
+  height: 104px;
+
+  font-size: var(--paragraph-medium);
+  font-weight: 400;
+  color: var(--content);
+  line-height: 160%;
+  text-align: center;
+}
+
+.productDetail-review {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 1050px;
+  gap: 56px;
+}
+
+/* 상품 후기 */
+
+/* 안내 문구 */
+.productDetail-review__top {
+  height: 142px;
+
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 76px;
+}
+
+.productDetail-review-top__title {
+  position: absolute;
+
+  font-size: var(--heading-xl);
+  font-weight: 700;
+  color: var(--black);
+}
+
+.productDetail-review-top__subtitle {
+  position: absolute;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--content);
+  top: 64px;
+}
+
+.productDetail-review-top__explain {
+  position: absolute;
+  top: 88px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-500);
+  line-height: 150%;
+}
+
+.productDetail-review-top__explain li::before{
+  content: '• ';
+  font-size: 10px;
+}
+
+.productDetail-review-top__reviewBtn {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  width: 155px;
+  height: 44px;
+  left: 895px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--white);
+}
+
+/* 게시판 */
+.productDetail-review__board {
+  gap: 16px;
+}
+
+.productDetail-review-board-top__nav{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.productDetail-review-board-top-nav__total{
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--content);
+  line-height: 150%;
+}
+
+.productDetail-review-board-top-nav__package{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.productDetail-review-board-top-nav-package__likes{
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--content);
+  line-height: 150%;
+}
+
+.productDetail-review-board-top-nav-package__newest::before {
+  display: flexbox;
+  margin: 0px 8px;
+  content: '|';
+  height: 40%;
+}
+
+.productDetail-review-board-top-nav-package__newest{
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--gray-300);
+  line-height: 150%;
+}
+
+/* 게시물 */
+.productDetail-review-board__customer {
+  border-top: 1px solid var(--black);
+  padding-top: 16px;
+}
+
+.productDetail-review-board-customer-writing__notice1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.productDetail-review-board-customer-writing-badge {
+  background: var(--gray-100);
+  border-radius: 1px;
+  width: 37px;
+  height: 18px;
+  padding: 2px 8px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--content);
+  line-height: 150%;
+  margin-right: 20px;
 }

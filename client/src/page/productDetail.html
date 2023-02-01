@@ -142,9 +142,10 @@
         <img class="productDetail-main-service-checkPoint__information" src="/client/assets/tangtang/detail_info.jpg" alt="상품 정보입니다.">
       </div>
       <div class="productDetail-main__five">
-        <dl>
-          <dt class="productDetail-main-five__one">깐깐한 상품위원회</dt>
-          <dd>
+        <h2 class="productDetail-main-five__title">WHY KARLY</h2>
+        <dl class="productDetail-main-five__one">
+          <dt class="productDetail-main-five-one__committee">깐깐한 상품위원회</dt>
+          <dd class="productDetail-main-five-one__guide">
             <p>
               나와 내 가족이 먹고 쓸 상품을 고르는 마음으로 매주 상품을 직접 먹어보고, 경험해보고 성분, 
               맛, 안정성 등 다각도의 기준을 통과한 상품만을 판매합니다.
@@ -152,8 +153,8 @@
           </dd>
         </dl>
         <dl class="productDetail-main-five__two">
-          <dt>차별화된 Karly Only 상품</dt>
-          <dd>
+          <dt class="productDetail-main-five-two__diff">차별화된 Karly Only 상품</dt>
+          <dd class="productDetail-main-five-two__guide">
             <p>
               전국 각지와 해외의 훌륭한 생산자가 믿고 선택하는 파트너, 마켓칼리. 
               3천여 개가 넘는 칼리 단독 브랜드, 스펙의 Karly Only 상품을 믿고 만나보세요.
@@ -161,17 +162,17 @@
           </dd>
         </dl>
         <dl class="productDetail-main-five__three">
-          <dt>신선한 풀콜드체인 배송</dt>
-          <dd>
+          <dt class="productDetail-main-five-three__fresh">신선한 풀콜드체인 배송</dt>
+          <dd class="productDetail-main-five-three__guide">
             <p>
               온라인 업계 최초로 산지에서 문 앞까지 상온, 냉장, 냉동 상품을 분리 포장 후최적의 
-              온도를 유지하는 냉장 배송 시스템,풀콜드체인으로 상품을 신선하게 전해드립니다.
+              온도를 유지하는 냉장 배송 시스템, 풀콜드체인으로 상품을 신선하게 전해드립니다.
             </p>
           </dd>
         </dl>
         <dl class="productDetail-main-five__four">
-          <dt>고객, 생산자를 위한 최선의 가격</dt>
-          <dd>
+          <dt class="productDetail-main-five-four__price">고객, 생산자를 위한 최선의 가격</dt>
+          <dd class="productDetail-main-five-four__guide">
             <p>
               매주 대형 마트와 주요 온라인 마트의 가격변동 상황을 확인해 신선식품은 품질을
               타협하지 않는 선에서 최선의 가격으로,가공식품은 언제나 합리적인 가격으로 정기 조정합니다.
@@ -179,8 +180,8 @@
           </dd>
         </dl>
         <dl class="productDetail-main-five__five">
-          <dt>환경을 생각하는 지속 가능한 유통</dt>
-          <dd>
+          <dt class="productDetail-main-five-five__retail">환경을 생각하는 지속 가능한 유통</dt>
+          <dd class="productDetail-main-five-five__guide">
             <p>
               친환경 포장재부터 생산자가 상품에만집중할 수 있는 직매입 유통구조까지, 지속 가능한 유통을 
               고민하며 컬리를 있게하는 모든 환경(생산자,커뮤니티,직원)이 더 나아질 수 있도록 노력합니다.
@@ -193,32 +194,35 @@
 
   <!-- 상품 후기 -->
   <section class="productDetail-review">
-    <div>
-      <h3 class="productDetail-review__title">상품 후기</h3>
-      <h4 class="productDetail-review__subtitle">글후기 50원 적립금 혜택이 있어요.</h4>
-      <article class="productDetail-review__explain">
-        <span>퍼플, 더퍼플은 2배 적립(100원) / 주간 베스트 후기로 선정시 5,000원 추가 적립</span>
-        <span>후기 작성은 배송완료일로부터 30일 이내 가능합니다.</span>
-        <span>작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일 소요)</span>
-      </article>
-      <button class="productDetail-review__reviewBtn" type="submit">후기 작성하기</button>
+    <div class="productDetail-review__top">
+      <h3 class="productDetail-review-top__title">상품 후기</h3>
+      <h3 class="productDetail-review-top__subtitle">글후기 50원 적립금 혜택이 있어요.</h3>
+      <ul class="productDetail-review-top__explain">
+        <li>퍼플, 더퍼플은 2배 적립(100원) / 주간 베스트 후기로 선정시 5,000원 추가 적립</li>
+        <li>후기 작성은 배송완료일로부터 30일 이내 가능합니다.</li>
+        <li>작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일 소요)</li>
+      </ul>
+      <button class="productDetail-review-top__reviewBtn" type="submit">후기 작성하기</button>
     </div>
     <div class="productDetail-review__board">
       <div class="productDetail-review-board__top">
-        <ul>
-          <li class="productDetail-review-board-top__likes"><a href="/">추천순</a></li>
-          <li class="productDetail-review-board-top__newest"><a href="/">최근 등록순</a></li>
+        <ul class="productDetail-review-board-top__nav">
+          <li class="productDetail-review-board-top-nav__total">총 2개</li>
+          <div class="productDetail-review-board-top-nav__package">
+            <li class="productDetail-review-board-top-nav-package__likes"><a href="/">추천순</a></li>
+            <li class="productDetail-review-board-top-nav-package__newest"><a href="/">최근 등록순</a></li>
+          </div>  
         </ul>
       </div>
       <div class="productDetail-review-board__customer">
         <ul class="productDetail-review-board-customer__writing">
           <li class="productDetail-review-board-customer-writing__notice1">
-            <span>공지</span>
-            <span><a href="/">금주의 베스트 후기 안내</a></span>
+            <span><span class="productDetail-review-board-customer-writing-badge">공지</span>
+            <a href="/">금주의 베스트 후기 안내</a></span>
           </li>
           <li class="productDetail-review-board-customer-writing__notice2">
-            <span>공지</span>
-            <span><a href="/">상품 후기 적립금 정책 안내</a></span>
+            <span><span class="productDetail-review-board-customer-writing-badge">공지</span>
+            <a href="/">상품 후기 적립금 정책 안내</a></span>
           </li>
           <li class="productDetail-review-board-customer-writing__best1">
             <span>베스트</span>
