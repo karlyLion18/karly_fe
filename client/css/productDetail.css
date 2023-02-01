@@ -8,7 +8,7 @@ body {
 }
 /* 프로덕트디테일 상단 */
 .productDetail {
-  background-color: aqua;
+  /* background-color: aqua; */
   width: 1050px;
   height: 1000px;
   display: flex;
@@ -51,7 +51,7 @@ body {
   line-height: 150%;
   font-weight: 600;
   font-size: var(--label-xl);
-  color: var(--black);
+  color: var(--content);
 }
 
 .productDetail-title__explain {
@@ -68,13 +68,13 @@ body {
 .productDetail-title-price__number {
   font-size: var(--label-xl);
   font-weight: 600;
-  color: var(--black)
+  color: var(--content)
 }
 
 .productDetail-title-price__won {
   font-size: var(--heading-medium);
   font-weight: 700;
-  color: var(--black);
+  color: var(--content);
 }
 
 .productDetail-title__notice {
@@ -193,8 +193,8 @@ body {
 .productDetail-infromation-sellect__number {
   border: 1px solid var(--gray-100);
   padding: 12px 16px;
-  margin-right: 50px;
-  width: 432px;
+  margin-right: 0px;
+  width: 482px;
 }
 
 .productDetail-infromation-sellect-number__name {
@@ -209,7 +209,7 @@ body {
   color: var(--black);
   
   position: absolute;
-  translate: 360px -12px;
+  translate: 415px -10px;
   width: 45px;
   /* background-color: aliceblue; */
 }  
@@ -229,7 +229,7 @@ body {
 .productDetail-infromation-sellect-calc__number {
   font-size: var(--label-medium);
   font-weight: 600;
-  color: var(--black);
+  color: var(--content);
   margin-top: 1px;
 }
 
@@ -253,18 +253,19 @@ body {
 .productDetail__total {
   display: flex;
   flex-flow: column wrap;
-  align-items: flex-start;
+  justify-content: right;
   margin-left: auto;
+  /* background-color: #fa622f; */
 }
 
 .productDetail-total__bill {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
+  justify-content: right;
   align-items: center;
   width: 200px;
   height: 43px;
-  margin-left: 20px;
+  margin-left: auto;
   margin-bottom: 40px;
   /* background-color: antiquewhite; */
 }
@@ -272,14 +273,14 @@ body {
 .productDetail-total-bill__totalPrice {
   font-size: var(--label-medium);
   font-weight: 600;
-  color: var(--black);
+  color: var(--content);
   margin-right: 17px;
 }
 
 .productDetail-total-bill__number {
   font-size: var(--label-xl);
   font-weight: 600;
-  color: #333333;
+  color: var(--content);
 
   margin-right: 4px;
 }
@@ -287,7 +288,7 @@ body {
 .productDetail-total-bill__won {
   font-size: var(--heading-medium);
   font-weight: 700;
-  color: #333333;
+  color: var(--content);
 }
 
 .productDetail-total-bill__guide {
@@ -302,7 +303,7 @@ body {
 .productDetail-total-bill-guide__mile {
   background-color: #fa622f;
   border-radius: 12px;
-  padding: 4px 8px;
+  padding: 5px 8px 4px 8px;
   position: absolute;
   translate: -170px 29px;
   
@@ -312,8 +313,39 @@ body {
 }
 
 .productDetail__basket {
-  background-color: aqua;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  width: 560px;
+  height: 56px;
 }
 
+.productDetail-basket__likeBtn {
+  background: url(/client/image/jjim.png) no-repeat 50% 89%;
+  border: 1px solid var(--gray-100);
+  border-radius: 4px;
+  width: 56px;
+  height: 56px;
+}
+
+.productDetail-basket__alarmBtn {
+  background: url(/client/image/bell.png) no-repeat 50% 50%;
+  border: 1px solid var(--gray-100);
+  border-radius: 4px;
+  width: 56px;
+  height: 56px;
+}
+
+.productDetail-basket__basketBtn {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 4px;
+  width: 424px;
+  height: 56px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--white);
+}
 
 
