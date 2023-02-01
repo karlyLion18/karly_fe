@@ -851,11 +851,29 @@
 }
 
 .productDetail-review-board-customer-writing__notice1 {
+  border-bottom: 1px solid var(--gray-100);
   display: flex;
   flex-direction: row;
-  align-items: center;
+  padding: 2px 20px 11px;
 }
 
+.productDetail-review-board-customer-writing__notice2 {
+  border-bottom: 1px solid var(--gray-100);
+  
+  display: flex;
+  flex-direction: row;
+
+  padding: 11px 20px 11px;
+}
+/* 공지 제목 */
+.prodcuproductDetail-review-board-customer-writing__title{
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--content);
+  line-height: 150%;
+}
+
+/* 공지 뱃지 */
 .productDetail-review-board-customer-writing-badge {
   background: var(--gray-100);
   border-radius: 1px;
@@ -868,4 +886,120 @@
   color: var(--content);
   line-height: 150%;
   margin-right: 20px;
+}
+
+.productDetail-review-board-customer-writing__best1,
+.productDetail-review-board-customer-writing__best2,
+.productDetail-review-board-customer-writing__best3 {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 0px 20px 20px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+/* 베스트 뱃지 */
+.productDetail-review-board-customer-writing-best {
+  background-color: var(--secondary);
+  border-radius: 1px;
+  width: 48px;
+  height: 18px;
+  padding: 0px 8px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--white);
+  line-height: 150%;
+  margin-right: 8px;
+}
+
+/* 퍼플 뱃지 */
+.productDetail-review-board-customer-wirting-purple {
+  border: 1px solid var(--primary);
+  border-radius: 1px;
+  width: 37px;
+  height: 18px;
+  padding: 0px 7px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 150%;
+  margin-right: 8px;
+}
+
+/* 작성자 이름 */
+.productDetail-review-board-customer-wirting-writer{
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--black);
+  line-height: 150%;
+  margin-right: 82px;
+}
+
+/* 리뷰 내용 */
+.roductDetail-review-board-customer-wirting-detail {
+  display: flex;
+  flex-flow: column nowrap;
+  
+  width: 142px;
+  height: 114px;
+}
+
+/* 리뷰 제품명 */
+.productDetail-review-board-customer-wirting-detail-pdName {
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+  line-height: 150%;
+}
+
+/* 리뷰 작성내용 */
+.productDetail-review-board-customer-wirting-detail-content {
+  font-size: var(--paragraph-small);
+  font-weight: 400;
+  color: var(--black);
+  line-height: 160%;
+  white-space: pre-line;
+  margin-bottom: 20px;
+}
+
+/* 리뷰 날짜 */
+.productDetail-review-board-customer-wirting-detail-date {
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+  line-height: 150%;
+}
+
+/* 리뷰 이전, 다음 버튼 */
+.productDetail-review-board__remote {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 72px;
+}
+
+.productDetail-review-board-remote__beforeBtn {
+  border: 1px solid var(--gray-100);
+  border-radius: 4px;
+
+  width: 56px;
+  height: 56px;
+  background: url(https://res.kurly.com/kurly/ico/2021/paging-prev-disabled.svg) no-repeat -3px -2px;
+  background-size: 60px 60px;
+  padding: 4px;
+  margin-right: 5px;
+}
+
+.productDetail-review-board-remote__afterBtn {
+  border: 1px solid var(--gray-100);
+  border-radius: 4px;
+
+  width: 56px;
+  height: 56px;
+  background: url(https://res.kurly.com/kurly/ico/2021/paging-next-activated.svg) no-repeat -3px -2px;
+  background-size: 60px 60px;
+  padding: 4px;
+  margin-left: 5px;
 }
