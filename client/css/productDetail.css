@@ -2,7 +2,8 @@
 @import url(/client/css/reset.css);
 @import url(/client/css/normalize.css);
 
-body {
+.productDetail-frame {
+  background-color: var(--white);
   width: 1050px;
   margin: 0 auto;
 }
@@ -312,6 +313,7 @@ body {
   color: var(--white);
 }
 
+/* 좋아요, 알람, 장바구니 버튼 */
 .productDetail__basket {
   /* background-color: aqua; */
   display: flex;
@@ -348,4 +350,138 @@ body {
   color: var(--white);
 }
 
+/* 상세페이지 네비게이션 */
+.productDetail-main__nav {
+  /* background-color: #fa622f; */
+  width: 1050px;
+  height: 102px;
+  margin-bottom: 40px;
+}
 
+.productDetail-main-nav__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 48px
+}
+
+.productDetail-main-nav-list__product {
+  border: 1px solid var(--gray-100);
+  border-bottom: 0px;
+  padding: 17px 102px;
+  width: 263px;
+  height: 54px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.productDetail-main-nav-list__explain {
+  background-color: var(--gray-50);
+  border: 1px solid var(--gray-300);
+  border-right: 0px;
+  padding: 18px 102px;
+  width: 263px;
+  height: 54px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--content);
+}
+
+.productDetail-main-nav-list__review {
+  background-color: var(--gray-50);
+  border: 1px solid var(--gray-300);
+  border-right: 0px;
+  padding: 18px 92px;
+  width: 263px;
+  height: 54px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--content);
+}
+
+.productDetail-main-nav-list__review span {
+  margin-left: 8px;
+  font-size: var(--paragraph-small);
+  font-weight: 400;
+}
+
+.productDetail-main-nav-list__claim {
+  background-color: var(--gray-50);
+  border: 1px solid var(--gray-300);
+  padding: 18px 115px;
+  width: 263px;
+  height: 54px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--content);
+}
+
+/* 제품 사진 및 제품명, 문구 */
+.productDetail-main-detail__img {
+  width: 1050px;
+  height: 670px;
+  margin-bottom: 76px;
+}
+
+.productDetail-main-detail__script {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 256px;
+  margin-bottom: 96px;
+}
+
+.productDetail-main-detail-script__subtitle {
+  font-size: var(--label-xl);
+  font-weight: 600;
+  color: var(--content);
+}
+
+.productDetail-main-detail-script__title {
+  font-size: var(--heading-xxxl);
+  font-weight: 700;
+  color: var(--content);
+  line-height: 140%;
+  margin-bottom: 36px;
+}
+
+.productDetail-main-detail-script__explain {
+  font-size: var(--paragraph-medium);
+  font-weight: 400;
+  color: var(--content);
+  border-top: 1px solid var(--gray-100);
+  padding: 28px 0px 0px;
+  line-height: 160%;
+}
+
+/* 칼리 체크포인트 */
+.productDetail-main__service {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 68px
+}
+
+.productDetail-main__service::before {
+  position: absolute;
+  translate: 0 10px;
+  display:block;
+  content: '';
+  width: 1050px;
+  height: 1px;
+  z-index: 1;
+  background-color: #d9d9d9;
+}
+
+.productDetail-main-service__checkPoint {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  background-color: var(--white);
+}

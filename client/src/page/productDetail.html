@@ -8,6 +8,7 @@
   <title>productDetail</title>
 </head>
 <body>
+<main class="productDetail-frame">
   <!-- 물품 상단 -->
   <section class="productDetail">
     <figure class="productDetail-main__photo">
@@ -116,18 +117,19 @@
   <!-- 상세 설명 -->
   <section class="productDetail__main">
     <nav class="productDetail-main__nav">
-      <ul>
-        <li><a href="/">상품설명</a></li>
-        <li><a href="/">상세정보</a></li>
-        <li><a href="/">후기(1,000)</a></li>
-        <li><a href="/">문의</a></li>
+      <ul class="productDetail-main-nav__list">
+        <li class="productDetail-main-nav-list__product"><a href="/">상품설명</a></li>
+        <li class="productDetail-main-nav-list__explain"><a href="/">상세정보</a></li>
+        <li class="productDetail-main-nav-list__review"><a href="/">후기<span>(1,000)</span></a></li>
+        <li class="productDetail-main-nav-list__claim"><a href="/">문의</a></li>
       </ul>
     </nav>
     <article class="productDetail-main__detail">
       <img class="productDetail-main-detail__img" src="/client/assets/tangtang/detail_banner.jpg" alt="상품 사진입니다.">
       <div class="productDetail-main-detail__script">
-        <h2 class="productDetail-main-detail-script__subtitle">튀기지 않아 부담없는 매콤한</h2>
+        <h2 class="productDetail-main-detail-script__subtitle">튀기지 않아 부담없는 매콤함</h2>
         <h2 class="productDetail-main-detail-script__title">[풀무원] 탱탱쫄면</h2>
+        <hr class="productDetail-main-detail-script__line">
         <p class="productDetail-main-detail-script__explain">
           쫄면의 진가는 매콤새콤한 양념과 탱탱한 면발에서 찾을 수 있지요. 풀무원은 이 맛을 더 부담 없이 즐길 수 있도록 튀기지 않고 만든 탱탱쫄면을 선보입니다. 
           밀가루와 감자 전분을 적절히 배합해 탄력이 좋고, 입에 넣었을 때는 찰지게 씹히죠. 고추장을 넣어 숙성한 비빔장은 자연스럽고 깊은 맛을 냅니다. 
@@ -135,7 +137,7 @@
         </p>
       </div>
       <div class="productDetail-main__service">
-        <h2 class="productDetail-main-service__checkPoint">Karly's Check Point</h2>
+        <h2 class="productDetail-main-service__checkPoint"><span>Karly's Check Point</span></h2>
         <img class="productDetail-main-service-checkPoint__Karly" src="/client/assets/tangtang/karlyCheckPoint.png" alt="칼리 체크포인트입니다.">
         <img class="productDetail-main-service-checkPoint__information" src="/client/assets/tangtang/detail_info.jpg" alt="상품 정보입니다.">
       </div>
@@ -328,5 +330,6 @@
         <button class="productDetail-claim-afterBtn" type="button"></button>
       </div>
   </section>
+</main>
 </body>
 </html>
