@@ -1,14 +1,11 @@
 /* header */
 header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  position: relative;
   min-width: 1050px;
-  width: 100%;
-  /* 패딩 말고 간격줄수 있는 방법을 찾아봅시다 */
-  padding: 0 23% 0;
   background: #ffffff;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
 }
@@ -17,7 +14,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  position: relative;
+  width: 1050px;
   margin-top: 35px;
 }
 
@@ -70,9 +68,12 @@ header {
   height: 30px;
   top: 3px;
   margin: 5px;
-  position: relative;
   border: none;
   cursor: pointer;
+}
+
+.header__form-button > img {
+  transform: translateY(3px);
 }
 
 /* header : icon */
@@ -91,11 +92,14 @@ header {
 }
 
 /* header : 고객 서비스 */
+.header__section {
+  position: absolute;
+  top: 35px;
+  right: 0;
+}
+
 .header__customerService {
   display: flex;
-  position: absolute;
-  top: 5px;
-  right: 0;
   padding: 5px;
   font-size: var(--paragraph-small);
   color: var(--content);
@@ -124,7 +128,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  width: 100%;
+  width: 1050px;
   height: 72px;
   margin: 0 auto;
 }
@@ -144,7 +148,7 @@ header {
   align-items: center;
   border: none;
   cursor: pointer;
-  line-height: px;
+  vertical-align: bottom;
 }
 
 .category__menu {

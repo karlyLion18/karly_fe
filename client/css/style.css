@@ -52,6 +52,42 @@ main {
   /* width: 1920px; */
 }
 
+/* 라디오 버튼 커스텀 */
+[type='radio'] {
+  vertical-align: middle;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: max(1px, 0.1em) solid var(--gray-500);
+  border-radius: 100%;
+  margin-right: 8px;
+}
+
+[type='radio']:checked {
+  border: 0.4375rem solid var(--primary);
+}
+
+/* 체크박스 커스텀 */
+[type='checkbox'] {
+  vertical-align: middle;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: max(1px, 0.1em) solid var(--gray-200);
+  border-radius: 100%;
+  margin-right: 8px;
+  background: url('../assets/icons/Icon/check.svg') no-repeat center center;
+  cursor: pointer;
+}
+
+[type='checkbox']:checked {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: none;
+  background: var(--primary) url('../assets/icons/Icon/white_check.svg') no-repeat center center;
+  fill: white;
+}
+
 .cartTitle {
   display: inline-block;
   margin: 80px 923px 44px;

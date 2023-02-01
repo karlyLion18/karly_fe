@@ -5,19 +5,16 @@
   height: 527px;
   margin: 80px 0;
   border-bottom: 1px solid var(--gray-100);
-}
-
-.login > h2 {
-  font-size: var(--heading-large);
-  font-weight: 600;
-}
-
-.login {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: auto;
+}
+
+.login > h2 {
+  font-size: var(--heading-large);
+  font-weight: 600;
 }
 
 .user-id {
@@ -42,12 +39,10 @@
   color: var(--gray-900);
 }
 
-.find {
-}
-
 .find > li {
   display: inline-block;
 }
+
 .find > li:first-child::after {
   content: '|';
   padding-left: 6px;
@@ -71,6 +66,7 @@
   outline: none;
   cursor: pointer;
 }
+
 .button__sub {
   width: 340px;
   height: 54px;
