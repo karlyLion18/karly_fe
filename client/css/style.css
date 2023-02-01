@@ -3,6 +3,11 @@
 @import url('./normalize.css');
 @import url('./theme.css');
 
+/* common */
+@import url('./common/topadd.css');
+@import url('./common/header.css');
+@import url('./common/footer.css');
+
 /* Accessibility Styles */
 .a11yHidden,
 legend {
@@ -26,7 +31,7 @@ body *::after {
 }
 
 [class] {
-  margin: 0;
+  /* margin: 0; */
 }
 
 a {
@@ -43,184 +48,8 @@ body {
   color: var(--black);
 }
 
-/* header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  /* height: 197px; */
-  width: 100%;
-  margin-top: 35px;
-  padding: 0 435px;
-  background: #ffffff;
-  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
-}
-
-.header__main {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin-top: 35px;
-}
-
-/* header : 주요부분 */
-.header__switch {
-  display: flex;
-  align-items: center;
-  width: 267px;
-  font-size: var(--paragraph-large);
-  font-weight: 600;
-  color: var(--gray-500);
-}
-
-.header__switch > h2:active,
-.header__switch > h2:hover {
-  color: var(--primary);
-}
-
-.header__switch > h2:nth-child(1)::after {
-  display: inline-block;
-  padding: 0 8px 0 8px;
-  content: '|';
-  color: var(--gray-200);
-  font-weight: 400;
-}
-
-.header__form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 400px;
-  height: 50px;
-  padding-left: 20px;
-  border: 1px solid var(--primary);
-  border-radius: 4px;
-}
-
-.header__form > fieldset {
-  padding: 0;
-}
-
-.header__form-input {
-  width: 320px;
-  height: 40px;
-  border: none;
-  outline: none;
-}
-
-.header__form-button {
-  width: 30px;
-  height: 30px;
-  top: 3px;
-  margin: 5px;
-  position: relative;
-  border: none;
-  cursor: pointer;
-}
-
-/* header : icon */
-.header__icon-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.header__icon-button {
-  border: none;
-  cursor: pointer;
-}
-
-.header__icon_button > img:hover {
-  color: red;
-}
-
-/* header : 고객 서비스 */
-.header__customerService {
-  display: flex;
-  position: absolute;
-  top: 10px;
-  right: 435px;
-  padding: 5px;
-  font-size: var(--paragraph-small);
-  color: var(--gray-700);
-}
-
-.header__customerService > li,
-.header__customerService > li:active {
-  display: inline-block;
-  padding: 5px;
-}
-
-.header__customerService > li::after {
-  display: inline-block;
-  content: '|';
-  padding: 0 0 0 10px;
-}
-
-.header__customerService > li:nth-child(3)::after {
-  display: inline-block;
-  content: normal;
-  padding-top: 5px;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  height: 72px;
-  margin: 0 auto;
-}
-
-.nav__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  color: var(--gray-700);
-  font-size: var(--paragraph-medium);
-  font-weight: 600;
-}
-
-.nav__item-category {
-  margin-right: 15%;
-  border: none;
-  outline: none;
-}
-
-.nav__item:hover {
-  color: var(--primary);
-  text-decoration: underline;
-  text-underline-offset : 8px;
-}
-
-.nav__link {
-  padding: 10px 15px;
-}
-
-.nav__item-delinoti {
-  margin-left: 15%;
-  padding: 6px 16px;
-  border: 1px solid var(--gray-100);
-  border-radius: 30px;
-  font-size: var(--paragraph-small);
-}
-
-.delinoti-primary {
-  color: var(--primary);
-}
-
 main {
   /* width: 1920px; */
-}
-
-footer {
-  /* width: 1920px; */
-  height: 629px;
-  background-color: #e1e1e1;
 }
 
 .cartTitle {
