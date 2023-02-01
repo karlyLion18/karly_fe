@@ -142,9 +142,10 @@
         <img class="productDetail-main-service-checkPoint__information" src="/client/assets/tangtang/detail_info.jpg" alt="상품 정보입니다.">
       </div>
       <div class="productDetail-main__five">
-        <dl>
-          <dt class="productDetail-main-five__one">깐깐한 상품위원회</dt>
-          <dd>
+        <h2 class="productDetail-main-five__title">WHY KARLY</h2>
+        <dl class="productDetail-main-five__one">
+          <dt class="productDetail-main-five-one__committee">깐깐한 상품위원회</dt>
+          <dd class="productDetail-main-five-one__guide">
             <p>
               나와 내 가족이 먹고 쓸 상품을 고르는 마음으로 매주 상품을 직접 먹어보고, 경험해보고 성분, 
               맛, 안정성 등 다각도의 기준을 통과한 상품만을 판매합니다.
@@ -152,8 +153,8 @@
           </dd>
         </dl>
         <dl class="productDetail-main-five__two">
-          <dt>차별화된 Karly Only 상품</dt>
-          <dd>
+          <dt class="productDetail-main-five-two__diff">차별화된 Karly Only 상품</dt>
+          <dd class="productDetail-main-five-two__guide">
             <p>
               전국 각지와 해외의 훌륭한 생산자가 믿고 선택하는 파트너, 마켓칼리. 
               3천여 개가 넘는 칼리 단독 브랜드, 스펙의 Karly Only 상품을 믿고 만나보세요.
@@ -161,17 +162,17 @@
           </dd>
         </dl>
         <dl class="productDetail-main-five__three">
-          <dt>신선한 풀콜드체인 배송</dt>
-          <dd>
+          <dt class="productDetail-main-five-three__fresh">신선한 풀콜드체인 배송</dt>
+          <dd class="productDetail-main-five-three__guide">
             <p>
               온라인 업계 최초로 산지에서 문 앞까지 상온, 냉장, 냉동 상품을 분리 포장 후최적의 
-              온도를 유지하는 냉장 배송 시스템,풀콜드체인으로 상품을 신선하게 전해드립니다.
+              온도를 유지하는 냉장 배송 시스템, 풀콜드체인으로 상품을 신선하게 전해드립니다.
             </p>
           </dd>
         </dl>
         <dl class="productDetail-main-five__four">
-          <dt>고객, 생산자를 위한 최선의 가격</dt>
-          <dd>
+          <dt class="productDetail-main-five-four__price">고객, 생산자를 위한 최선의 가격</dt>
+          <dd class="productDetail-main-five-four__guide">
             <p>
               매주 대형 마트와 주요 온라인 마트의 가격변동 상황을 확인해 신선식품은 품질을
               타협하지 않는 선에서 최선의 가격으로,가공식품은 언제나 합리적인 가격으로 정기 조정합니다.
@@ -179,8 +180,8 @@
           </dd>
         </dl>
         <dl class="productDetail-main-five__five">
-          <dt>환경을 생각하는 지속 가능한 유통</dt>
-          <dd>
+          <dt class="productDetail-main-five-five__retail">환경을 생각하는 지속 가능한 유통</dt>
+          <dd class="productDetail-main-five-five__guide">
             <p>
               친환경 포장재부터 생산자가 상품에만집중할 수 있는 직매입 유통구조까지, 지속 가능한 유통을 
               고민하며 컬리를 있게하는 모든 환경(생산자,커뮤니티,직원)이 더 나아질 수 있도록 노력합니다.
@@ -193,141 +194,188 @@
 
   <!-- 상품 후기 -->
   <section class="productDetail-review">
-    <div>
-      <h3 class="productDetail-review__title">상품 후기</h3>
-      <h4 class="productDetail-review__subtitle">글후기 50원 적립금 혜택이 있어요.</h4>
-      <article class="productDetail-review__explain">
-        <span>퍼플, 더퍼플은 2배 적립(100원) / 주간 베스트 후기로 선정시 5,000원 추가 적립</span>
-        <span>후기 작성은 배송완료일로부터 30일 이내 가능합니다.</span>
-        <span>작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일 소요)</span>
-      </article>
-      <button class="productDetail-review__reviewBtn" type="submit">후기 작성하기</button>
+    <div class="productDetail-review__top">
+      <h3 class="productDetail-review-top__title">상품 후기</h3>
+      <h3 class="productDetail-review-top__subtitle">글후기 50원 적립금 혜택이 있어요.</h3>
+      <ul class="productDetail-review-top__explain">
+        <li>퍼플, 더퍼플은 2배 적립(100원) / 주간 베스트 후기로 선정시 5,000원 추가 적립</li>
+        <li>후기 작성은 배송완료일로부터 30일 이내 가능합니다.</li>
+        <li>작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일 소요)</li>
+      </ul>
+      <button class="productDetail-review-top__reviewBtn" type="submit">후기 작성하기</button>
     </div>
     <div class="productDetail-review__board">
       <div class="productDetail-review-board__top">
-        <ul>
-          <li class="productDetail-review-board-top__likes"><a href="/">추천순</a></li>
-          <li class="productDetail-review-board-top__newest"><a href="/">최근 등록순</a></li>
+        <ul class="productDetail-review-board-top__nav">
+          <li class="productDetail-review-board-top-nav__total">총 2개</li>
+          <div class="productDetail-review-board-top-nav__package">
+            <li class="productDetail-review-board-top-nav-package__likes"><a href="/">추천순</a></li>
+            <li class="productDetail-review-board-top-nav-package__newest"><a href="/">최근 등록순</a></li>
+          </div>  
         </ul>
       </div>
       <div class="productDetail-review-board__customer">
         <ul class="productDetail-review-board-customer__writing">
           <li class="productDetail-review-board-customer-writing__notice1">
-            <span>공지</span>
-            <span><a href="/">금주의 베스트 후기 안내</a></span>
+            <span><span class="productDetail-review-board-customer-writing-badge">공지</span>
+            <a href="/" class="prodcuproductDetail-review-board-customer-writing__title">금주의 베스트 후기 안내</a></span>
           </li>
           <li class="productDetail-review-board-customer-writing__notice2">
-            <span>공지</span>
-            <span><a href="/">상품 후기 적립금 정책 안내</a></span>
+            <span><span class="productDetail-review-board-customer-writing-badge">공지</span>
+            <a href="/" class="prodcuproductDetail-review-board-customer-writing__title">상품 후기 적립금 정책 안내</a></span>
           </li>
           <li class="productDetail-review-board-customer-writing__best1">
-            <span>베스트</span>
-            <span>퍼플</span>
-            <span>김*진</span>
-            <span>[풀무원] 탱탱쫄면 (4개입)</span>
-            <p>
-              너무 맛있어여~
-              면이 쫄깃하고 양념도 짱맛나요!!
-            </p>
-            <time datetime="2022-11-10">2022.11.10</time>
+            <span class="productDetail-review-board-customer-writing-best">베스트</span>
+            <span class="productDetail-review-board-customer-wirting-purple">퍼플</span>
+            <span class="productDetail-review-board-customer-wirting-writer">김*진</span>
+            <span class="productDetail-review-board-customer-wirting-detail">            
+              <span class="productDetail-review-board-customer-wirting-detail-pdName">[풀무원] 탱탱쫄면 (4개입)</span>
+              <p class="productDetail-review-board-customer-wirting-detail-content">
+                너무 맛있어여~
+                면이 쫄깃하고 양념도 짱맛나요!!
+              </p>
+              <time class="productDetail-review-board-customer-wirting-detail-date" datetime="2022-11-10">2022.11.10</time>
+            </span>
           </li>
           <li class="productDetail-review-board-customer-writing__best2">
-            <span>베스트</span>
-            <span>퍼플</span>
-            <span>김*식</span>
-            <span>[풀무원] 탱탱쫄면 (4개입)</span>
-            <p>
-              또 주문할것 같습니다!
-              너무 맛있어요 내 스타일이야~!
-            </p>
-            <time datetime="2022-11-10">2022.11.10</time>
+            <span class="productDetail-review-board-customer-writing-best">베스트</span>
+            <span class="productDetail-review-board-customer-wirting-purple">퍼플</span>
+            <span class="productDetail-review-board-customer-wirting-writer">김*식</span>
+            <span class="productDetail-review-board-customer-wirting-detail">
+              <span class="productDetail-review-board-customer-wirting-detail-pdName">[풀무원] 탱탱쫄면 (4개입)</span>
+              <p class="productDetail-review-board-customer-wirting-detail-content">
+                또 주문할것 같습니다!
+                너무 맛있어요 내 스타일이야~!
+              </p>
+              <time class="productDetail-review-board-customer-wirting-detail-date" datetime="2022-11-10">2022.11.10</time>
+            </span>
           </li>
           <li class="productDetail-review-board-customer-writing__best3">
-            <span>베스트</span>
-            <span>퍼플</span>
-            <span>김*범</span>
-            <span>[풀무원] 탱탱쫄면 (4개입)</span>
-            <p>
-              너무 맛있어여~
-              면이 쫄깃하고 양념도 짱맛나요!!
-            </p>
-            <time datetime="2022-11-10">2022.11.10</time>
+            <span class="productDetail-review-board-customer-writing-best">베스트</span>
+            <span class="productDetail-review-board-customer-wirting-purple">퍼플</span>
+            <span class="productDetail-review-board-customer-wirting-writer">김*범</span>
+            <span class="productDetail-review-board-customer-wirting-detail">
+              <span class="productDetail-review-board-customer-wirting-detail-pdName">[풀무원] 탱탱쫄면 (4개입)</span>
+              <p class="productDetail-review-board-customer-wirting-detail-content">
+                너무 맛있어여~
+                면이 쫄깃하고 양념도 짱맛나요!!
+              </p>
+              <time class="productDetail-review-board-customer-wirting-detail-date" datetime="2022-11-10">2022.11.10</time>
+            </span>
           </li>
         </ul>
       </div>
-      <button class="productDetail-review-board__beforeBtn" type="button"></button>
-      <button class="productDetail-review-board__afterBtn" type="button"></button>
-    </div>
+        <div class="productDetail-review-board__remote">
+          <button class="productDetail-review-board-remote__beforeBtn" type="button"></button>
+          <button class="productDetail-review-board-remote__afterBtn" type="button"></button>
+        </div>
+      </div>
     </section>
 
     <!-- 상품 문의 -->
     <section class="productDetail-claim">
-      <div>
-        <h3 class="productDetail-claim__title">상품 문의</h3>
-        <p class="productDetail-claim__explain">
-          상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.
-          배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 1:1 문의에 남겨주세요.
-        </p>
-        <button class="productDetail-claim__claimBtn" tpye="button">문의하기</button>
+      <div class="productDetail-claim__top">
+        <h3 class="productDetail-claim-top__title">상품 문의</h3>
+        <ul class="productDetail-claim-top__explain">
+          <li>상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.</li>
+          <li>배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 1:1 문의에 남겨주세요.</li>
+        </ul>
+        <button class="productDetail-claim-top__claimBtn" tpye="button">문의하기</button>
       </div>
-      <div>
-        <div class="productDetail-claim__top">
-          <span class="productDetail-claim-top__writer">작성자</span>
-          <span class="productDetail-claim-top__title">제목</span>
-          <span class="productDetail-claim-top__date">작성일</span>
-          <span class="productDetail-claim-top__status">답변상태</span>
-        </div>
+      <div class="productDetail-claim__nav">
+        <span class="productDetail-claim-nav__title">제목</span>
+        <span class="productDetail-claim-nav__writer">작성자</span>
+        <span class="productDetail-claim-nav__date">작성일</span>
+        <span class="productDetail-claim-nav__status">답변상태</span>
+      </div>
+      <div claas="productDetail-claimList">
+        <ul class="productDetail-claim__notice">
+          <li class="productDetail-claim-notice__notice1">
+            <span><span class="productDetail-review-board-customer-writing-badge">공지</span>
+            <a href="/" class="productDetail-claim-notice-notice1__title">판매(임시)중단 제품 안내 (22.11.10 업데이트)</a></span>
+            <div class="productDetail-claimList-nds1">
+              <span class="productDetail-claim-board-claim-script__name">칼리</span>
+              <time class="productDetail-claim-board-claim-script__date" datetime="2017-02-01">2017.02.01</time>
+              <span class="productDetail-claim-board-claim-script__status1">-</span>
+            </div>
+          </li>
+        </ul>
         <ul class="productDetail-claim__board">
           <li class="productDetail-claim-board__claim1">
             <div class="productDetail-claim-board-claim1__script">
-              <button class="productDetail-claim-board-claim1-script__title" type="button">팩이 터져서 왔어요</button>
-              <span class="productDetail-claim-board-claim1-script__name">김*식</span>
-              <time class="productDetail-claim-board-claim1-script__date" datetime="2022-11-11">2022.11.11</time>
-              <span class="productDetail-claim-board-claim1-script__status">답변대기</span>
+              <button class="productDetail-claim-board-claim-script-title" type="button">팩이 터져서 왔어요</button>
+              <div class="productDetail-claimList-nds2">
+                <span class="productDetail-claim-board-claim-script__name">김*식</span>
+                <time class="productDetail-claim-board-claim-script__date" datetime="2022-11-11">2022.11.11</time>
+                <span class="productDetail-claim-board-claim-script__status2">답변대기</span>
+              </div>
             </div>
-            <p class="productDetail-claim-board-claim1__mention">스티로폼 박스도 손상되어 있어 포장이 터져 어망이네요. 환불 요청합니다.</p>
-            <p class="productDetail-claim-board-claim1__answer">
-              안녕하세요. 칼리입니다.
-              믿고 찾아주신 상품에 불편을 드려 정말 죄송합니다.
-              더불어, 해당 게시판은 실시간으로 상담이 어려워 순차적으로 답변드리고 있는 관계로 신속하게 답변 드리지 못하여 대단히 죄송합니다.
-              다행히도 고객님의 불편하셨던 사항은 고객행복센터를 통해 안내 받으신 점 확인하였습니다.
-              불편을 드려 정말 죄송할 따름이며, 고객님께 늘 신선하고 최상의 상품을 불편 없이 전달드리기 위해 최선을 다하는 칼리가 되겠습니다.
-              칼리 드림.
-            </p>
+            <div class="productDetail-claim-board-content">
+              <p class="productDetail-claim-board-claim-mention">스티로폼 박스도 손상되어 있어 포장이 터져 어망이네요. 
+                환불 요청합니다.
+              </p>
+              <p class="productDetail-claim-board-claim-answer">안녕하세요. 칼리입니다.
+                믿고 찾아주신 상품에 불편을 드려 정말 죄송합니다.
+
+                더불어, 해당 게시판은 실시간으로 상담이 어려워 순차적으로 답변드리고 있는 관계로 신속하게 답변
+                드리지 못하여 대단히 죄송합니다.
+
+                다행히도 고객님의 불편하셨던 사항은 고객행복센터를 통해 안내 받으신 점 확인하였습니다.
+
+                불편을 드려 정말 죄송할 따름이며, 고객님께 늘 신선하고 최상의 상품을 불편 없이 전달드리기 위해 
+                최선을 다하는 칼리가 되겠습니다.
+                
+                칼리 드림.
+              </p>
+              <time class="productDetail-claim-board-claim-date" datetime="2022-11-11">2022.11.11</time>
+            </div>
           </li>
-          <li class="productDetail-claim-board__claim2">
-            <button class="productDetail-claim-board-claim2__itle" type="button">비밀글입니다.</button>
-            <span class="productDetail-claim-board-claim2__name">김*진</span>
-            <time datetime="2022-10-09">2022.10.09</time>
-            <span class="productDetail-claim-board-claim2__status">답변대기</span>
+          <li class="productDetail-claim-board-noOpen">
+            <button class="productDetail-claim-board-secret-title" type="button">비밀글입니다.</button>
+            <div class="productDetail-claimList-nds2">
+              <span class="productDetail-claim-board-claim-script__name">김*진</span>
+              <time class="productDetail-claim-board-claim-script__date" datetime="2022-10-09">2022.10.09</time>
+              <span class="productDetail-claim-board-claim-script__status2">답변대기</span>
+            </div>
+            </li>
+          <li class="productDetail-claim-board-noOpen">
+            <button class="productDetail-claim-board-secret-title" type="button">비밀글입니다.</button>
+            <div class="productDetail-claimList-nds2">
+              <span class="productDetail-claim-board-claim-script__name">김*범</span>
+              <time class="productDetail-claim-board-claim-script__date" datetime="2022-09-13">2022.09.13</time>
+              <span class="productDetail-claim-board-claim-script__status3">답변완료</span>
+            </div>
           </li>
-          <li class="productDetail-claim-board__claim3">
-            <button class="productDetail-claim-board-claim3__title" type="button">비밀글입니다.</button>
-            <span class="productDetail-claim-board-claim3__name">김*범</span>
-            <time datetime="2022-09-13">2022.09.13</time>
-            <span class="productDetail-claim-board-claim3__status"답변완료</span>
+          <li class="productDetail-claim-board-noOpen">
+            <button class="productDetail-claim-board-secret-title" type="button">비밀글입니다.</button>
+            <div class="productDetail-claimList-nds2">
+              <span class="productDetail-claim-board-claim-script__name">심*범</span>
+              <time class="productDetail-claim-board-claim-script__date" datetime="2022-08-30">2022.08.30</time>
+              <span class="productDetail-claim-board-claim-script__status3">답변완료</span>
+            </div>
           </li>
-          <li class="productDetail-claim-board__claim4">
-            <button class="productDetail-claim-board-claim4__title" type="button">비밀글입니다.</button>
-            <span class="productDetail-claim-board-claim4__name">심*범</span>
-            <time datetime="2022-08-30">2022.08.30</time>
-            <span class="productDetail-claim-board-claim4__status">답변완료</span>
+          <li class="productDetail-claim-board-noOpen">
+            <button class="productDetail-claim-board-secret-title" type="button">비밀글입니다.</button>
+            <div class="productDetail-claimList-nds2">
+              <span class="productDetail-claim-board-claim-script__name">야*</span>
+              <time class="productDetail-claim-board-claim-script__date" datetime="2022-08-12">2022.08.12</time>
+              <span class="productDetail-claim-board-claim-script__status3">답변완료</span>
+            </div>  
           </li>
-          <li class="productDetail-claim-board__claim5">
-            <button class="productDetail-claim-board-claim5__title" type="button">비밀글입니다.</button>
-            <span class="productDetail-claim-board-claim5__name">야*</span>
-            <time datetime="2022-08-12">2022.08.12</time>
-            <span class="productDetail-claim-board-claim5__status">답변완료</span>
-          </li>
-          <li class="productDetail-claim-board__claim6">
-            <button class="productDetail-claim-board-claim6__title" type="button">비밀글입니다.</button>
-            <span class="productDetail-claim-board-claim6__name">김**사</span>
-            <time datetime="2022-07-23">2022.07.23</time>
-            <span class="productDetail-claim-board-claim6__status">답변완료</span>
-          </li>
+          <li class="productDetail-claim-board-noOpen">
+            <button class="productDetail-claim-board-secret-title" type="button">비밀글입니다.</button>
+            <div class="productDetail-claimList-nds2">
+              <span class="productDetail-claim-board-claim-script__name">김**사</span>
+              <time class="productDetail-claim-board-claim-script__date"  datetime="2022-07-23">2022.07.23</time>
+              <span class="productDetail-claim-board-claim-script__status3">답변완료</span>
+            </div>
+           </li>
         </ul>
-        <button class="productDetail-claim-beforeBtn" type="button"></button>
-        <button class="productDetail-claim-afterBtn" type="button"></button>
+      </div>
+      <div class="productDetail-claim-board__remote">
+        <button class="productDetail-claim-board-remote__beforeBtn" type="button"></button>
+        <button class="productDetail-claim-board-remote__afterBtn" type="button"></button>
+      </div>
       </div>
   </section>
 </main>
