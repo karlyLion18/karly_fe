@@ -1,0 +1,487 @@
+@import url(/client/css/theme.css);
+@import url(/client/css/reset.css);
+@import url(/client/css/normalize.css);
+
+.productDetail-frame {
+  background-color: var(--white);
+  width: 1050px;
+  margin: 0 auto;
+}
+/* 프로덕트디테일 상단 */
+.productDetail {
+  /* background-color: aqua; */
+  width: 1050px;
+  height: 1000px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* 썸네일 */
+.productDetail-main__photo {
+  width: 400px;
+  height: 515px;
+  margin-top: 44px;
+  margin-bottom: auto;
+  padding: 0px;
+}
+
+/* 제품명 */
+.productDetail-title {
+  width: 600px;
+  height: 240px;
+  margin-bottom: 0px;
+  /* background-color: azure; */
+}
+
+/* 배송유형 */
+.productDetail-title__delivery {
+  font-size: var(--heading-large);
+  font-weight: 700;
+  color: var(--gray-700);
+  
+  padding-top: 44px;
+  padding-bottom: 16px;
+
+}
+
+/* 제품 세부사항 */
+.productDetail-title__name {
+  line-height: 150%;
+  font-weight: 600;
+  font-size: var(--label-xl);
+  color: var(--content);
+}
+
+.productDetail-title__explain {
+  line-height: 160%;
+  font-weight: 400;
+  font-size: var(--paragraph-medium);
+  color: var(--gray-400);
+}
+
+.productDetail-title__price {
+  padding-top : 16px;
+}
+
+.productDetail-title-price__number {
+  font-size: var(--label-xl);
+  font-weight: 600;
+  color: var(--content)
+}
+
+.productDetail-title-price__won {
+  font-size: var(--heading-medium);
+  font-weight: 700;
+  color: var(--content);
+}
+
+.productDetail-title__notice {
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--primary);
+
+  padding-top: 16px;
+}
+
+/* 제품 정보표 */
+.productDetail-information {
+  /* background-color: grey; */
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+
+  margin-left: auto;
+  margin-top: 20px;
+  padding: 0px;
+  width: 600px;
+  height: 480px;
+}
+
+.productDetail-information__delivery,
+.productDetail-information__seller,
+.productDetail-information__package,
+.productDetail-information__unit,
+.productDetail-information__weight,
+.productDetail-information__origin,
+.productDetail-information__allergy,
+.productDetail-information__sellect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid var(--gray-100);
+  border-bottom: 1px solid var(--gray-100);
+  padding: 16px 0px;
+  width: 600px;
+  /* background-color: aquamarine; */
+}
+
+.productDetail-information-delivery__normal,
+.productDetail-information-seller__company,
+.productDetail-information-package__type,
+.productDetail-information-unit__sell,
+.productDetail-information-weight__unit,
+.productDetail-information-origin__land,
+.productDetail-information-allergy__info,
+.productDetail-information-sellect__item {
+  width: 120px;
+  padding: 0px;
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-500);
+}
+
+.productDetail-information-delivery__guide {
+  padding-right: 79px;
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.productDetail-information-seller__name { 
+  padding-right: 451px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.productDetail-information-package__guide {
+  padding-right: 238px;
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.productDetail-information-unit__item {
+  padding-right: 458px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.productDetail-information-weight__item {
+  padding-right: 422px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.productDetail-information-origin__page {
+  padding-right: 378px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.productDetail-information-allergy__list {
+  padding-left: 56px;
+  padding-right: 30px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+/* 수량 조정 */
+.productDetail-infromation-sellect__number {
+  border: 1px solid var(--gray-100);
+  padding: 12px 16px;
+  margin-right: 0px;
+  width: 482px;
+}
+
+.productDetail-infromation-sellect-number__name {
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-500);
+}
+
+.productDetail-information-sellect-number__totalPrice {
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--black);
+  
+  position: absolute;
+  translate: 415px -10px;
+  width: 45px;
+  /* background-color: aliceblue; */
+}  
+
+.productDetail-information-sellect__calc {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--gray-200);
+  padding: 5px;
+  margin-top: 12px;
+  width: 84px;
+  height: 30px;
+}
+
+.productDetail-infromation-sellect-calc__number {
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--content);
+  margin-top: 1px;
+}
+
+.productDetail-information-sellect-calc__minusBtn {
+  border: 0px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 1px;
+  background: url(/client/image/minus.png) no-repeat 50% 49%;
+}
+
+.productDetail-information-sellect-calc__plusBtn {
+  border: 0px;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 2px;
+  background: url(/client/image/plus.png) no-repeat 50% 50%;
+}
+
+/* 총 액 */
+.productDetail__total {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: right;
+  margin-left: auto;
+  /* background-color: #fa622f; */
+}
+
+.productDetail-total__bill {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  align-items: center;
+  width: 200px;
+  height: 43px;
+  margin-left: auto;
+  margin-bottom: 40px;
+  /* background-color: antiquewhite; */
+}
+
+.productDetail-total-bill__totalPrice {
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--content);
+  margin-right: 17px;
+}
+
+.productDetail-total-bill__number {
+  font-size: var(--label-xl);
+  font-weight: 600;
+  color: var(--content);
+
+  margin-right: 4px;
+}
+
+.productDetail-total-bill__won {
+  font-size: var(--heading-medium);
+  font-weight: 700;
+  color: var(--content);
+}
+
+.productDetail-total-bill__guide {
+  justify-content: center;
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--black);
+  margin-top: 10px;
+  /* background-color: aliceblue; */
+}
+
+.productDetail-total-bill-guide__mile {
+  background-color: #fa622f;
+  border-radius: 12px;
+  padding: 5px 8px 4px 8px;
+  position: absolute;
+  translate: -170px 29px;
+  
+  font-size: var(--heading-small);
+  font-weight: 400;
+  color: var(--white);
+}
+
+/* 좋아요, 알람, 장바구니 버튼 */
+.productDetail__basket {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  width: 560px;
+  height: 56px;
+}
+
+.productDetail-basket__likeBtn {
+  background: url(/client/image/jjim.png) no-repeat 50% 89%;
+  border: 1px solid var(--gray-100);
+  border-radius: 4px;
+  width: 56px;
+  height: 56px;
+}
+
+.productDetail-basket__alarmBtn {
+  background: url(/client/image/bell.png) no-repeat 50% 50%;
+  border: 1px solid var(--gray-100);
+  border-radius: 4px;
+  width: 56px;
+  height: 56px;
+}
+
+.productDetail-basket__basketBtn {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 4px;
+  width: 424px;
+  height: 56px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--white);
+}
+
+/* 상세페이지 네비게이션 */
+.productDetail-main__nav {
+  /* background-color: #fa622f; */
+  width: 1050px;
+  height: 102px;
+  margin-bottom: 40px;
+}
+
+.productDetail-main-nav__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 48px
+}
+
+.productDetail-main-nav-list__product {
+  border: 1px solid var(--gray-100);
+  border-bottom: 0px;
+  padding: 17px 102px;
+  width: 263px;
+  height: 54px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.productDetail-main-nav-list__explain {
+  background-color: var(--gray-50);
+  border: 1px solid var(--gray-300);
+  border-right: 0px;
+  padding: 18px 102px;
+  width: 263px;
+  height: 54px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--content);
+}
+
+.productDetail-main-nav-list__review {
+  background-color: var(--gray-50);
+  border: 1px solid var(--gray-300);
+  border-right: 0px;
+  padding: 18px 92px;
+  width: 263px;
+  height: 54px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--content);
+}
+
+.productDetail-main-nav-list__review span {
+  margin-left: 8px;
+  font-size: var(--paragraph-small);
+  font-weight: 400;
+}
+
+.productDetail-main-nav-list__claim {
+  background-color: var(--gray-50);
+  border: 1px solid var(--gray-300);
+  padding: 18px 115px;
+  width: 263px;
+  height: 54px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--content);
+}
+
+/* 제품 사진 및 제품명, 문구 */
+.productDetail-main-detail__img {
+  width: 1050px;
+  height: 670px;
+  margin-bottom: 76px;
+}
+
+.productDetail-main-detail__script {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 256px;
+  margin-bottom: 96px;
+}
+
+.productDetail-main-detail-script__subtitle {
+  font-size: var(--label-xl);
+  font-weight: 600;
+  color: var(--content);
+}
+
+.productDetail-main-detail-script__title {
+  font-size: var(--heading-xxxl);
+  font-weight: 700;
+  color: var(--content);
+  line-height: 140%;
+  margin-bottom: 36px;
+}
+
+.productDetail-main-detail-script__explain {
+  font-size: var(--paragraph-medium);
+  font-weight: 400;
+  color: var(--content);
+  border-top: 1px solid var(--gray-100);
+  padding: 28px 0px 0px;
+  line-height: 160%;
+}
+
+/* 칼리 체크포인트 */
+.productDetail-main__service {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 68px
+}
+
+.productDetail-main__service::before {
+  position: absolute;
+  translate: 0 10px;
+  display:block;
+  content: '';
+  width: 1050px;
+  height: 1px;
+  z-index: 1;
+  background-color: #d9d9d9;
+}
+
+.productDetail-main-service__checkPoint {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  background-color: var(--white);
+}
