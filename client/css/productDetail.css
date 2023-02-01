@@ -1003,3 +1003,302 @@
   padding: 4px;
   margin-left: 5px;
 }
+
+/* 상품 문의 */
+.productDetail-claim__top {
+  height: 100px;
+
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 76px;
+  margin-bottom: 56px;
+}
+ 
+.productDetail-claim-top__title {
+  position: absolute;
+
+  font-size: var(--heading-xl);
+  font-weight: 700;
+  color: var(--black);
+}
+
+.productDetail-claim-top__explain {
+  position: absolute;
+  top: 64px;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-500);
+  line-height: 150%;
+}
+
+.productDetail-claim-top__explain li::before{
+  content: '• ';
+  font-size: 10px;
+}
+
+.productDetail-claim-top__claimBtn {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  width: 155px;
+  height: 44px;
+  left: 895px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--white);
+}
+
+/* 상품 문의 네비 */
+.productDetail-claim__nav {
+  border-color: var(--black);
+  border-width: 2px 0px 1px 0px;
+  border-style: solid;
+
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 58px;
+}
+
+.productDetail-claim-nav__title {
+  padding: 17px 361px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--black);
+  line-height: 150%;
+}
+
+.productDetail-claim-nav__writer,
+.productDetail-claim-nav__date,
+.productDetail-claim-nav__status {
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--black);
+  line-height: 150%;
+}
+
+.productDetail-claim-nav__status {
+  padding-right: 22px;
+}
+
+/* 상품 문의 게시판 */
+.productDetail-claimList {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* 상품 문의 공지 */
+.productDetail-claim__notice,
+.productDetail-claim-board-claim1__script,
+.productDetail-claim-board-noOpen {
+  height: 58px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.productDetail-claim-notice__notice1 {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 17px  46px 17px 20px; 
+}
+
+.productDetail-claim-notice-notice1__title { 
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--content);
+  line-height: 150%;
+  width: 750px; 
+}
+.productDetail-claimList-nds1,
+.productDetail-claimList-nds2 {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--gray-400);
+  line-height: 150%;
+}
+
+.productDetail-claim-board-claim-script__status3{
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 150%;
+}
+
+/* 답변상태 - */
+.productDetail-claim-board-claim-script__status1{
+  margin-left: 50px;
+}
+
+/* 답변상태 답변대기 */
+.productDetail-claim-board-claim-script__status2,
+.productDetail-claim-board-claim-script__status3{
+  margin-left: 24px;
+}
+
+.productDetail-claim-board-claim-script__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 105px;
+}
+
+/* 게시 날짜 */
+.productDetail-claim-board-claim-script__date{
+
+  width: 80px;
+}
+
+/* 상품 문의 게시판 리스트 */
+.productDetail-claim-board-claim1__script,
+.productDetail-claim-board-noOpen {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 17px 22px 17px 20px
+}
+
+.productDetail-claim-board-claim-script-title {
+  border: none;
+  height: 24px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--content);
+}
+
+/* 오픈 시 Q&A */
+.productDetail-claim-board-content {
+  position: relative;
+  background-color: var(--gray-50);
+  border-bottom: 1px solid var(--gray-100);
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* 오픈 시 질문 */
+.productDetail-claim-board-claim-mention::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  background: url(/client/image/Question.png) no-repeat;
+}
+
+.productDetail-claim-board-claim-mention {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  white-space: pre-line;
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--content);
+  margin-bottom: 40px;
+  line-height: 150%;
+}
+
+
+/* 오픈 시 답변 */
+.productDetail-claim-board-claim-answer::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  background: url(/client/image/Answer.png) no-repeat;
+}
+
+.productDetail-claim-board-claim-answer {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  white-space: pre-line;
+
+  width: 685px;
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--content);
+  margin-bottom: 50px;
+  line-height: 150%;
+}
+
+.productDetail-claim-board-claim-date {
+  position: absolute;
+  top: 330px;
+  left: 55px;
+  
+
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-400);
+  line-height: 150%;
+}
+
+.productDetail-claim-board-secret-title {
+  display: flex;
+  flex-direction: row;
+
+  border: none;
+  height: 24px;
+
+  font-size: var(--label-medium);
+  font-weight: 600;
+  color: var(--gray-400);
+}
+
+.productDetail-claim-board-secret-title::after {
+  display: block;
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: url(/client/image/Lock.png) no-repeat;
+  margin-left: 20px;
+}
+
+/* 상품문의 리모컨 */
+.productDetail-claim-board__remote {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 72px;
+}
+
+.productDetail-claim-board-remote__beforeBtn {
+  border: 1px solid var(--gray-100);
+  border-radius: 4px;
+
+  width: 56px;
+  height: 56px;
+  background: url(https://res.kurly.com/kurly/ico/2021/paging-prev-disabled.svg) no-repeat -3px -2px;
+  background-size: 60px 60px;
+  padding: 4px;
+  margin-right: 5px;
+}
+
+.productDetail-claim-board-remote__afterBtn {
+  border: 1px solid var(--gray-100);
+  border-radius: 4px;
+
+  width: 56px;
+  height: 56px;
+  background: url(https://res.kurly.com/kurly/ico/2021/paging-next-activated.svg) no-repeat -3px -2px;
+  background-size: 60px 60px;
+  padding: 4px;
+  margin-left: 5px;
+}

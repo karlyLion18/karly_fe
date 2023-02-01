@@ -274,72 +274,108 @@
 
     <!-- 상품 문의 -->
     <section class="productDetail-claim">
-      <div>
-        <h3 class="productDetail-claim__title">상품 문의</h3>
-        <p class="productDetail-claim__explain">
-          상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.
-          배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 1:1 문의에 남겨주세요.
-        </p>
-        <button class="productDetail-claim__claimBtn" tpye="button">문의하기</button>
+      <div class="productDetail-claim__top">
+        <h3 class="productDetail-claim-top__title">상품 문의</h3>
+        <ul class="productDetail-claim-top__explain">
+          <li>상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은 사전동의 없이 담당 게시판으로 이동될 수 있습니다.</li>
+          <li>배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은 마이컬리 내 1:1 문의에 남겨주세요.</li>
+        </ul>
+        <button class="productDetail-claim-top__claimBtn" tpye="button">문의하기</button>
       </div>
-      <div>
-        <div class="productDetail-claim__top">
-          <span class="productDetail-claim-top__writer">작성자</span>
-          <span class="productDetail-claim-top__title">제목</span>
-          <span class="productDetail-claim-top__date">작성일</span>
-          <span class="productDetail-claim-top__status">답변상태</span>
-        </div>
+      <div class="productDetail-claim__nav">
+        <span class="productDetail-claim-nav__title">제목</span>
+        <span class="productDetail-claim-nav__writer">작성자</span>
+        <span class="productDetail-claim-nav__date">작성일</span>
+        <span class="productDetail-claim-nav__status">답변상태</span>
+      </div>
+      <div claas="productDetail-claimList">
+        <ul class="productDetail-claim__notice">
+          <li class="productDetail-claim-notice__notice1">
+            <span><span class="productDetail-review-board-customer-writing-badge">공지</span>
+            <a href="/" class="productDetail-claim-notice-notice1__title">판매(임시)중단 제품 안내 (22.11.10 업데이트)</a></span>
+            <div class="productDetail-claimList-nds1">
+              <span class="productDetail-claim-board-claim-script__name">칼리</span>
+              <time class="productDetail-claim-board-claim-script__date" datetime="2017-02-01">2017.02.01</time>
+              <span class="productDetail-claim-board-claim-script__status1">-</span>
+            </div>
+          </li>
+        </ul>
         <ul class="productDetail-claim__board">
           <li class="productDetail-claim-board__claim1">
             <div class="productDetail-claim-board-claim1__script">
-              <button class="productDetail-claim-board-claim1-script__title" type="button">팩이 터져서 왔어요</button>
-              <span class="productDetail-claim-board-claim1-script__name">김*식</span>
-              <time class="productDetail-claim-board-claim1-script__date" datetime="2022-11-11">2022.11.11</time>
-              <span class="productDetail-claim-board-claim1-script__status">답변대기</span>
+              <button class="productDetail-claim-board-claim-script-title" type="button">팩이 터져서 왔어요</button>
+              <div class="productDetail-claimList-nds2">
+                <span class="productDetail-claim-board-claim-script__name">김*식</span>
+                <time class="productDetail-claim-board-claim-script__date" datetime="2022-11-11">2022.11.11</time>
+                <span class="productDetail-claim-board-claim-script__status2">답변대기</span>
+              </div>
             </div>
-            <p class="productDetail-claim-board-claim1__mention">스티로폼 박스도 손상되어 있어 포장이 터져 어망이네요. 환불 요청합니다.</p>
-            <p class="productDetail-claim-board-claim1__answer">
-              안녕하세요. 칼리입니다.
-              믿고 찾아주신 상품에 불편을 드려 정말 죄송합니다.
-              더불어, 해당 게시판은 실시간으로 상담이 어려워 순차적으로 답변드리고 있는 관계로 신속하게 답변 드리지 못하여 대단히 죄송합니다.
-              다행히도 고객님의 불편하셨던 사항은 고객행복센터를 통해 안내 받으신 점 확인하였습니다.
-              불편을 드려 정말 죄송할 따름이며, 고객님께 늘 신선하고 최상의 상품을 불편 없이 전달드리기 위해 최선을 다하는 칼리가 되겠습니다.
-              칼리 드림.
-            </p>
+            <div class="productDetail-claim-board-content">
+              <p class="productDetail-claim-board-claim-mention">스티로폼 박스도 손상되어 있어 포장이 터져 어망이네요. 
+                환불 요청합니다.
+              </p>
+              <p class="productDetail-claim-board-claim-answer">안녕하세요. 칼리입니다.
+                믿고 찾아주신 상품에 불편을 드려 정말 죄송합니다.
+
+                더불어, 해당 게시판은 실시간으로 상담이 어려워 순차적으로 답변드리고 있는 관계로 신속하게 답변
+                드리지 못하여 대단히 죄송합니다.
+
+                다행히도 고객님의 불편하셨던 사항은 고객행복센터를 통해 안내 받으신 점 확인하였습니다.
+
+                불편을 드려 정말 죄송할 따름이며, 고객님께 늘 신선하고 최상의 상품을 불편 없이 전달드리기 위해 
+                최선을 다하는 칼리가 되겠습니다.
+                
+                칼리 드림.
+              </p>
+              <time class="productDetail-claim-board-claim-date" datetime="2022-11-11">2022.11.11</time>
+            </div>
           </li>
-          <li class="productDetail-claim-board__claim2">
-            <button class="productDetail-claim-board-claim2__itle" type="button">비밀글입니다.</button>
-            <span class="productDetail-claim-board-claim2__name">김*진</span>
-            <time datetime="2022-10-09">2022.10.09</time>
-            <span class="productDetail-claim-board-claim2__status">답변대기</span>
+          <li class="productDetail-claim-board-noOpen">
+            <button class="productDetail-claim-board-secret-title" type="button">비밀글입니다.</button>
+            <div class="productDetail-claimList-nds2">
+              <span class="productDetail-claim-board-claim-script__name">김*진</span>
+              <time class="productDetail-claim-board-claim-script__date" datetime="2022-10-09">2022.10.09</time>
+              <span class="productDetail-claim-board-claim-script__status2">답변대기</span>
+            </div>
+            </li>
+          <li class="productDetail-claim-board-noOpen">
+            <button class="productDetail-claim-board-secret-title" type="button">비밀글입니다.</button>
+            <div class="productDetail-claimList-nds2">
+              <span class="productDetail-claim-board-claim-script__name">김*범</span>
+              <time class="productDetail-claim-board-claim-script__date" datetime="2022-09-13">2022.09.13</time>
+              <span class="productDetail-claim-board-claim-script__status3">답변완료</span>
+            </div>
           </li>
-          <li class="productDetail-claim-board__claim3">
-            <button class="productDetail-claim-board-claim3__title" type="button">비밀글입니다.</button>
-            <span class="productDetail-claim-board-claim3__name">김*범</span>
-            <time datetime="2022-09-13">2022.09.13</time>
-            <span class="productDetail-claim-board-claim3__status"답변완료</span>
+          <li class="productDetail-claim-board-noOpen">
+            <button class="productDetail-claim-board-secret-title" type="button">비밀글입니다.</button>
+            <div class="productDetail-claimList-nds2">
+              <span class="productDetail-claim-board-claim-script__name">심*범</span>
+              <time class="productDetail-claim-board-claim-script__date" datetime="2022-08-30">2022.08.30</time>
+              <span class="productDetail-claim-board-claim-script__status3">답변완료</span>
+            </div>
           </li>
-          <li class="productDetail-claim-board__claim4">
-            <button class="productDetail-claim-board-claim4__title" type="button">비밀글입니다.</button>
-            <span class="productDetail-claim-board-claim4__name">심*범</span>
-            <time datetime="2022-08-30">2022.08.30</time>
-            <span class="productDetail-claim-board-claim4__status">답변완료</span>
+          <li class="productDetail-claim-board-noOpen">
+            <button class="productDetail-claim-board-secret-title" type="button">비밀글입니다.</button>
+            <div class="productDetail-claimList-nds2">
+              <span class="productDetail-claim-board-claim-script__name">야*</span>
+              <time class="productDetail-claim-board-claim-script__date" datetime="2022-08-12">2022.08.12</time>
+              <span class="productDetail-claim-board-claim-script__status3">답변완료</span>
+            </div>  
           </li>
-          <li class="productDetail-claim-board__claim5">
-            <button class="productDetail-claim-board-claim5__title" type="button">비밀글입니다.</button>
-            <span class="productDetail-claim-board-claim5__name">야*</span>
-            <time datetime="2022-08-12">2022.08.12</time>
-            <span class="productDetail-claim-board-claim5__status">답변완료</span>
-          </li>
-          <li class="productDetail-claim-board__claim6">
-            <button class="productDetail-claim-board-claim6__title" type="button">비밀글입니다.</button>
-            <span class="productDetail-claim-board-claim6__name">김**사</span>
-            <time datetime="2022-07-23">2022.07.23</time>
-            <span class="productDetail-claim-board-claim6__status">답변완료</span>
-          </li>
+          <li class="productDetail-claim-board-noOpen">
+            <button class="productDetail-claim-board-secret-title" type="button">비밀글입니다.</button>
+            <div class="productDetail-claimList-nds2">
+              <span class="productDetail-claim-board-claim-script__name">김**사</span>
+              <time class="productDetail-claim-board-claim-script__date"  datetime="2022-07-23">2022.07.23</time>
+              <span class="productDetail-claim-board-claim-script__status3">답변완료</span>
+            </div>
+           </li>
         </ul>
-        <button class="productDetail-claim-beforeBtn" type="button"></button>
-        <button class="productDetail-claim-afterBtn" type="button"></button>
+      </div>
+      <div class="productDetail-claim-board__remote">
+        <button class="productDetail-claim-board-remote__beforeBtn" type="button"></button>
+        <button class="productDetail-claim-board-remote__afterBtn" type="button"></button>
+      </div>
       </div>
   </section>
 </main>
