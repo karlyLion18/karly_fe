@@ -1,0 +1,159 @@
+footer {
+  width: 100%;
+  min-width: 1050px;
+  /* height: 629px; */
+  margin: 28px auto 0 auto;
+  color: var(--content);
+  font-weight: 500;
+}
+
+.karly__info {
+  display: flex;
+  justify-content: center;
+  /* algin-items: center; */
+  margin: auto 0 32px;
+  /* min-height: 417px; */
+  background: var(--white);
+}
+
+.karly__info-customer_inquiry {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  margin-right: 88px;
+  /* width: 477px; */
+}
+
+.inquiry__title {
+  font-size: var(--heading-large);
+  margin-bottom: 16px;
+}
+
+.inquiry__number {
+  display: inline-block;
+  font-size: var(--heading-xl);
+  font-weight: 600;
+  margin-right: 18px;
+}
+
+.inquiry__schedule {
+  font-size: var(--paragraph-medium);
+}
+
+.karly__inquiry-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.karly__inquiry-way {
+  width: 140px;
+  height: 40px;
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+  margin: 0 16px 0 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.karly__inquiry-way > span {
+  margin-left: 16px;
+}
+
+.intro_guide {
+  display: flex;
+}
+
+.intro_corpinfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.karly__non-members {
+  font-size: var(--paragraph-small);
+}
+
+.karly__non-members > a {
+  color: var(--primary);
+}
+
+/* 칼리소개~ */
+.karly__info-intro {
+  display: flex;
+  flex-direction: column;
+  min-width: 486px;
+}
+
+.intro_guide {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--paragraph-medium);
+  margin-bottom: 28px;
+}
+
+.intro_corpinfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: var(--paragraph-small);
+  line-height: 18px;
+}
+
+.intro_corpinfo {
+  display: inline-block;
+}
+
+.corpinfo__about-karly {
+  margin-bottom: 40px;
+}
+
+.corpinfo__link {
+  color: var(--primary);
+}
+
+.about-karly__sns {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+/* karly 뱃지 */
+.karly__badge {
+  display: flex;
+  justify-content: space-between;
+  algin-items: center;
+  width: 1050px;
+  margin: auto;
+  padding: 26px 0 33px;
+  border-top: 1px solid var(--gray-100);
+}
+
+.badge__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--heading-small);
+}
+
+.badge {
+  height: 34px;
+  margin-right: 10px;
+}
+
+.badge__desc {
+  /* min-width: 175px; */
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/* 칼리 카피라이트 */
+.karly__copyright {
+  height: 108px;
+  padding: 20px 0px 30px;
+  background: var(--gray-50);
+  color: var(--gray-500);
+  text-align: center;
+  line-height: 160%;
+  font-size: var(--paragraph-small);
+}

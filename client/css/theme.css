@@ -23,9 +23,9 @@ body *::after {
   box-sizing: border-box;
 }
 
+
 button {
   border: none;
-}
 
 a {
   color: inherit;
