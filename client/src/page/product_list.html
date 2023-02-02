@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style_product_list.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="./js/main.js" type="module"></script> -->
+    <title>PRODUCT LIST</title>
+  </head>
+
+  <body>
+    <section class="topbanner">top banner</section>
+
+    <header class="header">header</header>
+
+    <main>
+      <h3 class="page-name">
+        베스트
+      </h3>
+      <section class="karly-page">
+        <!-- 
+          karly-sub-nav-naming button을 클릭했을 시
+          가장 가까운 ul의 opacity:1 를 함으로서 정보를 시각화해준다.
+          즉, 버튼의 class는 karly-sub-nav__naming-button 으로 통일해도 될 것 같다.
+        -->
+        <nav class="karly-sub-nav">
+          <div class="karly-sub-nav__filter">
+            <span class="karly-sub-nav__filter-name">필터</span>
+            <button class="karly-sub-nav__filter-button">
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.78 3.96303C12.504 2.16973 10.4086 1 8.04 1C4.15192 1 1 4.15192 1 8.04C1 11.9281 4.15192 15.08 8.04 15.08C11.9281 15.08 15.08 11.9281 15.08 8.04" stroke="#666" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="round"></path><path d="M14.4933 1L14.4933 4.52H10.9733" stroke="#666" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="round"></path></svg>
+              <span class="karly-sub-nav__filter-init">초기화</span>
+            </button>
+          </div>
+          <div class="karly-sub-nav__naming">
+            <div class="karly-sub-nav__category">
+              <!-- button과 ul 내부 요소들은 모두 공통요소로
+              만들어서 사용하는게 나을 것 같다.
+              -->
+              <button class="karly-sub-nav__naming-button">
+                <div class="karly-sub-nav__naming-info">
+                  <span class="karly-sub-nav__naming-name">카테고리</span>
+                  <span class="karly-sub-nav__naming-num">1</span>
+                </div>
+                <label class="karly__img-icon-arrow--up"></label>
+              </button>
+              <ul class="karly-sub-nav__ui">
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--false"></label>
+                    <span class="karly-sub-nav__li-name">샐러드·간편식</span>
+                    <span class="karly-sub-nav__li-num">66</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--true"></label>
+                    <span class="karly-sub-nav__li-name">국·반찬·메인요리</span>
+                    <span class="karly-sub-nav__li-num">46</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--true"></label>
+                    <span class="karly-sub-nav__li-name">정육·계란</span>
+                    <span class="karly-sub-nav__li-num">39</span>
+                  </a>
+                </li>           
+                <button class="karly-sub-nav__more-button">
+                  <span class="karly-sub-nav__more-name">카테고리 더보기</span>
+                  <label class="karly__img-icon-arrow--right"></label>
+                </button>
+              </ul>
+            </div>
+            <div class="karly-sub-nav__brand">
+              <button class="karly-sub-nav__naming-button">
+                <div class="karly-sub-nav__naming-info">
+                  <span class="karly-sub-nav__naming-name">브랜드</span>
+                  <span class="karly-sub-nav__naming-num">3</span>
+                </div>
+                <label class="karly__img-icon-arrow--right"></label>
+              </button>
+              <ul class="karly-sub-nav__ui">
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--false"></label>
+                    <span class="karly-sub-nav__li-name">감자밭</span>
+                    <span class="karly-sub-nav__li-num">1</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--true"></label>
+                    <span class="karly-sub-nav__li-name">강남면옥</span>
+                    <span class="karly-sub-nav__li-num">3</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--true"></label>
+                    <span class="karly-sub-nav__li-name">경남제약</span>
+                    <span class="karly-sub-nav__li-num">1</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--true"></label>
+                    <span class="karly-sub-nav__li-name">경복궁</span>
+                    <span class="karly-sub-nav__li-num">1</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--true"></label>
+                    <span class="karly-sub-nav__li-name">고래사</span>
+                    <span class="karly-sub-nav__li-num">1</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--true"></label>
+                    <span class="karly-sub-nav__li-name">고메공방</span>
+                    <span class="karly-sub-nav__li-num">1</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--true"></label>
+                    <span class="karly-sub-nav__li-name">고온어다이어트</span>
+                    <span class="karly-sub-nav__li-num">1</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--true"></label>
+                    <span class="karly-sub-nav__li-name">교토마블</span>
+                    <span class="karly-sub-nav__li-num">1</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--true"></label>
+                    <span class="karly-sub-nav__li-name">그래놀라 하우스</span>
+                    <span class="karly-sub-nav__li-num">1</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--true"></label>
+                    <span class="karly-sub-nav__li-name">그리츠 시그니처 램</span>
+                    <span class="karly-sub-nav__li-num">1</span>
+                  </a>
+                </li>
+                <button class="karly-sub-nav__more-button">
+                  <span class="karly-sub-nav__more-name">브랜드 더보기</span>
+                  <label class="karly__img-icon-arrow--right"></label>
+                </button>
+              </ul>
+            </div>
+            <div class="karly-sub-nav__price">
+              <button class="karly-sub-nav__naming-button">
+                <div class="karly-sub-nav__naming-info">
+                  <span class="karly-sub-nav__naming-name">가격</span>
+                  <span class="karly-sub-nav__naming-num">1</span>
+                </div>
+                <label class="karly__img-icon-arrow--down"></label>
+              </button>
+              <ul class="karly-sub-nav__ui">
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-isselected--true"></label>
+                    <span class="karly-sub-nav__li-name">7,345원 미만</span>
+                    <span class="karly-sub-nav__li-num">34</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-isselected--false"></label>
+                    <span class="karly-sub-nav__li-name">7,345원 ~ 10,760원</span>
+                    <span class="karly-sub-nav__li-num">46</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-isselected--false"></label>
+                    <span class="karly-sub-nav__li-name">10,760원 이상</span>
+                    <span class="karly-sub-nav__li-num">39</span>
+                  </a>
+                </li>           
+              </ul>
+            </div>
+            <div class="karly-sub-nav__benefit">
+              <button class="karly-sub-nav__naming-button">
+                <div class="karly-sub-nav__naming-info">
+                  <span class="karly-sub-nav__naming-name">혜택</span>
+                  <span class="karly-sub-nav__naming-num">1</span>
+                </div>
+                <label class="karly__img-icon-arrow--left"></label>
+              </button>
+              <ul class="karly-sub-nav__ui">
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--false"></label>
+                    <span class="karly-sub-nav__li-name">할인상품</span>
+                    <span class="karly-sub-nav__li-num">100</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--true"></label>
+                    <span class="karly-sub-nav__li-name">한정수량</span>
+                    <span class="karly-sub-nav__li-num">3</span>
+                  </a>
+                </li>        
+              </ul>      
+            </div>
+            <div class="karly-sub-nav__type">
+              <button class="karly-sub-nav__naming-button">
+                <div class="karly-sub-nav__naming-info">
+                  <span class="karly-sub-nav__naming-name">유형</span>
+                  <span class="karly-sub-nav__naming-num">1</span>
+                </div>
+                <label class="karly__img-icon-arrow--up"></label>
+              </button>
+              <ul class="karly-sub-nav__ui">
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--false"></label>
+                    <span class="karly-sub-nav__li-name">Kurly Only</span>
+                    <span class="karly-sub-nav__li-num">103</span>
+                  </a>
+                </li>
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--true"></label>
+                    <span class="karly-sub-nav__li-name">희소가치 프로젝트</span>
+                    <span class="karly-sub-nav__li-num">3</span>
+                  </a>
+                </li>        
+              </ul> 
+            </div>
+            <div class="karly-sub-nav__ban">
+              <button class="karly-sub-nav__naming-button">
+                <div class="karly-sub-nav__naming-info">
+                  <span class="karly-sub-nav__naming-name">특정상품 제외</span>
+                  <span class="karly-sub-nav__naming-num">1</span>
+                </div>
+                <label class="karly__img-icon-arrow--up"></label>
+              </button>
+              <ul class="karly-sub-nav__ui">
+                <li class="karly-sub-nav__li">
+                  <a href="#" class="karly-sub-nav__li-a">
+                    <label class="karly__img-ischecked--false"></label>
+                    <span class="karly-sub-nav__li-name">반려동물 상품</span>
+                    <span class="karly-sub-nav__li-num">2</span>
+                  </a>
+                </li>      
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+
+        <div class="karly-product-list">
+          <menu class="karly-product-menu">
+            <span class="karly-product-menu__total-num">총 277건</span>
+            <!-- cursor: default; 방식으로 클릭가능 on/off -->
+            <ul class="karly-product-menu__order-naming">
+              <li class="karly-product-menu__order-li">
+                <a href="javascript:void(0);" class="karly-product-menu__order-li--active">추천순</a>
+                <div class="karly-product-menu__rank_info">
+                  <img src="/assets/img/product_list/rank_qestion.svg" alt="" />
+                  <div class="karly-product-menu__rank_detail">소비자 인기도(판매량, 판매금액, 조회수 등), 상품 출시일, 수요 적합성, 상품 운영상 필요 등을 종합적으로 고려한 순서입니다.</div>
+                </div>
+              </li>
+              <li class="karly-product-menu__order-li karly-product-menu__order-li--before">
+                <a href="javascript:void(0);" class="karly-product-menu__order-li--inactive">신상품순</a>
+                
+              </li>
+              <li class="karly-product-menu__order-li karly-product-menu__order-li--before">
+                <a href="javascript:void(0);" class="karly-product-menu__order-li--inactive">판매량순</a>
+                
+              </li>
+              <li class="karly-product-menu__order-li karly-product-menu__order-li--before">
+                <a href="javascript:void(0);" class="karly-product-menu__order-li--inactive">혜택순</a>
+                
+              </li>
+              <li class="karly-product-menu__order-li karly-product-menu__order-li--before">
+                <a href="javascript:void(0);" class="karly-product-menu__order-li--inactive">낮은 가격순</a>
+                
+              </li>
+              <li class="karly-product-menu__order-li karly-product-menu__order-li--before">
+                <a href="javascript:void(0);" class="karly-product-menu__order-li--inactive">높은 가격순</a>
+                
+              </li>
+            </ul>
+          </menu>
+          <div class="karly-product">
+            <a href="javascript:void(0);" class="karly-product-a">
+              <visual class="karly-product-a__visual">
+                <img src="\assets\tangtang\thumbnail.jpg" alt="" />
+                <button class="karly-product-a__visual-button">
+                  <img src="/assets/img/product_list/cart.svg" alt="" />
+                </button>
+              </visual>
+              <div class="karly-product-info">
+                <span class="karly-product-info__delivery-type">샛별배송</span>
+                <span class="karly-product-info__full-name">[풀무원] 탱탱쫄면 (4개입)</span>
+                <div class="karly-product-price">
+                  <span class="karly-product-price__discount-rate">10%</span>
+                  <span class="karly-product-price__computed-price">4,500원</span>
+                </div>
+                <span class="karly-product-price__original-price">5,000원</span>
+                <span class="karly-product-price__oneline-review">튀기지 않아 부담없는 매콤함</span>
+                <div class="karly-product-badge">
+                  <span class="karly-product-badge__karly">
+                    Karly Only
+                  </span>
+                  <span class="karly-product-badge__text">
+                    한정수량
+                  </span>
+                </div>
+              </div>
+            </a>
+            <a href="javascript:void(0);">
+              <article class="karly-product-show">
+                <visual class="karly-product-a__visual">
+                  <img src="\assets\tangtang\thumbnail.jpg" alt="" />
+                </visual>
+                <div class="karly-product-info">
+                  <span class="karly-product-info__delivery-type">샛별배송</span>
+                  <span class="karly-product-info__full-name">[풀무원] 탱탱쫄면 (4개입)</span>
+                  <div class="karly-product-price">
+                    <span class="karly-product-price__discount-rate">10%</span>
+                    <span class="karly-product-price__computed-price">4,500원</span>
+                  </div>
+                  <span class="karly-product-price__original-price">5,000원</span>
+                  <span class="karly-product-price__oneline-review">튀기지 않아 부담없는 매콤함</span>
+                  <div class="karly-product-badge">
+                    <span class="karly-product-badge__karly">
+                      Karly Only
+                    </span>
+                    <span class="karly-product-badge__text">
+                      한정수량
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="javascript:void(0);">
+              <article class="karly-product-show">
+                <visual class="karly-product-a__visual">
+                  <img src="\assets\tangtang\thumbnail.jpg" alt="" />
+                </visual>
+                <div class="karly-product-info">
+                  <span class="karly-product-info__delivery-type">샛별배송</span>
+                  <span class="karly-product-info__full-name">[풀무원] 탱탱쫄면 (4개입)</span>
+                  <div class="karly-product-price">
+                    <span class="karly-product-price__discount-rate">10%</span>
+                    <span class="karly-product-price__computed-price">4,500원</span>
+                  </div>
+                  <span class="karly-product-price__original-price">5,000원</span>
+                  <span class="karly-product-price__oneline-review">튀기지 않아 부담없는 매콤함</span>
+                  <div class="karly-product-badge">
+                    <span class="karly-product-badge__karly">
+                      Karly Only
+                    </span>
+                    <span class="karly-product-badge__text">
+                      한정수량
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="javascript:void(0);">
+              <article class="karly-product-show">
+                <visual class="karly-product-a__visual">
+                  <img src="\assets\tangtang\thumbnail.jpg" alt="" />
+                </visual>
+                <div class="karly-product-info">
+                  <span class="karly-product-info__delivery-type">샛별배송</span>
+                  <span class="karly-product-info__full-name">[풀무원] 탱탱쫄면 (4개입)</span>
+                  <div class="karly-product-price">
+                    <span class="karly-product-price__discount-rate">10%</span>
+                    <span class="karly-product-price__computed-price">4,500원</span>
+                  </div>
+                  <span class="karly-product-price__original-price">5,000원</span>
+                  <span class="karly-product-price__oneline-review">튀기지 않아 부담없는 매콤함</span>
+                  <div class="karly-product-badge">
+                    <span class="karly-product-badge__karly">
+                      Karly Only
+                    </span>
+                    <span class="karly-product-badge__text">
+                      한정수량
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="javascript:void(0);">
+              <article class="karly-product-show">
+                <visual class="karly-product-a__visual">
+                  <img src="\assets\tangtang\thumbnail.jpg" alt="" />
+                </visual>
+                <div class="karly-product-info">
+                  <span class="karly-product-info__delivery-type">샛별배송</span>
+                  <span class="karly-product-info__full-name">[풀무원] 탱탱쫄면 (4개입)</span>
+                  <div class="karly-product-price">
+                    <span class="karly-product-price__discount-rate">10%</span>
+                    <span class="karly-product-price__computed-price">4,500원</span>
+                  </div>
+                  <span class="karly-product-price__original-price">5,000원</span>
+                  <span class="karly-product-price__oneline-review">튀기지 않아 부담없는 매콤함</span>
+                  <div class="karly-product-badge">
+                    <span class="karly-product-badge__karly">
+                      Karly Only
+                    </span>
+                    <span class="karly-product-badge__text">
+                      한정수량
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="javascript:void(0);">
+              <article class="karly-product-show">
+                <visual class="karly-product-a__visual">
+                  <img src="\assets\tangtang\thumbnail.jpg" alt="" />
+                </visual>
+                <div class="karly-product-info">
+                  <span class="karly-product-info__delivery-type">샛별배송</span>
+                  <span class="karly-product-info__full-name">[풀무원] 탱탱쫄면 (4개입)</span>
+                  <div class="karly-product-price">
+                    <span class="karly-product-price__discount-rate">10%</span>
+                    <span class="karly-product-price__computed-price">4,500원</span>
+                  </div>
+                  <span class="karly-product-price__original-price">5,000원</span>
+                  <span class="karly-product-price__oneline-review">튀기지 않아 부담없는 매콤함</span>
+                  <div class="karly-product-badge">
+                    <span class="karly-product-badge__karly">
+                      Karly Only
+                    </span>
+                    <span class="karly-product-badge__text">
+                      한정수량
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="javascript:void(0);">
+              <article class="karly-product-show">
+                <visual class="karly-product-a__visual">
+                  <img src="\assets\tangtang\thumbnail.jpg" alt="" />
+                </visual>
+                <div class="karly-product-info">
+                  <span class="karly-product-info__delivery-type">샛별배송</span>
+                  <span class="karly-product-info__full-name">[풀무원] 탱탱쫄면 (4개입)</span>
+                  <div class="karly-product-price">
+                    <span class="karly-product-price__discount-rate">10%</span>
+                    <span class="karly-product-price__computed-price">4,500원</span>
+                  </div>
+                  <span class="karly-product-price__original-price">5,000원</span>
+                  <span class="karly-product-price__oneline-review">튀기지 않아 부담없는 매콤함</span>
+                  <div class="karly-product-badge">
+                    <span class="karly-product-badge__karly">
+                      Karly Only
+                    </span>
+                    <span class="karly-product-badge__text">
+                      한정수량
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </a>
+            <a href="javascript:void(0);">
+              <article class="karly-product-show">
+                <visual class="karly-product-a__visual">
+                  <img src="\assets\tangtang\thumbnail.jpg" alt="" />
+                </visual>
+                <div class="karly-product-info">
+                  <span class="karly-product-info__delivery-type">샛별배송</span>
+                  <span class="karly-product-info__full-name">[풀무원] 탱탱쫄면 (4개입)</span>
+                  <div class="karly-product-price">
+                    <span class="karly-product-price__discount-rate">10%</span>
+                    <span class="karly-product-price__computed-price">4,500원</span>
+                  </div>
+                  <span class="karly-product-price__original-price">5,000원</span>
+                  <span class="karly-product-price__oneline-review">튀기지 않아 부담없는 매콤함</span>
+                  <div class="karly-product-badge">
+                    <span class="karly-product-badge__karly">
+                      Karly Only
+                    </span>
+                    <span class="karly-product-badge__text">
+                      한정수량
+                    </span>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+          <div class="karly-page-control">
+            <a href="javascript:void(0);" class="karly-page-control__a">
+              <div class="karly__img-arrow--left-end"></div>
+            </a>
+            <a href="javascript:void(0);" class="karly-page-control__a">
+              <div class="karly__img-arrow--left-step"></div>
+            </a>
+            <a href="javascript:void(0);" class="karly-page-control__a">1</a>
+            <a href="javascript:void(0);" class="karly-page-control__a">2</a>
+            <a href="javascript:void(0);" class="karly-page-control__a">3</a>
+            <a href="javascript:void(0);" class="karly-page-control__a">
+              <div class="karly__img-arrow--right-step"></div>
+            </a>
+            <a href="javascript:void(0);" class="karly-page-control__a">
+              <div class="karly__img-arrow--right-end"></div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">footer</footer>
+  </body>
+</html>
