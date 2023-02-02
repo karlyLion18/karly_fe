@@ -23,9 +23,9 @@ body *::after {
   box-sizing: border-box;
 }
 
-[class] {
-  margin: 0;
-}
+
+button {
+  border: none;
 
 a {
   color: inherit;
@@ -110,4 +110,5 @@ video {
   
   /* 박스 섀도우 */
   --below-medium: 0px 8px 36px rgba(0, 0, 0, 0.2);
+  --below-low: 0px 4px 24px rgba(0, 0, 0, 0.1);
 }
