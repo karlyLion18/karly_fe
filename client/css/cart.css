@@ -163,20 +163,20 @@ footer {
 }
 
 .cartProduct__minus {
-  background-image: url(../assets/img/cart/minus.png);
+  background-image: url(../assets/img/cart/minus.svg);
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-color: transparent;
   width: 30px;
-  height: 28px;
+  height: 30px;
   border: none;
 }
 
 .cartProduct__plus {
-  background-image: url(../assets/img/cart/plus.png);
+  background-image: url(../assets/img/cart/plus.svg);
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-color: transparent;
   width: 30px;
-  height: 28px;
+  height: 30px;
   border: none;
 }
 

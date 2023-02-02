@@ -1,4 +1,4 @@
-import { getNode, insertAfter } from "../lib/index.js";
+import { getNode, insertAfter, clearContents } from "../lib/index.js";
 
 const cartList_add = getNode('.cartProduct-section')
 const cartList_show = getNode('.cartList')
@@ -45,16 +45,41 @@ const render_list = (target) => {
 }
 
 
-function handler(e) {
-  let showButton = e.target.closest('button');
+function handler_show(e) {
+  let showButton = e.target.closest('.cartList__showListIcon');
+
+
   let list = e.target.closest('li');
+
 
   if (!showButton || !list) return;
 
-  console.log('dd')
-  render_list(list)
+  render_list(list);
+
 }
 
+function handler_delete(e) {
+  let close = e.target.closest('.closeIconbtn');
+  let close_article = e.target.closest('.cartProductList');
 
+  if (!close || !close_article) return;
 
-cartList_show.addEventListener('click', handler)
+  close_article?.parentNode.removeChild(close_article);
+}
+
+function handler_check(e) {
+  let checkbox = e.target.closest('.cartProduct__check');
+  let close_article = e.target.closest('.cartProductList');
+  if (!checkbox || !close_article) return;
+  // console.log('dd');
+
+  if (checkbox.checked) {
+    const newNode = document.createElement('img');
+    newNode.class = 'cartProduct__check';
+    newNode.src = '../../assets/img/cart/isChecked=false.png" alt="체크된 이미지"'
+  }
+}
+
+cartList_show.addEventListener('click', handler_show);
+cartList_show.addEventListener('click', handler_delete);
+cartList_show.addEventListener('click', handler_check);
