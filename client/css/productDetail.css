@@ -135,6 +135,13 @@
   color: var(--gray-500);
 }
 
+.productDetail-information-delivery__title {
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-500);
+}
+
+
 .productDetail-information-delivery__guide {
   padding-right: 79px;
   font-size: var(--label-small);
@@ -147,8 +154,15 @@
 
   font-size: var(--label-small);
   font-weight: 600;
-  color: var(--gray-400);
+  color: var(--gray-500);
 }
+
+.productDetail-information-packgage-guide__title {
+  font-size: var(--label-small);
+  font-weight: 600;
+  color: var(--gray-500)
+}
+
 
 .productDetail-information-package__guide {
   padding-right: 238px;
@@ -157,12 +171,13 @@
   color: var(--gray-400);
 }
 
+
 .productDetail-information-unit__item {
   padding-right: 458px;
 
   font-size: var(--label-small);
   font-weight: 600;
-  color: var(--gray-400);
+  color: var(--gray-500);
 }
 
 .productDetail-information-weight__item {
@@ -170,7 +185,7 @@
 
   font-size: var(--label-small);
   font-weight: 600;
-  color: var(--gray-400);
+  color: var(--gray-500);
 }
 
 .productDetail-information-origin__page {
@@ -178,7 +193,7 @@
 
   font-size: var(--label-small);
   font-weight: 600;
-  color: var(--gray-400);
+  color: var(--gray-500);
 }
 
 .productDetail-information-allergy__list {
@@ -186,8 +201,8 @@
   padding-right: 30px;
 
   font-size: var(--label-small);
-  font-weight: 600;
-  color: var(--gray-400);
+  font-weight: 400;
+  color: var(--gray-500);
 }
 
 /* 수량 조정 */
