@@ -1,0 +1,360 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
+
+header {
+  height: 247px;
+  width: 1920px;
+  background-color: #5F0080;
+}
+
+main {
+  width: 1920px;
+}
+
+footer {
+  width: 1920px;
+  height: 629px;
+  background-color: #E1E1E1;
+}
+
+.cartTitle {
+  display: inline-block;
+  margin: 80px 923px 44px;
+  font-weight: 600;
+  font-size: var(--label-large);
+}
+
+/* ------------- 장바구니 상품 목록 ------------- */
+.cart {
+  margin: 0px 435px 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartList {
+  width: 742px;
+  height: 298px;
+  font-weight: 600;
+  font-size: var(--label-medium);
+}
+
+.cartList__select-list {
+  padding: 16px 0px;
+  height: 56px;
+}
+
+.cartList__select-list--border {
+  border-top: 1px solid var(--black);
+}
+
+.cartList__selectWrapper {
+  display: flex;
+  height: 24px;
+  line-height: 24px;
+}
+
+.cartList__select {
+  display: none;
+}
+
+.cartList__select+label {
+  cursor: pointer;
+  padding-left: 32px;
+  background-repeat: no-repeat;
+  background-image: url(../assets/img/cart/isChecked=true.png);
+}
+
+.cartList__select:checked+label {
+  background-image: url(../assets/img/cart/isChecked=false.png);
+}
+
+.cartList__select:disabled+label {
+  background-image: url(../assets/img/cart/isChecked=true.png);
+}
+
+.cartList__selectLabel {
+  display: flex;
+}
+
+.cartList__line {
+  display: inline-block;
+  background: var(--content);
+  width: 1px;
+  height: 10px;
+  margin: 7px 8px 0px;
+}
+
+.cartList__selectDelete {
+  border: none;
+  padding: 0px;
+}
+
+.cartList__foodType {
+  padding: 16px 0px;
+  border-top: 1px solid var(--black);
+  height: 62px;
+}
+
+.cartList__foodTypeWrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  line-height: 30px;
+}
+
+.cartList__foodTypeImgText {
+  display: flex;
+}
+
+.cartList__foodTypeImg {
+  margin-right: 12px;
+}
+
+.cartList__typeText {
+  display: inline-block;
+}
+
+.cartList__showListIcon {
+  background-image: url(../assets/img/cart/arrow.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+
+.cartProductList {
+  padding: 20px 0px;
+  height: 118px;
+}
+
+.cartProduct {
+  width: 742px;
+  font-size: var(--label-medium);
+  font-weight: 600;
+
+}
+
+.cartProduct__counter,
+.cartProduct__check,
+.cartProduct__name,
+.cartProduct__img,
+.cartProduct__price,
+.closeIconbtn {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.cartProduct__name {
+  padding-right: 178px;
+}
+
+.cartProduct__price {
+  padding-left: 68px;
+}
+
+.cartProduct__counter {
+  height: 30px;
+  /* width: 84px; */
+  line-height: 30px;
+  border: 1px solid var(--gray-200);
+}
+
+.cartProduct__minus {
+  background-image: url(../assets/img/cart/minus.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  width: 30px;
+  height: 28px;
+  border: none;
+}
+
+.cartProduct__plus {
+  background-image: url(../assets/img/cart/plus.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  width: 30px;
+  height: 28px;
+  border: none;
+}
+
+.cartProduct__countNum {
+  line-height: 30px;
+  vertical-align: top;
+  margin: 0px 4px;
+}
+
+.closeIconbtn {
+  background-image: url(../assets/img/cart/Cancel.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  border: none;
+}
+
+
+/* ------------- 배송지 부분 -----------------*/
+.delivery {
+  width: 284px;
+}
+
+.deliveryInfoWrapper {
+  padding: 20px;
+  border: 1px solid var(--gray-100);
+}
+
+.deliveryInfo__title::before {
+  content: url(../assets/img/cart/Location.png);
+  vertical-align: middle;
+}
+
+.deliveryInfo__title {
+  display: inline-block;
+  font-weight: 600;
+  font-size: var(--label-medium);
+  margin-bottom: 12px;
+  color: var(--black);
+  height: 36px;
+}
+
+.deliveryInfo__address {
+  font-weight: 600;
+  font-size: var(--label-medium);
+  margin-bottom: 12px;
+  color: var(--black);
+  height: 48px;
+  line-height: 150%;
+  width: 246px;
+}
+
+.deliveryInfo__type {
+  display: inline-block;
+  font-weight: 600;
+  font-size: var(--label-small);
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+.deliveryInfo__change {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: var(--label-medium);
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  padding: 10px 85.5px;
+  width: 244px;
+  height: 44px;
+}
+
+.totalPriceWrapper {
+  padding: 20px;
+  border: 1px solid var(--gray-100);
+  background: var(--gray-50);
+}
+
+.priceInfo {
+  color: var(--content);
+  border-bottom: 1px dashed var(--gray-100);
+}
+
+.priceInfo__list {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: var(--paragraph-medium);
+  height: 26px;
+  line-height: 26px;
+}
+
+.priceInfo__list {
+  margin-bottom: 16px;
+}
+
+.priceInfo__list--mb-24 {
+  margin-bottom: 24px;
+}
+
+.priceInfo__priceGroup {
+  display: flex;
+}
+
+.priceInfo__priceUnitGroup {
+  font-weight: 600;
+  font-size: var(--label-medium);
+  margin-left: 4px;
+}
+
+.totalPriceInfo {
+  display: flex;
+  margin-top: 24px;
+  justify-content: space-between;
+}
+
+.totalPriceInfo__totalText {
+  font-weight: 400;
+  font-size: var(--label-medium);
+  line-height: 40px;
+  color: var(--content);
+}
+
+.totalPriceInfo__totalPriceUnit {
+  display: flex;
+  color: var(--black);
+}
+
+.totalPriceInfo__totalNum {
+  font-weight: 700;
+  font-size: var(--heading-xl);
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 4px;
+}
+
+.totalPriceInfo__priceUnit {
+  line-height: 40px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: var(--label-medium);
+}
+
+.pointInfo {
+  display: flex;
+  padding-left: 73px;
+  margin-top: 11px;
+  font-weight: 600;
+  font-size: var(--label-small);
+  line-height: 18px;
+  justify-content: space-between;
+}
+
+.pointInfo__point {
+  padding: 0px 8px;
+  background: var(--accent-yellow);
+  border-radius: 1px;
+  color: var(--white);
+  text-align: center;
+}
+
+.pointInfo__pointBrief {
+  color: var(--content);
+}
+
+.btnOrder {
+  background: var(--primary);
+  border-radius: 4px;
+  width: 284px;
+  height: 44px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--white);
+  border: none;
+  margin: 16px 0px;
+}
+
+.orderNotice {
+  font-weight: 600;
+  font-size: var(--label-small);
+  color: var(--gray-400);
+  line-height: 18px;
+}
