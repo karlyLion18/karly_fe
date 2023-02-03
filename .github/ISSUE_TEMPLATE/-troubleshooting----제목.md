@@ -1,7 +1,7 @@
 ---
-name: "[트러블슈팅] : 제목"
+name: "[TroubleShooting] : 제목"
 about: 발생한 문제에 대하여 고민하고 해결한 방법을 적습니다.
-title: "[트러블슈팅]"
+title: "[TroubleShooting]"
 labels: "\U0001F52B 트러블슈팅"
 assignees: MIINII, luckydoyun, ssuho, KMSWN, jenny7732
 
