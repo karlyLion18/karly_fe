@@ -37,3 +37,17 @@
     }
   ]
 }
+
+    {
+      "id": "Lee",
+      "name": "이연진",
+      "password": "12345abc",
+      "e-mail": "Lee@karly.co.kr",
+      "phonenumber": "010-9999-7777",
+      "gender": "N",
+      "birth": "1991.02.02",
+      "tos": "false",
+      "recommend": 0
+    }
+  ]
+}
