@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/cart.css" />
+  <script src="../../js/main.js" type="module"></script>
+  <title>cart</title>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <h2 class="cartTitle">장바구니</h2>
+    <div class="cart">
+      <section class="cartList">
+        <ul>
+          <li class="cartList__select-list">
+            <div class="cartList__selectWrapper">
+              <input type="checkbox" id="check" class="cartList__select"></input>
+              <label class="cartList__selectLabel" for="check">
+                <div class="cartList__totalSelect">전체선택 (3/3)</div>
+                <span class="cartList__line"></span>
+              </label>
+              <button class="cartList__selectDelete">선택삭제</button>
+            </div>
+          </li>
+          <li class="cartList__foodType">
+            <div class="cartList__foodTypeWrapper">
+              <div class="cartList__foodTypeImgText">
+                <div class="cartList__foodTypeImg"><img src="../../assets/img/cart/Type=Refrigerated.png"
+                    alt="냉장식품 아이콘" /></div>
+                <div class="cartList__typeText">냉장 식품</div>
+              </div>
+              <button class="cartList__showListIcon"></button>
+            </div>
+          </li>
+          <li class="cartList__foodType">
+            <div class="cartList__foodTypeWrapper">
+              <div class="cartList__foodTypeImgText">
+                <div class="cartList__foodTypeImg"><img src="../../assets/img/cart/Type=Frozen.png" alt="냉동식품 아이콘" />
+                </div>
+                <div class="cartList__typeText">냉동 식품</div>
+              </div>
+              <button class="cartList__showListIcon"></button>
+            </div>
+          </li>
+          <li class="cartList__foodType">
+            <div class="cartList__foodTypeWrapper">
+              <div class="cartList__foodTypeImgText">
+                <div class="cartList__foodTypeImg"><img src="../../assets/img/cart/Type=_Normal.png" alt="상온식품 아이콘" />
+                </div>
+                <div class="cartList__typeText">상온 식품</div>
+              </div>
+              <button class="cartList__showListIcon"></button>
+            </div>
+          </li>
+          <li class="cartList__select-list cartList__select-list--border">
+            <div class="cartList__selectWrapper">
+              <input type="checkbox" id="check" class="cartList__select"></input>
+              <label class="cartList__selectLabel" for="check">
+                <div class="cartList__totalSelect">전체선택 (3/3)</div>
+                <span class="cartList__line"></span>
+              </label>
+              <button class="cartList__selectDelete">선택삭제</button>
+          </li>
+        </ul>
+      </section>
+      <section class="delivery">
+        <div class="deliveryInfoWrapper">
+          <ul class="deliveryInfo">
+            <li class="deliveryInfo__title">배송지</li>
+            <li class="deliveryInfo__address">서울 중랑구 면목로 42길 11 (행운빌딩) 603호</li>
+            <li class="deliveryInfo__type">샛별 배송</li>
+          </ul>
+          <button class="deliveryInfo__change">배송지변경</button>
+        </div>
+        <div class="totalPriceWrapper">
+          <ul class="priceInfo">
+            <li class="priceInfo__list">
+              <div>상품금액</div>
+              <div class="priceInfo__priceGroup">
+                <div>40,680</div>
+                <div class="priceInfo__priceUnitGroup">원</div>
+              </div>
+            </li>
+            <li class="priceInfo__list">
+              <div>상품할인금액</div>
+              <div class="priceInfo__priceGroup">
+                <div>-4,651</div>
+                <div class="priceInfo__priceUnitGroup">원</div>
+              </div>
+            </li>
+            <li class="priceInfo__list priceInfo__list--mb-24">
+              <div>배송비</div>
+              <div class="priceInfo__priceGroup">
+                <div>+3,000</div>
+                <div class="priceInfo__priceUnitGroup">원</div>
+              </div>
+            </li>
+          </ul>
+          <div>
+            <div class="totalPriceInfo">
+              <div class="totalPriceInfo__totalText">결제예정금액</div>
+              <div class="totalPriceInfo__totalPriceUnit">
+                <div class="totalPriceInfo__totalNum">40,680</div>
+                <div class="totalPriceInfo__priceUnit">원</div>
+              </div>
+            </div>
+          </div>
+          <div class="pointInfo">
+            <div class="pointInfo__point">적립</div>
+            <div class="pointInfo__pointBrief">최대 36원 적립 일반 0.1%</div>
+          </div>
+        </div>
+        <button class="btnOrder">주문하기</button>
+        <div class="orderNotice">
+          <ul>
+            <li>쿠폰/적립금은 주문서에서 사용 가능합니다.</li>
+            <li>[주문완료] 상태일 경우에만 주문 취소 가능합니다.</li>
+            <li>[마이컬리 > 주문내역 상세페이지] 에서 직접 취소하실 수 있습니다.</li>
+            <li>쿠폰, 적립금 사용 금액을 제외한 실 결제 금액 기준으로 최종산정됩니다.</li>
+            <li>상품별로 적립금 지급 기준이 다를 수 있습니다. (상품 상세 페이지에서 확인 가능합니다)</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <footer></footer>
+
+</body>
+
+</html>

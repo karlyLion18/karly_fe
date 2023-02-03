@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 {
   "name": "karly",
@@ -15,3 +16,24 @@
     "live-server": "^1.2.2"
   }
 }
+=======
+{
+  "name": "karly",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "all": "run-p serve start", 
+    "serve": "npx json-server server/db/data.json",
+    "start": "npx live-server client --host=localhost --port=8080 --no-browser"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.1",
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "swiper": "^8.4.6"
+  }
+}
+>>>>>>> upstream/develop
