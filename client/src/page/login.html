@@ -19,7 +19,112 @@
       <button type="button"><img src="/client/assets/icons/Icon/close.png" alt="닫기버튼" /></button>
     </article>
 
-    <header id="header"></header>
+    <header class="header">
+      <div class="header__main">
+        <h1 class="header__logo">
+          <img src="/client/assets/icons/Icon/logo.svg" alt="칼리 로고" />
+        </h1>
+        <div class="header__switch">
+          <h2><a href="#">마켓칼리</a></h2>
+          <h2><a href="#">뷰티칼리</a></h2>
+        </div>
+
+        <form class="header__form" action="#" method="get">
+          <fieldset>
+            <legend>검색</legend>
+            <label for="search" class="a11yHidden">검색어</label>
+            <input class="header__form-input" id="search" type="search" placeholder="검색어를 입력하세요" />
+            <button class="header__form-button" type="submit">
+              <img src="../../assets/icons/Icon/search.svg" alt="검색 버튼" />
+            </button>
+          </fieldset>
+        </form>
+
+        <section class="header__icon">
+          <ul class="header__icon-list">
+            <li>
+              <button class="header__icon-button" type="button">
+                <img class="header__icon-link" src="../../assets/icons/Icon/locate.svg" alt="배송지" />
+              </button>
+            </li>
+            <li>
+              <button class="header__icon-button" type="button">
+                <img class="header__icon-link" src="../../assets/icons/Icon/Heart.svg" alt="좋아요" />
+              </button>
+            </li>
+            <li>
+              <button class="header__icon-button" type="button">
+                <img class="header__icon-link" src="../../assets/icons/Icon/cart_line.svg" alt="장바구니" />
+              </button>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <section>
+        <ul class="header__customerService">
+          <li><a href="/">회원가입</a></li>
+          <li><a href="/">로그인</a></li>
+          <li>
+            <a href="/">고객센터</a>
+            <ul class="header__customerService-submenu a11yHidden">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">자주 하는 질문</a></li>
+              <li><a href="#">1:1문의</a></li>
+              <li><a href="#">대량주문 문의</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <nav class="nav">
+        <h2 class="a11yHidden">메인 메뉴</h2>
+
+        <ul class="nav__list" role="tablist">
+          <li class="nav__item-category">
+            <button class="category__btn" aria-label="카테고리 열기">
+              <div class="category__menu">
+                <span class="category__menu-top"></span>
+                <span class="category__menu-mid"></span>
+                <span class="category__menu-bot"></span>
+              </div>
+              카테고리
+            </button>
+            <ul class="category__map a11yHidden">
+              <li><a href="/" class="category__link--gift">선물하기</a></li>
+              <li><a href="/" class="category__link--vege">채소</a></li>
+              <li><a href="/" class="category__link--fruit">과일・견과・쌀</a></li>
+              <li><a href="/" class="category__link--sea">수산・해산・건어물</a></li>
+              <li><a href="/" class="category__link--meet">정육・계란</a></li>
+              <li><a href="/" class="category__link--dish">국・반찬・메인요리</a></li>
+              <li><a href="/" class="category__link--salad">샐러드・간편식</a></li>
+              <li><a href="/" class="category__link--salt">면・양념・오일</a></li>
+              <li><a href="/" class="category__link--drink">생수・음료・우유・커피</a></li>
+              <li><a href="/" class="category__link--snack">간식・과자・떡</a></li>
+              <li><a href="/" class="category__link--bread">베이커리・치즈・델리</a></li>
+              <li><a href="/" class="category__link--health">건강식품</a></li>
+              <li><a href="/" class="category__link--wine">와인</a></li>
+              <li><a href="/" class="category__link--liq">전통주</a></li>
+              <li><a href="/" class="category__link--liv">생활용품・리빙・캠핑</a></li>
+              <li><a href="/" class="category__link--cos">스킨케어・메이크업</a></li>
+              <li><a href="/" class="category__link--hair">헤어・바디・구강</a></li>
+              <li><a href="/" class="category__link--kit">주방용품</a></li>
+              <li><a href="/" class="category__link--elec">가전제품</a></li>
+              <li><a href="/" class="category__link--pet">반려동물</a></li>
+              <li><a href="/" class="category__link--baby">베이비・키즈・완구</a></li>
+              <li><a href="/" class="category__link--tour">여행・티켓</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a href="/" class="nav__link">신상품</a></li>
+          <li class="nav__item"><a href="/" class="nav__link">베스트</a></li>
+          <li class="nav__item"><a href="/" class="nav__link">알뜰쇼핑</a></li>
+          <li class="nav__item"><a href="/" class="nav__link">특가/혜택</a></li>
+          <li class="nav__item-delinoti">
+            <a href="#" class="delinoti"><span class="delinoti-primary">샛별・낮</span> 배송안내</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <section class="login">
       <h2>로그인</h2>
