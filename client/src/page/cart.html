@@ -5,158 +5,118 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/cart.css" />
   <script src="../../js/main.js" type="module"></script>
   <title>cart</title>
 </head>
 
 <body>
-
   <header></header>
   <main>
-    <h2 class="cartTitle black">장바구니</h2>
-    <div class="cartWrapper">
-      <section class="cartProduct">
+    <h2 class="cartTitle">장바구니</h2>
+    <div class="cart">
+      <section class="cartList">
         <ul>
-          <li class="selectGroup">
-            <div class="selectWrapper">
-              <div class="checkboxImg"><img src="../../image/isChecked=true.png" alt="체크된 이미지" /></div>
-              <div class="totalSelect">전체선택 (3/3)</div>
-              <div class="selectDelete">선택삭제</div>
+          <li class="cartList__select-list">
+            <div class="cartList__selectWrapper">
+              <input type="checkbox" id="check" class="cartList__select"></input>
+              <label class="cartList__selectLabel" for="check">
+                <div class="cartList__totalSelect">전체선택 (3/3)</div>
+                <span class="cartList__line"></span>
+              </label>
+              <button class="cartList__selectDelete">선택삭제</button>
             </div>
           </li>
-          <li class="foodTypeGroup">
-            <div class="foodTypeWrapper">
-              <div class="foodTypeImgText">
-                <div class="foodTypeImg"><img src="../../image/Type=Refrigerated.png" alt="냉장식품 아이콘" /></div>
-                <div class="foodType">냉장 식품</div>
+          <li class="cartList__foodType">
+            <div class="cartList__foodTypeWrapper">
+              <div class="cartList__foodTypeImgText">
+                <div class="cartList__foodTypeImg"><img src="../../assets/img/cart/Type=Refrigerated.png"
+                    alt="냉장식품 아이콘" /></div>
+                <div class="cartList__typeText">냉장 식품</div>
               </div>
-              <div class="showListIcon"><img src="../../image/Vector.png" alt="누르면 리스트 보여주는 아이콘" /></div>
+              <button class="cartList__showListIcon"></button>
             </div>
-            <table>
-              <tr>
-                <td>
-                  <!-- img와 같이 쓰인 div 태그는 css 후에 필요없으면 삭제.. -->
-                  <div class="checkboxImg"><img src="../../image/isChecked=true.png" alt="체크된 이미지" /></div>
-                </td>
-                <td>
-                  <div class="cartProductImg"><img src="../../image/cartProduct.png" alt="탱탱쫄면 이미지" /></div>
-                </td>
-                <td>
-                  <div class="productName">[풀무원] 탱탱쫄면 (4개입)</div>
-                </td>
-                <td>
-                  <div class="productCounter">
-                    <img src="../../image/minus.png" alt="빼기 이모티콘" />
-                    <div class="countNum">1</div>
-                    <img src="../../image/plus.png" alt="더하기 이모티콘" />
-                  </div>
-                </td>
-                <td>
-                  <div class="closeIcon"><img src="../../image/Close.png" alt="닫기 아이콘" /></div>
-                </td>
-              </tr>
-            </table>
-            <table>
-              <tr>
-                <td>
-                  <!-- img와 같이 쓰인 div 태그는 css 후에 필요없으면 삭제.. -->
-                  <div class="checkboxImg"><img src="../../image/isChecked=true.png" alt="체크된 이미지" /></div>
-                </td>
-                <td>
-                  <div class="cartProductImg"><img src="../../image/cartProduct.png" alt="탱탱쫄면 이미지" /></div>
-                </td>
-                <td>
-                  <div class="productName">[풀무원] 탱탱쫄면 (4개입)</div>
-                </td>
-                <td>
-                  <div class="productCounter">
-                    <img src="../../image/minus.png" alt="빼기 이모티콘" />
-                    <div class="countNum">1</div>
-                    <img src="../../image/plus.png" alt="더하기 이모티콘" />
-                  </div>
-                </td>
-                <td>
-                  <div class="closeIcon"><img src="../../image/Close.png" alt="닫기 아이콘" /></div>
-                </td>
-              </tr>
-            </table>
           </li>
-          <li class="foodTypeGroup">
-            <div class="foodTypeWrapper">
-              <div class="foodTypeImgText">
-                <div class="foodTypeImg"><img src="../../image/Type=Frozen.png" alt="냉동식품 아이콘" /></div>
-                <div class="foodType">냉동 식품</div>
+          <li class="cartList__foodType">
+            <div class="cartList__foodTypeWrapper">
+              <div class="cartList__foodTypeImgText">
+                <div class="cartList__foodTypeImg"><img src="../../assets/img/cart/Type=Frozen.png" alt="냉동식품 아이콘" />
+                </div>
+                <div class="cartList__typeText">냉동 식품</div>
               </div>
-              <div class="showListIcon"><img src="../../image/Vector.png" alt="누르면 리스트 보여주는 아이콘" /></div>
+              <button class="cartList__showListIcon"></button>
             </div>
           </li>
-          <li class="foodTypeGroup">
-            <div class="foodTypeWrapper">
-              <div class="foodTypeImgText">
-                <div class="foodTypeImg"><img src="../../image/Type=_Normal.png" alt="상온식품 아이콘" /></div>
-                <div class="foodType">상온 식품</div>
+          <li class="cartList__foodType">
+            <div class="cartList__foodTypeWrapper">
+              <div class="cartList__foodTypeImgText">
+                <div class="cartList__foodTypeImg"><img src="../../assets/img/cart/Type=_Normal.png" alt="상온식품 아이콘" />
+                </div>
+                <div class="cartList__typeText">상온 식품</div>
               </div>
-              <div class="showListIcon"><img src="../../image/Vector.png" alt="누르면 리스트 보여주는 아이콘" /></div>
+              <button class="cartList__showListIcon"></button>
             </div>
           </li>
-          <li class="selectGroup">
-            <div class="selectWrapper">
-              <div class="checkboxImg"><img src="../../image/isChecked=true.png" alt="체크된 이미지" /></div>
-              <div class="totalSelect">전체선택 (3/3)</div>
-              <div class="selectDelete">선택삭제</div>
-            </div>
+          <li class="cartList__select-list cartList__select-list--border">
+            <div class="cartList__selectWrapper">
+              <input type="checkbox" id="check" class="cartList__select"></input>
+              <label class="cartList__selectLabel" for="check">
+                <div class="cartList__totalSelect">전체선택 (3/3)</div>
+                <span class="cartList__line"></span>
+              </label>
+              <button class="cartList__selectDelete">선택삭제</button>
           </li>
         </ul>
       </section>
-      <section class="deliveryWrapper">
+      <section class="delivery">
         <div class="deliveryInfoWrapper">
           <ul class="deliveryInfo">
-            <li>배송지</li> <!-- h3로 할지.. -->
-            <li>서울 중랑구 면목로 42길 11 (행운빌딩) 603호</li>
-            <li>샛별 배송</li>
-            <li><a>배송지변경</a></li>
+            <li class="deliveryInfo__title">배송지</li>
+            <li class="deliveryInfo__address">서울 중랑구 면목로 42길 11 (행운빌딩) 603호</li>
+            <li class="deliveryInfo__type">샛별 배송</li>
           </ul>
+          <button class="deliveryInfo__change">배송지변경</button>
         </div>
         <div class="totalPriceWrapper">
           <ul class="priceInfo">
-            <li>
+            <li class="priceInfo__list">
               <div>상품금액</div>
-              <div class="priceGroup">
-                <div class="price">40,680</div>
-                <div>원</div>
+              <div class="priceInfo__priceGroup">
+                <div>40,680</div>
+                <div class="priceInfo__priceUnitGroup">원</div>
               </div>
             </li>
-            <li>
+            <li class="priceInfo__list">
               <div>상품할인금액</div>
-              <div class="priceGroup">
+              <div class="priceInfo__priceGroup">
                 <div>-4,651</div>
-                <div>원</div>
+                <div class="priceInfo__priceUnitGroup">원</div>
               </div>
             </li>
-            <li>
+            <li class="priceInfo__list priceInfo__list--mb-24">
               <div>배송비</div>
-              <div class="priceGroup">
+              <div class="priceInfo__priceGroup">
                 <div>+3,000</div>
-                <div>원</div>
+                <div class="priceInfo__priceUnitGroup">원</div>
               </div>
             </li>
           </ul>
           <div>
             <div class="totalPriceInfo">
-              <div class="totalText">결제예정금액</div>
-              <div class="totalPriceUnit">
-                <div class="totalNum">40,680</div>
-                <div class="priceUnit">원</div>
+              <div class="totalPriceInfo__totalText">결제예정금액</div>
+              <div class="totalPriceInfo__totalPriceUnit">
+                <div class="totalPriceInfo__totalNum">40,680</div>
+                <div class="totalPriceInfo__priceUnit">원</div>
               </div>
             </div>
           </div>
           <div class="pointInfo">
-            <div class="point">적립</div>
-            <div class="pointBrief">최대 36원 적립 일반0.1%</div>
+            <div class="pointInfo__point">적립</div>
+            <div class="pointInfo__pointBrief">최대 36원 적립 일반 0.1%</div>
           </div>
         </div>
-        <button class="toOrder">주문하기</button>
+        <button class="btnOrder">주문하기</button>
         <div class="orderNotice">
           <ul>
             <li>쿠폰/적립금은 주문서에서 사용 가능합니다.</li>
@@ -168,6 +128,7 @@
         </div>
       </section>
     </div>
+
   </main>
   <footer></footer>
 
