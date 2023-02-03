@@ -1,5 +1,6 @@
-@import url(/client/css/normalize.css);
-@import url(/client/css/reset.css);
+@import url(/css/normalize.css);
+@import url(/css/reset.css);
+@import url(/css/theme.css);
 
 /* 공통 */
 .main-banner,
@@ -187,7 +188,7 @@
 .swiper-button-prev.a1 {
   width: 52px;
   height: 52px;
-  background: url(/client/assets/icons/Icon/Arrow.png) no-repeat;
+  background: url(/assets/icons/Icon/Arrow.png) no-repeat;
   background-size: 100% auto;
   background-position: center;
   /* display: none; */
@@ -199,7 +200,7 @@
 .swiper-button-next.a1 {
   width: 52px;
   height: 52px;
-  background: url(/client/assets/icons/Icon/Arrow.png) no-repeat;
+  background: url(/assets/icons/Icon/Arrow.png) no-repeat;
   background-size: 100% auto;
   background-position: center;
   /* display: none; */
@@ -239,7 +240,7 @@
 .swiper-button-prev.a2, .swiper-button-prev.a3 {
   width: 50px;
   height: 50px;
-  background: url(/client/assets/icons/Icon/Arrow-recommend.png) no-repeat;
+  background: url(/assets/icons/Icon/Arrow-recommend.png) no-repeat;
   background-size: 100% auto;
   background-position: center;
   transform: translateX(-35px) rotate(180deg) !important;
@@ -248,7 +249,7 @@
 .swiper-button-next.a2, .swiper-button-next.a3 {
   width: 50px;
   height: 50px;
-  background: url(/client/assets/icons/Icon/Arrow-recommend.png) no-repeat;
+  background: url(/assets/icons/Icon/Arrow-recommend.png) no-repeat;
   background-size: 100% auto;
   background-position: center;
 }
@@ -277,7 +278,7 @@
 /* 임시 */
 .swiper-slide {
   min-height: 426px;
-  /* background-image: url(/client/assets/test/slide.png); */
+  /* background-image: url(/assets/test/slide.png); */
   /* background-color: green; */
   background-repeat: no-repeat;
 }

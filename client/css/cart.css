@@ -1,7 +1,4 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');
-@import url("./normalize.css");
-@import url("./reset.css");
-@import url("./theme.css");
 
 header {
   height: 247px;
