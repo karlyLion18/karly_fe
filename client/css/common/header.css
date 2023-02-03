@@ -100,6 +100,9 @@ header {
 
 .header__customerService {
   display: flex;
+  position:absolute;
+  top: 40px;
+  right:427px;
   padding: 5px;
   font-size: var(--paragraph-small);
   color: var(--content);
