@@ -1,29 +1,50 @@
-import { karlyxios } from "/js/common/karlyxios.js";
+import { getNode } from '/client/lib/index.js';
+import { getInputValue } from '../lib/dom/getInputValue.js';
+import { karlyxios } from './common/karlyxios.js';
 
-const user_new = {
-  "id": "Hong",
-  "name": "홍길동",
-  "password": "123",
-  "e-mail": "Hong@karly.co.kr",
-  "phonenumber": "010-1111-2222",
-  "gender": "M",
-  "birth": "2013.02.02",
-  "tos": "true",
-  "recommend": 2
-}
+let url = 'http://localhost:5001/users';
 
-const user_modified = {
-  "id": "Hong",
-  "name": "홍길동수정",
-  "password": "12344",
-  "e-mail": "Hong@karly.co.kr",
-}
+const registerBtn = getNode('.register_btn');
 
-let url = 'http://localhost:5002/users';
-let delete_url = 'http://localhost:5002/users/Hong';
-let update_url = 'http://localhost:5002/users/Hong';
-console.log("hello");
-// console.log(karlyxios.get(url));
-// console.log(karlyxios.delete(delete_url));
-// karlyxios.post(url,user_new);
-karlyxios.put(update_url, user_modified);
+const userIdNode = getNode('.user__input-id');
+
+// console.log('🚀 ⁝ onSubmit ⁝ userGender', userGender);
+
+const onSubmit = () => {
+  const userID = getInputValue('.user__input-id');
+  const userPw = getInputValue('.user__input-pw');
+  const userName = getInputValue('.user__input-name');
+  const userEmail = getInputValue('.user__input-email');
+  const userPhone = getInputValue('.user__input-phone');
+  const userGender = document.querySelector('input[type="radio"]:checked').value;
+
+  const userBirth = () => {
+    const birthYear = getInputValue('.user__birth--year');
+    const birthMonth = getInputValue('.user__birth--month');
+    const birthDay = getInputValue('.user__birth--day');
+
+    return [birthYear, birthMonth, birthDay].join('.');
+  };
+
+  const data = {
+    id: userID,
+    name: userName,
+    password: userPw,
+    email: userEmail,
+    phonenumber: userPhone,
+    gender: userGender,
+    birth: userBirth(),
+    tos: '',
+    recommend: 0,
+  };
+
+  karlyxios.post(url, data);
+};
+
+registerBtn.addEventListener('click', () => {
+  if (onsubmit.data.value === '') {
+    alert(err);
+  } else {
+    onSubmit();
+  }
+});
