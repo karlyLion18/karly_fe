@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/client/css/main.css" />
     <link rel="stylesheet" href="/client/css/register.css" />
 
+    <script type="module" src="/client/js/index.js"></script>
     <title>회원가입 - 칼리</title>
   </head>
   <body>
@@ -22,7 +23,7 @@
       <h2>회원가입</h2>
       <span class="essential">필수입력사항</span>
 
-      <form class="register__form" action="#" method="post">
+      <div class="register__form">
         <fieldset>
           <legend>회원가입 양식</legend>
 
@@ -30,7 +31,7 @@
             <label class="essential user__label" for="userId">아이디</label>
             <div class="user__input">
               <input
-                class="user__info"
+                class="user__info user__input-id"
                 type="text"
                 id="userId"
                 name="userId"
@@ -45,7 +46,7 @@
             <label class="essential user__label" for="userPw">비밀번호</label>
             <div class="user__input">
               <input
-                class="user__info"
+                class="user__info user__input-pw"
                 type="password"
                 id="userPw"
                 name="userPw"
@@ -59,7 +60,7 @@
             <label class="essential user__label" for="userPwConfirm">비밀번호 확인</label>
             <div class="user__input">
               <input
-                class="user__info"
+                class="user__info user__input-pwConfirm"
                 type="password"
                 id="userPwConfirm"
                 name="userPwConfirm"
@@ -72,7 +73,7 @@
           <div class="user-box user__name">
             <label class="essential user__label" for="userName">이름</label>
             <input
-              class="user__info"
+              class="user__info user__input-name"
               type="text"
               id="userName"
               name="userName"
@@ -84,7 +85,7 @@
             <label class="essential user__label" for="userEmail">이메일</label>
             <div class="user__input">
               <input
-                class="user__info"
+                class="user__info user__input-email"
                 type="email"
                 id="userEmail"
                 name="userEmail"
@@ -99,7 +100,7 @@
             <label class="essential user__label" for="userPhone">휴대폰</label>
             <div class="user__input">
               <input
-                class="user__info"
+                class="user__info user__input-phone"
                 type="tel"
                 pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
                 id="userPhone"
@@ -123,20 +124,20 @@
           <div class="user-box user__gender">
             <label class="user__label" for="userGender">성별</label>
             <div class="radio__box">
-              <label class="radio"><input name="userGender" type="radio" />여자</label>
-              <label class="radio"><input name="userGender" type="radio" />남자</label>
-              <label class="radio"><input name="userGender" type="radio" />선택안함</label>
+              <label class="radio"><input name="userGender" value="F" type="radio" />여자</label>
+              <label class="radio"><input name="userGender" value="M" type="radio" />남자</label>
+              <label class="radio"><input name="userGender" value="N" type="radio" />선택안함</label>
             </div>
           </div>
 
           <div class="user-box user__birth">
             <label class="user__label" for="userBirth">생년월일</label>
             <div class="user__birth--input-box">
-              <input type="text" placeholder="YYYY" />
+              <input class="user__birth--year" type="text" maxlength="4" placeholder="YYYY" />
               <span aria-hidden="true">/</span>
-              <input type="text" placeholder="MM" />
+              <input class="user__birth--month" type="text" maxlength="2" placeholder="MM" />
               <span aria-hidden="true">/</span>
-              <input type="text" placeholder="DD" />
+              <input class="user__birth--day" type="text" maxlength="2" placeholder="DD" />
             </div>
           </div>
 
@@ -176,9 +177,11 @@
             </div>
           </div>
 
-          <div class="button__box"><button class="button_primary" type="submit">가입하기</button></div>
+          <div class="button__box">
+            <button class="button_primary register_btn" type="button">가입하기</button>
+          </div>
         </fieldset>
-      </form>
+      </div>
     </section>
   </body>
 </html>
