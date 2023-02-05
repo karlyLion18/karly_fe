@@ -7,15 +7,15 @@
     <link rel="shortcut icon" href="/assets/icons/Icon/karly_logo.ico" type="image/x-icon" />
 
     <!-- style -->
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/register.css" />
+    <link rel="stylesheet" href="/client/css/main.css" />
+    <link rel="stylesheet" href="/client/css/register.css" />
 
     <title>회원가입 - 칼리</title>
   </head>
   <body>
     <article class="article__ad">
       <a href="">지금 가입하고 인기상품 100원에 받아가세요!</a>
-      <button type="button"><img src="/assets/icons/Icon/close.png" alt="닫기버튼" /></button>
+      <button type="button"><img src="/client/assets/icons/Icon/close.png" alt="닫기버튼" /></button>
     </article>
 
     <section class="register">
@@ -28,36 +28,45 @@
 
           <div class="user-box user__id">
             <label class="essential user__label" for="userId">아이디</label>
-            <input
-              class="user__info"
-              type="text"
-              id="userId"
-              name="userId"
-              placeholder="아이디를 입력해주세요"
-              required />
+            <div class="user__input">
+              <input
+                class="user__info"
+                type="text"
+                id="userId"
+                name="userId"
+                placeholder="아이디를 입력해주세요"
+                required />
+              <p class="user-box__validation">6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합</p>
+            </div>
             <button class="confirm_button" type="button">중복확인</button>
           </div>
 
           <div class="user-box user__pw">
             <label class="essential user__label" for="userPw">비밀번호</label>
-            <input
-              class="user__info"
-              type="password"
-              id="userPw"
-              name="userPw"
-              placeholder="비밀번호를 입력해주세요"
-              required />
+            <div class="user__input">
+              <input
+                class="user__info"
+                type="password"
+                id="userPw"
+                name="userPw"
+                placeholder="비밀번호를 입력해주세요"
+                required />
+              <p class="user-box__validation">영문/숫자/특수문자(공백 제외)만 허용하며, 2개 이상 조합</p>
+            </div>
           </div>
 
           <div class="user-box user__pw-confirm">
             <label class="essential user__label" for="userPwConfirm">비밀번호 확인</label>
-            <input
-              class="user__info"
-              type="password"
-              id="userPwConfirm"
-              name="userPwConfirm"
-              placeholder="비밀번호를 한번 더 입력해주세요"
-              required />
+            <div class="user__input">
+              <input
+                class="user__info"
+                type="password"
+                id="userPwConfirm"
+                name="userPwConfirm"
+                placeholder="비밀번호를 한번 더 입력해주세요"
+                required />
+              <p class="user-box__validation">영문/숫자/특수문자(공백 제외)만 허용하며, 2개 이상 조합</p>
+            </div>
           </div>
 
           <div class="user-box user__name">
@@ -73,26 +82,32 @@
 
           <div class="user-box user__email">
             <label class="essential user__label" for="userEmail">이메일</label>
-            <input
-              class="user__info"
-              type="email"
-              id="userEmail"
-              name="userEmail"
-              placeholder="예) marketkarly@karly.com"
-              required />
+            <div class="user__input">
+              <input
+                class="user__info"
+                type="email"
+                id="userEmail"
+                name="userEmail"
+                placeholder="예) marketkarly@karly.com"
+                required />
+              <p class="user-box__validation">이메일 형식으로 입력해 주세요.</p>
+            </div>
             <button class="confirm_button" type="button">중복확인</button>
           </div>
 
           <div class="user-box user__phone">
             <label class="essential user__label" for="userPhone">휴대폰</label>
-            <input
-              class="user__info"
-              type="tel"
-              pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
-              id="userPhone"
-              name="userPhone"
-              placeholder="숫자만 입력해주세요."
-              required />
+            <div class="user__input">
+              <input
+                class="user__info"
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+                id="userPhone"
+                name="userPhone"
+                placeholder="숫자만 입력해주세요."
+                required />
+              <p class="user-box__validation">숫자만 입력해 주세요.</p>
+            </div>
             <button class="confirm_button" type="submit">인증번호 받기</button>
           </div>
 
