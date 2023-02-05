@@ -339,12 +339,3 @@ userBoxUserEmail.addEventListener('input',(e) => validationChekckEmail(e));
 userBoxUserPw.addEventListener('input', (e) => validationChekckPw(e));
 userBoxUserPwConfirm.addEventListener('input', (e) => validationChekckPwConfirm(e));
 userBoxUserPhone.addEventListener('input', (e) => validationChekckPhone(e));
-
-let url = 'http://localhost:5002/users';
-let delete_url = 'http://localhost:5002/users/Hong';
-let update_url = 'http://localhost:5002/users/Hong';
-console.log("hello");
-// console.log(karlyxios.get(url));
-// console.log(karlyxios.delete(delete_url));
-// karlyxios.post(url,user_new);
-karlyxios.put(update_url, user_modified);
