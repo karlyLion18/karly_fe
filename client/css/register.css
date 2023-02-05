@@ -59,7 +59,7 @@
   position: absolute;
   font-size: var(--paragraph-small);
   color: red;
-  padding: 5px 0;
+  padding: 5px 3px;
 }
 
 .user__label {
