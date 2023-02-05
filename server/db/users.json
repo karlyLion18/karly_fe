@@ -29,6 +29,7 @@
       "name": "이연진",
       "password": "12345abc",
       "email": "Lee@karly.co.kr",
+<<<<<<< HEAD
       "phonenumber": "010-9999-7777",
       "gender": "N",
       "birth": "1991.02.02",
@@ -43,6 +44,8 @@
       "name": "이연진",
       "password": "12345abc",
       "e-mail": "Lee@karly.co.kr",
+=======
+>>>>>>> 2a82a25 (Chore : data.json 내  users 추가)
       "phonenumber": "010-9999-7777",
       "gender": "N",
       "birth": "1991.02.02",
