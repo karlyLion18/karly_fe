@@ -83,12 +83,30 @@ header {
 }
 
 .header__icon-button {
+  position: relative;
   border: none;
   cursor: pointer;
 }
 
 .header__icon_button > img:hover {
   color: red;
+}
+
+.header__icon-badge {
+  position: absolute;
+  background-color: var(--primary);
+  border: 2px solid var(--white);
+  border-radius: 20px;
+  min-width: 20px;
+  height: 20px;
+  color: var(--white);
+
+  padding: 3px 2px 2px 2px;
+  font-size: 5px;
+  align-items: center;
+
+  top: 0px;
+  left: 29px; 
 }
 
 /* header : 고객 서비스 */
@@ -203,4 +221,32 @@ header {
 
 .delinoti-primary {
   color: var(--primary);
+}
+
+.category__btn:hover,
+.category__btn:focus {
+  color: var(--primary);
+}
+
+.category__menubar {
+  display: none;
+}
+
+.category__map {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  top: 72px;
+  left: 0px;
+
+  border: 1px solid var(--gray-100);
+  background-color: var(--white);
+  width: 247px;
+  gap: 6px;
+}
+
+.category__map li {
+  margin: 6px 8px;
 }
