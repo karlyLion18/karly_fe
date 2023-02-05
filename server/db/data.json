@@ -80,5 +80,113 @@
       },
       "stock": 13
     }
+  ],
+  "users": [
+    {
+      "id": "Hong",
+      "name": "홍길동",
+      "password": "123",
+      "email": "Hong@karly.co.kr",
+      "phonenumber": "010-1111-2222",
+      "gender": "M",
+      "birth": "2013.02.02",
+      "tos": "true",
+      "recommend": 2
+    },
+    {
+      "id": "Kim",
+      "name": "김영희",
+      "password": "12345",
+      "email": "Kim@karly.co.kr",
+      "phonenumber": "010-5555-7777",
+      "gender": "F",
+      "birth": "2001.02.02",
+      "tos": "false",
+      "recommend": 10
+    },
+    {
+      "id": "Lee",
+      "name": "이연진",
+      "password": "12345abc",
+      "email": "Lee@karly.co.kr",
+      "phonenumber": "010-9999-7777",
+      "gender": "N",
+      "birth": "1991.02.02",
+      "tos": "false",
+      "recommend": 0
+    },
+    {
+      "id": "ksejvC7",
+      "name": "",
+      "password": "",
+      "email": ""
+    },
+    {
+      "id": "asdf",
+      "name": "asdf",
+      "password": "asdf",
+      "email": "asdf@naver.com"
+    },
+    {
+      "id": "4FU3hkX",
+      "name": "",
+      "password": "",
+      "email": "",
+      "phone": "",
+      "gender": null
+    },
+    {
+      "id": "mZcQIjo",
+      "name": "",
+      "password": "",
+      "email": "",
+      "phone": "",
+      "gender": {}
+    },
+    {
+      "id": "L7lZa24",
+      "name": "",
+      "password": "",
+      "email": "",
+      "phone": "",
+      "gender": null,
+      "birth": "1111.11.11"
+    },
+    {
+      "id": "lDatGBk",
+      "name": "",
+      "password": "",
+      "email": "",
+      "phone": "",
+      "gender": {},
+      "birth": ".."
+    },
+    {
+      "id": "SSbEfSg",
+      "name": "",
+      "password": "",
+      "email": "",
+      "phone": "",
+      "gender": null,
+      "birth": ".."
+    },
+    {
+      "id": "iB9nFh1",
+      "name": "",
+      "password": "",
+      "email": "",
+      "phone": "",
+      "gender": null,
+      "birth": ".."
+    },
+    {
+      "id": "asd",
+      "name": "asd",
+      "password": "asd",
+      "email": "asdf@naver.com",
+      "phone": "010-0000-0000",
+      "gender": {},
+      "birth": "1111.11.11"
+    }
   ]
 }
