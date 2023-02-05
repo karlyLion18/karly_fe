@@ -78,7 +78,6 @@ karlyxios.put = (url, body, options) => {
     url,
     body: JSON.stringify(body),
     method: 'PUT',
-    ...options,
   });
 };
 
@@ -93,7 +92,7 @@ karlyxios.delete = (url, body, options) => {
 karlyxios.delete = (url, body, options) => {
   return karlyxios({
     url,
-    method: "DELETE",
-    ...options
+    method: 'DELETE',
+    ...options,
   });
 };
