@@ -37,7 +37,7 @@
                 name="userId"
                 placeholder="아이디를 입력해주세요"
                 required />
-              <p class="user-box__validation">6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합</p>
+              <p class="user-box__validation user-box__id-validation user-box_validation-toggle">6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합</p>
             </div>
             <button class="confirm_button" type="button">중복확인</button>
           </div>
@@ -52,7 +52,7 @@
                 name="userPw"
                 placeholder="비밀번호를 입력해주세요"
                 required />
-              <p class="user-box__validation">영문/숫자/특수문자(공백 제외)만 허용하며, 2개 이상 조합</p>
+              <p class="user-box__validation user-box__pw-validation user-box_validation-toggle">최소 8자 이상 입력</p>
             </div>
           </div>
 
@@ -66,7 +66,7 @@
                 name="userPwConfirm"
                 placeholder="비밀번호를 한번 더 입력해주세요"
                 required />
-              <p class="user-box__validation">영문/숫자/특수문자(공백 제외)만 허용하며, 2개 이상 조합</p>
+              <p class="user-box__validation user-box__pw-confirm-validation user-box_validation-toggle">동일한 비밀번호를 입력</p>
             </div>
           </div>
 
@@ -91,7 +91,7 @@
                 name="userEmail"
                 placeholder="예) marketkarly@karly.com"
                 required />
-              <p class="user-box__validation">이메일 형식으로 입력해 주세요.</p>
+              <p class="user-box__validation user-box__email-validation user-box_validation-toggle">이메일 형식으로 입력해 주세요.</p>
             </div>
             <button class="confirm_button" type="button">중복확인</button>
           </div>
@@ -107,7 +107,7 @@
                 name="userPhone"
                 placeholder="숫자만 입력해주세요."
                 required />
-              <p class="user-box__validation">숫자만 입력해 주세요.</p>
+              <p class="user-box__validation user-box__phone-validation user-box_validation-toggle">휴대폰 번호를 입력해 주세요.</p>
             </div>
             <button class="confirm_button" type="submit">인증번호 받기</button>
           </div>
