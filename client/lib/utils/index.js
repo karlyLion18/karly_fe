@@ -3,5 +3,7 @@ export * from './copy.js';
 export * from './delay.js';
 export * from './memo.js';
 export * from './typeOf.js';
+export * from './cart_popup.js';
+export * from './products_card.js';
 export * from './tiger.js';
 export * from './storage.js';

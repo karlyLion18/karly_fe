@@ -8,10 +8,10 @@
       "saleRatio": 0.24,
       "salePrice": 5244,
       "image": {
-        "thumbnail": "ubuho/thumbnail.jpg",
-        "view": "ubuho/detail_view.jpg",
-        "banner": "ubuho/detail_banner.jpg",
-        "info": "ubuho/detail_info.jpg",
+        "thumbnail": "/client/assetsubuho/thumbnail.jpg",
+        "view": "/client/assetsubuho/detail_view.jpg",
+        "banner": "/client/assetsubuho/detail_banner.jpg",
+        "info": "/client/assetsubuho/detail_info.jpg",
         "alt": "유부호 만두"
       },
       "stock": 3
@@ -24,10 +24,10 @@
       "saleRatio": 0,
       "salePrice": 0,
       "image": {
-        "thumbnail": "tangtang/thumbnail.jpg",
-        "view": "tangtang/detail_view.jpg",
-        "banner": "tangtang/detail_banner.jpg",
-        "info": "tangtang/detail_info.jpg",
+        "thumbnail": "/client/assetstangtang/thumbnail.jpg",
+        "view": "/client/assetstangtang/detail_view.jpg",
+        "banner": "/client/assetstangtang/detail_banner.jpg",
+        "info": "/client/assetstangtang/detail_info.jpg",
         "alt": "풀무원 탱탱쫄면"
       },
       "stock": 10
@@ -40,10 +40,10 @@
       "saleRatio": 0.13,
       "salePrice": 6800,
       "image": {
-        "thumbnail": "jukkumi/thumbnail.jpg",
-        "view": "jukkumi/detail_view.jpg",
-        "banner": "jukkumi/detail_banner.jpg",
-        "info": "jukkumi/detail_info.jpg",
+        "thumbnail": "/client/assetsjukkumi/thumbnail.jpg",
+        "view": "/client/assetsjukkumi/detail_view.jpg",
+        "banner": "/client/assetsjukkumi/detail_banner.jpg",
+        "info": "/client/assetsjukkumi/detail_info.jpg",
         "alt": "홍대 주꾸미"
       },
       "stock": 8
@@ -56,10 +56,10 @@
       "saleRatio": 0,
       "salePrice": 0,
       "image": {
-        "thumbnail": "kangnam/thumbnail.jpg",
-        "view": "kangnam/detail_view.jpg",
-        "banner": "kangnam/detail_banner.jpg",
-        "info": "kangnam/detail_info.jpg",
+        "thumbnail": "/client/assetskangnam/thumbnail.jpg",
+        "view": "/client/assetskangnam/detail_view.jpg",
+        "banner": "/client/assetskangnam/detail_banner.jpg",
+        "info": "/client/assetskangnam/detail_info.jpg",
         "alt": "강남면옥 소갈비찜"
       },
       "stock": 2
@@ -72,10 +72,10 @@
       "saleRatio": 0.25,
       "salePrice": 3375,
       "image": {
-        "thumbnail": "bacon/thumbnail.jpg",
-        "view": "bacon/detail_view.jpg",
-        "banner": "bacon/detail_banner.jpg",
-        "info": "bacon/detail_info.jpg",
+        "thumbnail": "/client/assetsbacon/thumbnail.jpg",
+        "view": "/client/assetsbacon/detail_view.jpg",
+        "banner": "/client/assetsbacon/detail_banner.jpg",
+        "info": "/client/assetsbacon/detail_info.jpg",
         "alt": "칼리 한돈 삼겹 베이컨"
       },
       "stock": 13
