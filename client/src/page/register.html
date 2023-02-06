@@ -9,8 +9,12 @@
     <!-- style -->
     <link rel="stylesheet" href="/client/css/main.css" />
     <link rel="stylesheet" href="/client/css/register.css" />
-
+    
     <script type="module" src="/client/js/index.js"></script>
+    <!-- kakao address API -->
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    
+    
     <title>회원가입 - 칼리</title>
   </head>
   <body>
@@ -116,7 +120,7 @@
             <label class="essential user__label" for="userAddress">주소</label>
             <!-- how  -->
             <div class="address__box">
-              <button class="button__sub" type="button" required>주소검색</button>
+              <button class="button__sub popup_btn" " type="button" required>주소검색</button>
               <span class="address__noti">배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
             </div>
           </div>
@@ -133,11 +137,15 @@
           <div class="user-box user__birth">
             <label class="user__label" for="userBirth">생년월일</label>
             <div class="user__birth--input-box">
-              <input class="user__birth--year" type="text" maxlength="4" placeholder="YYYY" />
+              <input class="user__birth--year" type="text" min="2" maxlength="4" placeholder="YYYY" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required/>
+
               <span aria-hidden="true">/</span>
-              <input class="user__birth--month" type="text" maxlength="2" placeholder="MM" />
+
+              <input class="user__birth--month" type="text"  minlength="2" maxlength="2" placeholder="MM" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1' );" required/>
+
               <span aria-hidden="true">/</span>
-              <input class="user__birth--day" type="text" maxlength="2" placeholder="DD" />
+
+              <input class="user__birth--day" type="text" minlength="2"  maxlength="2" placeholder="DD" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"required/>
             </div>
           </div>
 
@@ -159,19 +167,19 @@
                 >
               </div>
               <label class="terms">
-                <input name="userMore" type="checkbox" required />이용약관 동의(필수)
+                <input clas="tos" name="userMore" type="checkbox" required />이용약관 동의(필수)
                 <a href="#">약관보기</a>
               </label>
               <label class="terms">
-                <input name="userMore" type="checkbox" required />개인정보 수집·이용 동의(필수)
+                <input clas="tos" name="userMore" type="checkbox" required />개인정보 수집·이용 동의(필수)
                 <a href="#">약관보기</a>
               </label>
               <label class="terms">
-                <input name="userMore" type="checkbox" />무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)
+                <input clas="tos" name="userMore" type="checkbox" />무료배송, 할인쿠폰 등 혜택/정보 수신 동의(선택)
                 <a href="#">약관보기</a>
               </label>
               <label class="terms">
-                <input name="userMore" type="checkbox" required />본인은 만 14세 이상입니다.(필수)
+                <input class="tos"  name="userMore" type="checkbox" required />본인은 만 14세 이상입니다.(필수)
                 <a href="#">약관보기</a>
               </label>
             </div>
