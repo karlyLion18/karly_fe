@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { karlyxios } from "/client/js/common/karlyxios.js";
 import { getNode, attr, addClass, toggleClass, getInputValue, removeClass } from '/client/lib/index.js';
 
