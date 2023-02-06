@@ -38,10 +38,12 @@ export const karlyxios = async (options = {}) => {
 
   let response = await fetch(url, restOptions);
 
-  if (!response.ok) {
+  try {
+    if(response.ok){
+      response.data = await response.json();
+    }
+  } catch (error) {
     refError('[karlyxios] : you were faild');
-  } else {
-    response.data = await response.json();
   }
 
   return response;
