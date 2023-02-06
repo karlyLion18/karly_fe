@@ -1,0 +1,10 @@
+.popup {
+  display: none;
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
