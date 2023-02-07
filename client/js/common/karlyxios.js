@@ -1,19 +1,9 @@
-import { refError } from '/client/lib/error/refError.js';
+import { refError } from '/lib/error/refError.js';
 
 const defaultOptions = {
   method: 'GET',
   mode: 'cors',
-  body: {
-    id: '',
-    name: '',
-    password: '',
-    email: '',
-    phonenumber: '',
-    gender: 'N',
-    birth: 'null',
-    tos: '',
-    recommend: '0',
-  },
+  body: null,
   cache: 'no-cache',
   credential: 'same-origin',
   redirect: 'follow',
