@@ -15,7 +15,7 @@
   |할일|할일|할일|할일|할일|  
   
 ## 🔑 실행방법
-<img src="https://user-images.githubusercontent.com/83333217/217299675-7eaf6fb1-50ca-4f93-91e2-cef70a3cf6d5.png" width="20" align="center" /> 터미널에 `yarn all` 입력후 [localhost:8080](http://localhost:8080) 으로 들어오세요
+#### <img src="https://user-images.githubusercontent.com/83333217/217299675-7eaf6fb1-50ca-4f93-91e2-cef70a3cf6d5.png" width="20" align="center" /> 터미널에 `yarn all` 입력후 [localhost:8080](http://localhost:8080) 으로 들어오세요
 
   
 ## 🧠기술스택🧠
