@@ -14,6 +14,10 @@
   |할일|할일|할일|할일|할일|
   |할일|할일|할일|할일|할일|  
   
+## 🔑 실행방법
+<img src="https://user-images.githubusercontent.com/83333217/217299675-7eaf6fb1-50ca-4f93-91e2-cef70a3cf6d5.png" width="20" align="center" /> 터미널에 `yarn all` 입력후 [localhost:8080](http://localhost:8080) 으로 들어오세요
+
+  
 ## 🧠기술스택🧠
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
