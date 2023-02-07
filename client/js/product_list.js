@@ -29,7 +29,8 @@ const karlyProduct = getNode('.karly-product');
 const karlyProductMenu = getNode('.karly-product-menu__order-naming');
 const karlyProductMenuToggle = getNodes('.karly-product-menu__order-li a');
 const karlyPageControl = getNode('.karly-page-control');
-
+const karlyProductTotal = getNode('.karly-product-menu__total-num');
+let karlyProductTotalCount = '';
 
 
 /* -------------------------------------------------------------------------- */
@@ -54,8 +55,6 @@ function ready() {
 function createKarlyProductList(productListBone = {}) {
   let image = productListBone.image;
 
-  //가격 단위표시인 , 구현 해야함
-
   if(productListBone.saleRatio){
     //세일을 한다면
     return /* html */`
@@ -71,9 +70,9 @@ function createKarlyProductList(productListBone = {}) {
         <span class="karly-product-info__full-name">${productListBone.name}</span>
         <div class="karly-product-price">      
           <span class="karly-product-price__discount-rate">${productListBone.saleRatio*100}%</span>
-          <span class="karly-product-price__computed-price">${productListBone.salePrice}원</span>
+          <span class="karly-product-price__computed-price">${priceChange(productListBone.salePrice)}원</span>
         </div>
-        <span class="karly-product-price__original-price">${productListBone.price}원</span>
+        <span class="karly-product-price__original-price">${priceChange(productListBone.price)}원</span>
         <span class="karly-product-price__oneline-review">${productListBone.description}</span>
         <div class="karly-product-badge">
           <span class="karly-product-badge__karly">
@@ -100,7 +99,7 @@ function createKarlyProductList(productListBone = {}) {
         <span class="karly-product-info__delivery-type">샛별배송</span>
         <span class="karly-product-info__full-name">${productListBone.name}</span>
         <div class="karly-product-price">          
-          <span class="karly-product-price__computed-price">${productListBone.price}원</span>
+          <span class="karly-product-price__computed-price">${priceChange(productListBone.price)}원</span>
         </div>
         <span class="karly-product-price__oneline-review">${productListBone.description}</span>
         <div class="karly-product-badge">
@@ -140,8 +139,13 @@ function toggleProductMenu(e) {
 
 async function orderSortRecommend() {
   let productDataFromDB = await karlyxios.get(url);
+  let objectData = productDataFromDB.data;
+
   removeChildkarlyProduct();
-  productDataFromDB.data.forEach((element) => {
+  
+  karlyProductTotalCount = objectData.length;
+  updateKarlyProductTotal(karlyProductTotalCount);
+  objectData.forEach((element) => {
     insertLast(karlyProduct,createKarlyProductList(element));
   });
 }
@@ -152,6 +156,8 @@ async function orderSort() {
   objectData.sort((a,b) => a.stock - b.stock);
 
   removeChildkarlyProduct();
+  karlyProductTotalCount = objectData.length;
+  updateKarlyProductTotal(karlyProductTotalCount);
 
   objectData.forEach((element) => {
     insertLast(karlyProduct,createKarlyProductList(element));
@@ -174,6 +180,13 @@ function karlyProductCartButton(e) {
   }
 }
 
+function updateKarlyProductTotal(count) {
+  karlyProductTotal.innerHTML = `총 ${count}건`;
+}
+
+function priceChange(price) {
+  return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 /* -------------------------------------------------------------------------- */
 /*                            addEventListener List                           */
