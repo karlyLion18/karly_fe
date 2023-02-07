@@ -1,6 +1,6 @@
-@import url(/css/normalize.css);
-@import url(/css/reset.css);
-@import url(/css/theme.css);
+@import url(/client/css/normalize.css);
+@import url(/client/css/reset.css);
+@import url(/client/css/theme.css);
 
 /* 공통 */
 .main-banner,
