@@ -537,46 +537,46 @@ main {
 .karly__img-ischecked--true {
   width: 24px;
   height: 24px;
-  background: -8px -8px url(/assets/img/product_list/input_check.svg) no-repeat;
+  background: -8px -8px url(/client/assets/img/product_list/input_check.svg) no-repeat;
 }
 
 .karly__img-ischecked--false {
   width: 24px;
   height: 24px;
-  background: -8px -40px url(/assets/img/product_list/input_check.svg) no-repeat;
+  background: -8px -40px url(/client/assets/img/product_list/input_check.svg) no-repeat;
 }
 
 .karly__img-isselected--true {
   width: 24px;
   height: 24px;
-  background: -8px -8px url(/assets/img/product_list/input_radio.svg) no-repeat;
+  background: -8px -8px url(/client/assets/img/product_list/input_radio.svg) no-repeat;
 }
 
 .karly__img-isselected--false {
   width: 24px;
   height: 24px;
-  background: -8px -41px url(/assets/img/product_list/input_radio.svg) no-repeat;
+  background: -8px -41px url(/client/assets/img/product_list/input_radio.svg) no-repeat;
 }
 
 .karly__img-icon-arrow--up {
   width: 18px;
   height: 18px;
-  background: -8px -8px url(/assets/img/product_list/arrow_directions.svg) no-repeat;
+  background: -8px -8px url(/client/assets/img/product_list/arrow_directions.svg) no-repeat;
 }
 .karly__img-icon-arrow--down {
   width: 18px;
   height: 18px;
-  background: -8px -34px url(/assets/img/product_list/arrow_directions.svg) no-repeat;
+  background: -8px -34px url(/client/assets/img/product_list/arrow_directions.svg) no-repeat;
 }
 .karly__img-icon-arrow--left {
   width: 18px;
   height: 18px;
-  background: -8px -60px url(/assets/img/product_list/arrow_directions.svg) no-repeat;
+  background: -8px -60px url(/client/assets/img/product_list/arrow_directions.svg) no-repeat;
 }
 .karly__img-icon-arrow--right {
   width: 18px;
   height: 18px;
-  background: -8px -86px url(/assets/img/product_list/arrow_directions.svg) no-repeat;
+  background: -8px -86px url(/client/assets/img/product_list/arrow_directions.svg) no-repeat;
 }
 
 /* image */
@@ -584,25 +584,25 @@ main {
 .karly__img-arrow--left-end {
   width: 9px;
   height: 7px;
-  background: url(/assets/img/product_list/left_arrow_end.jpg) no-repeat;
+  background: url(/client/assets/img/product_list/left_arrow_end.jpg) no-repeat;
 }
 
 .karly__img-arrow--left-step {
   width: 5px;
   height: 7px;
-  background: url(/assets/img/product_list/left_arrow_step.jpg) no-repeat;
+  background: url(/client/assets/img/product_list/left_arrow_step.jpg) no-repeat;
 }
 
 .karly__img-arrow--right-step {
   width: 5px;
   height: 7px;
-  background: url(/assets/img/product_list/right_arrow_step.jpg) no-repeat;
+  background: url(/client/assets/img/product_list/right_arrow_step.jpg) no-repeat;
 }
 
 .karly__img-arrow--right-end {
   width: 9px;
   height: 7px;
-  background: url(/assets/img/product_list/right_arrow_end.jpg) no-repeat;
+  background: url(/client/assets/img/product_list/right_arrow_end.jpg) no-repeat;
 }
 
 .footer {
