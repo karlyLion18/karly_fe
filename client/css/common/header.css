@@ -223,13 +223,9 @@ header {
   color: var(--primary);
 }
 
-.category__btn:hover,
+.category__btn:hover
 .category__btn:focus {
-  color: var(--primary);
-}
-
-.category__menubar {
-  display: none;
+  color: var(--primary);  
 }
 
 .category__map {
@@ -244,9 +240,10 @@ header {
   border: 1px solid var(--gray-100);
   background-color: var(--white);
   width: 247px;
-  gap: 6px;
+  padding: px 10px;
+  gap: 20px;
 }
 
-.category__map li {
-  margin: 6px 8px;
+.category__menuBar {
+  display: none;
 }
