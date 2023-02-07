@@ -7,20 +7,20 @@
     <link rel="shortcut icon" href="/assets/icons/Icon/karly_logo.ico" type="image/x-icon" />
 
     <!-- style -->
-    <link rel="stylesheet" href="/client/css/main.css" />
-    <link rel="stylesheet" href="/client/css/register.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/register.css" />
+
+    <script defer type="module" src="/js/index.js"></script>
     
-    <script type="module" src="/client/js/index.js"></script>
     <!-- kakao address API -->
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-    
-    
+
     <title>회원가입 - 칼리</title>
   </head>
   <body>
     <article class="article__ad">
       <a href="">지금 가입하고 인기상품 100원에 받아가세요!</a>
-      <button type="button"><img src="/client/assets/icons/Icon/close.png" alt="닫기버튼" /></button>
+      <button type="button"><img src="/assets/icons/Icon/close.png" alt="닫기버튼" /></button>
     </article>
 
     <header class="header">
@@ -32,7 +32,7 @@
           <h2><a href="#">마켓칼리</a></h2>
           <h2><a href="#">뷰티칼리</a></h2>
         </div>
-  
+
         <form class="header__form" action="#" method="get">
           <fieldset>
             <legend>검색</legend>
@@ -43,7 +43,7 @@
             </button>
           </fieldset>
         </form>
-  
+
         <section class="header__icon">
           <ul class="header__icon-list">
             <li>
@@ -64,7 +64,7 @@
           </ul>
         </section>
       </div>
-  
+
       <section>
         <ul class="header__customerService">
           <li><a href="/">회원가입</a></li>
@@ -80,10 +80,10 @@
           </li>
         </ul>
       </section>
-  
+
       <nav class="nav">
         <h2 class="a11yHidden">메인 메뉴</h2>
-  
+
         <ul class="nav__list" role="tablist">
           <li class="nav__item-category">
             <button class="category__btn" aria-label="카테고리 열기">
@@ -148,7 +148,9 @@
                 name="userId"
                 placeholder="아이디를 입력해주세요"
                 required />
-              <p class="user-box__validation user-box__id-validation user-box_validation-toggle">6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합</p>
+              <p class="user-box__validation user-box__id-validation user-box_validation-toggle">
+                6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합
+              </p>
             </div>
             <button class="confirm_button" type="button">중복확인</button>
           </div>
@@ -177,7 +179,9 @@
                 name="userPwConfirm"
                 placeholder="비밀번호를 한번 더 입력해주세요"
                 required />
-              <p class="user-box__validation user-box__pw-confirm-validation user-box_validation-toggle">동일한 비밀번호를 입력</p>
+              <p class="user-box__validation user-box__pw-confirm-validation user-box_validation-toggle">
+                동일한 비밀번호를 입력
+              </p>
             </div>
           </div>
 
@@ -202,7 +206,9 @@
                 name="userEmail"
                 placeholder="예) marketkarly@karly.com"
                 required />
-              <p class="user-box__validation user-box__email-validation user-box_validation-toggle">이메일 형식으로 입력해 주세요.</p>
+              <p class="user-box__validation user-box__email-validation user-box_validation-toggle">
+                이메일 형식으로 입력해 주세요.
+              </p>
             </div>
             <button class="confirm_button" type="button">중복확인</button>
           </div>
@@ -218,7 +224,9 @@
                 name="userPhone"
                 placeholder="숫자만 입력해주세요."
                 required />
-              <p class="user-box__validation user-box__phone-validation user-box_validation-toggle">휴대폰 번호를 입력해 주세요.</p>
+              <p class="user-box__validation user-box__phone-validation user-box_validation-toggle">
+                휴대폰 번호를 입력해 주세요.
+              </p>
             </div>
             <button class="confirm_button" type="submit">인증번호 받기</button>
           </div>
@@ -227,7 +235,7 @@
             <label class="essential user__label" for="userAddress">주소</label>
             <!-- how  -->
             <div class="address__box">
-              <button class="button__sub popup_btn" " type="button" required>주소검색</button>
+              <button class="button__sub popup_btn" type="button" required>주소검색</button>
               <span class="address__noti">배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
             </div>
           </div>
@@ -244,15 +252,36 @@
           <div class="user-box user__birth">
             <label class="user__label" for="userBirth">생년월일</label>
             <div class="user__birth--input-box">
-              <input class="user__birth--year" type="text" min="2" maxlength="4" placeholder="YYYY" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" required/>
+              <input
+                class="user__birth--year"
+                type="text"
+                min="2"
+                maxlength="4"
+                placeholder="YYYY"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                required />
 
               <span aria-hidden="true">/</span>
 
-              <input class="user__birth--month" type="text"  minlength="2" maxlength="2" placeholder="MM" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1' );" required/>
+              <input
+                class="user__birth--month"
+                type="text"
+                minlength="2"
+                maxlength="2"
+                placeholder="MM"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1' );"
+                required />
 
               <span aria-hidden="true">/</span>
 
-              <input class="user__birth--day" type="text" minlength="2"  maxlength="2" placeholder="DD" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"required/>
+              <input
+                class="user__birth--day"
+                type="text"
+                minlength="2"
+                maxlength="2"
+                placeholder="DD"
+                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                required />
             </div>
           </div>
 
@@ -286,7 +315,7 @@
                 <a href="#">약관보기</a>
               </label>
               <label class="terms">
-                <input class="tos"  name="userMore" type="checkbox" required />본인은 만 14세 이상입니다.(필수)
+                <input class="tos" name="userMore" type="checkbox" required />본인은 만 14세 이상입니다.(필수)
                 <a href="#">약관보기</a>
               </label>
             </div>
