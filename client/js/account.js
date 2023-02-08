@@ -1,5 +1,5 @@
-import { karlyxios } from '/js/common/karlyxios.js';
-import { getNode, attr, addClass, toggleClass, getInputValue, removeClass } from '/lib/index.js';
+import { karlyxios } from '/client/js/common/karlyxios.js';
+import { getNode, attr, addClass, toggleClass, getInputValue, removeClass } from '/client/lib/index.js';
 
 let url = 'http://localhost:5001/users';
 

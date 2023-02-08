@@ -1,4 +1,4 @@
-import { getNode } from '/lib/index.js';
+import { getNode } from '/client/lib/index.js';
 
 const kakaoPopup = getNode('.popup_btn')
 

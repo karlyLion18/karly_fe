@@ -1,5 +1,5 @@
-import { karlyxios } from '/js/common/karlyxios.js';
-import { insertBefore, getNode, insertAfter } from '/lib/dom/index.js';
+import { karlyxios } from '/client/js/index.js';
+import { insertBefore, getNode, insertAfter } from '/client/lib/dom/index.js';
 
 const productDetail = getNode('.productDetail__main');
 const index = document.querySelector('data-index');
