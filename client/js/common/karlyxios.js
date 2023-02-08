@@ -88,11 +88,3 @@ karlyxios.delete = (url, body, options) => {
     ...options,
   });
 };
-
-karlyxios.delete = (url, body, options) => {
-  return karlyxios({
-    url,
-    method: 'DELETE',
-    ...options,
-  });
-};
