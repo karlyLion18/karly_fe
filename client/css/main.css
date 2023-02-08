@@ -24,7 +24,6 @@
 /* 추천 리스트 */
 .recommend-list {
   height: 600px;
-  /* background-color: #FEC6D0; */
   padding: 40px 0 40px 0;
   position: relative;
 }
@@ -50,16 +49,40 @@
 
 .recommend-list__product-name {
   color: var(--content);
-  font-size: var(--label-medium);
+  font-size: var(--paragraph-medium);
   line-height: 160%;
   font-weight: 400;
 }
 
 .recommend-list__price {
-  color: var(--content);
   font-size: var(--label-large);
-  line-height: 140%;
-  font-weight: bold;
+  font-weight: 600;
+  line-height: 150%;
+  color: var(--content);
+  margin-bottom: 8px;
+}
+
+.recommed-list__sale-wrapper {
+  display: flex;
+  gap: 8px;
+  font-size: var(--label-large);
+  line-height: 150%;
+  font-weight: 600;
+  color: var(--content);
+  margin-bottom: 8px;
+
+}
+
+.recommend-list__sale-ratio {
+  color: var(--accent-yellow);
+}
+
+.recommend-list__before-price {
+  text-decoration: line-through;
+  color: var(--gray-400);
+  font-size: var(--paragraph-small);
+  font-weight: 400;
+  line-height: 160%;
 }
 
 .recommend-list__cart-add {
@@ -89,10 +112,10 @@
   position: absolute;
   overflow: hidden;
   box-shadow: var(--below-medium);
-  /* top: 30%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10000; */
+  z-index: 9999;
 }
 
 .ad-popup__button-list {
@@ -100,7 +123,7 @@
   position: absolute;
   bottom: 0px;
   margin: 0 auto;
-  z-index: 9999;
+  z-index: 10000;
 }
 
 .ad-popup__button {
@@ -207,8 +230,8 @@
   background-image: url(/client/assets/img/cart/minus.png);
   background-repeat: no-repeat;
   background-position: 33.33%;
-  width: 33.33%;
-  height: 33.33%;
+  width: 27px;
+  height: 27px;
   border: none;
   padding: 0;
 }
@@ -217,8 +240,8 @@
   background-image: url(/client/assets/img/cart/plus.png);
   background-repeat: no-repeat;
   background-position: 33.33%;
-  width: 33.33%;
-  height: 33.33%;
+  width: 27px;
+  height: 27px;
   border: none;
   padding: 0;
 }
