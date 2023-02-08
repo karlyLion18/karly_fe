@@ -2,7 +2,6 @@ import { karlyxios } from '/js/common/karlyxios.js';
 import { insertBefore, getNode, insertAfter } from '/lib/dom/index.js';
 
 const productDetail = getNode('.productDetail__main');
-
 const index = document.querySelector('data-index');
 
 export const productCard = ({
@@ -23,7 +22,7 @@ export const productCard = ({
   <figure class="productDetail-main__photo">
     <img
       class="productDetail-main-photo__img"
-      src="${image.thumbnail}"
+      src="/assets/${image.thumbnail}"
       alt="상품 썸네일입니다." />
   </figure>
   <div>
@@ -124,6 +123,8 @@ export const productCard = ({
 </section>
   `;
 };
+
+// const productId = karlyxios.create('http://localhost:5001/products/${id}');
 
 export const renderProduct = async () => {
   try {

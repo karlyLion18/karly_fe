@@ -63,7 +63,7 @@ export const recommendProduct = ({
           <img class="recommend-list__img" src="/assets/${image.view}" alt="${image.alt}" />
           <div class="recommend-list__product-info">
             <h3 class="recommend-list__product-name">${name}</h3>
-            <span class="recommend-list__price">${price} 원</span>
+            <span class="recommend-list__price">${price}원</span>
           </div>
         </a>
         <button class="recommend-list__cart-add" type="button">

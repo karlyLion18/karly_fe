@@ -79,7 +79,39 @@
         "alt": "칼리 한돈 삼겹 베이컨"
       },
       "stock": 13
+    },   {
+      "id": "product-tkwk",
+      "name": "[강남면옥] 소갈비찜",
+      "description": "보는 맛과 먹는 맛 모두 푸짐",
+      "price": 29800,
+      "saleRatio": 0,
+      "salePrice": 0,
+      "image": {
+        "thumbnail": "kangnam/thumbnail.jpg",
+        "view": "kangnam/detail_view.jpg",
+        "banner": "kangnam/detail_banner.jpg",
+        "info": "kangnam/detail_info.jpg",
+        "alt": "강남면옥 소갈비찜"
+      },
+      "stock": 2
+    },
+    {
+      "id": "product-ckzk",
+      "name": "[Kalry's] 한돈 삼겹 베이컨",
+      "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
+      "price": 4500,
+      "saleRatio": 0.25,
+      "salePrice": 3375,
+      "image": {
+        "thumbnail": "bacon/thumbnail.jpg",
+        "view": "bacon/detail_view.jpg",
+        "banner": "bacon/detail_banner.jpg",
+        "info": "bacon/detail_info.jpg",
+        "alt": "칼리 한돈 삼겹 베이컨"
+      },
+      "stock": 13
     }
+    
   ],
   "users": [
     {
