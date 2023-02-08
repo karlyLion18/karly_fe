@@ -1,4 +1,4 @@
-import { getNode } from '/client/lib/index.js';
+import { getNode } from '/lib/index.js';
 
 const popup = getNode('.popup');
 const btnOpenPopup = getNode('.popup_btn');

@@ -4,7 +4,7 @@
   "main": "main.js",
   "license": "MIT",
   "scripts": {
-    "all": "run-s serve start", 
+    "all": "run-p serve start",
     "serve": "npx json-server server/db/data.json --port=5001",
     "start": "npx live-server client --host=localhost --port=8080 --no-browser"
   },
@@ -17,3 +17,4 @@
     "swiper": "^8.4.6"
   }
 }
+  

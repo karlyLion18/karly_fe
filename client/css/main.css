@@ -1,11 +1,11 @@
-@import url(/client/css/normalize.css);
-@import url(/client/css/reset.css);
-@import url(/client/css/theme.css);
+@import url(/css/normalize.css);
+@import url(/css/reset.css);
+@import url(/css/theme.css);
 
 
-@import url(/client/css/common/topadd.css);
-@import url(/client/css/common/header.css);
-@import url(/client/css/common/footer.css);
+@import url(/css/common/topadd.css);
+@import url(/css/common/header.css);
+@import url(/css/common/footer.css);
 
 /* 공통 */
 .main-banner,
