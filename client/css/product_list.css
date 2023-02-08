@@ -12,13 +12,6 @@ body {
   height: 50px;
   background: var(--primary);
 }
-
-.header {
-  width: 1920px;
-  height: 197px;
-  background: var(--secondary);
-}
-
 /* main start */
 main {
   height: 3132px;
@@ -603,10 +596,4 @@ main {
   width: 9px;
   height: 7px;
   background: url(/client/assets/img/product_list/right_arrow_end.jpg) no-repeat;
-}
-
-.footer {
-  width: 1920px;
-  height: 629px;
-  background: var(--secondary);
 }

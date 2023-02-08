@@ -1,8 +1,5 @@
-import { attr } from '../lib/dom/attr.js';
-import { getNode, getNodes } from '../lib/dom/getNode.js';
-import { insertLast } from '../lib/dom/insert.js';
-import { karlyxios } from './index.js';
-import { insertBefore } from './../lib/dom/insert.js';
+import { karlyxios } from '/client/js/common/karlyxios.js';
+import { insertBefore, insertLast,getNode, getNodes, attr} from '/client/lib/index.js'
 
 /* -------------------------------------------------------------------------- */
 /*                                products info                               */

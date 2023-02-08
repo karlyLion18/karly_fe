@@ -1,4 +1,4 @@
-import { refError } from '/lib/error/refError.js';
+import { refError } from '/client/lib/error/refError.js';
 
 let body = {
   id: '',
