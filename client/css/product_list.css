@@ -3,7 +3,7 @@ body {
   /* Auto layout */
   /* width: 1920px;
   height: 4008px; */
-  
+  background: var(--white);
 }
 
 .topbanner {
@@ -13,6 +13,12 @@ body {
   background: var(--primary);
 }
 
+.header {
+  width: 1920px;
+  height: 197px;
+  background: var(--secondary);
+}
+
 /* main start */
 main {
   height: 3132px;
@@ -20,6 +26,7 @@ main {
   margin: auto;
   border-radius: 0px;
   padding: 0px 0px 80px 0px;
+  background: var(--white);
 }
 
 .page-name {
@@ -596,4 +603,10 @@ main {
   width: 9px;
   height: 7px;
   background: url(/client/assets/img/product_list/right_arrow_end.jpg) no-repeat;
+}
+
+.footer {
+  width: 1920px;
+  height: 629px;
+  background: var(--secondary);
 }
