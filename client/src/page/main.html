@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/css/main.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="/client/css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script defer src="/js/main.js"></script>
-  <script defer src="/js/swiper.js"></script>
+  <script defer src="/client/js/main.js" type="module"></script>
+  <script defer src="/client/js/swiper.js" type="module"></script>
 </head>
+
 <body>
 
 
@@ -21,13 +23,13 @@
     <div class="swiper1">
       <div class="swiper-wrapper">
         <div class="swiper-slide main-banner__swiper">
-          <a href="#"><img src="/assets/banner/banner05.png" alt=""></a>
+          <a href="#"><img src="/client/assets/banner/banner05.png" alt=""></a>
         </div>
         <div class="swiper-slide main-banner__swiper">
-          <a href="#"><img src="/assets/banner/banner02.png" alt=""></a>
+          <a href="#"><img src="/client/assets/banner/banner02.png" alt=""></a>
         </div>
         <div class="swiper-slide main-banner__swiper">
-          <a href="#"><img src="/assets/banner/banner01.png" alt=""></a>
+          <a href="#"><img src="/client/assets/banner/banner01.png" alt=""></a>
         </div>
       </div>
       <div class="swiper-button-prev a1"></div>
@@ -36,288 +38,165 @@
     </div>
 
   </section>
-  
+
   <!-- 추천 리스트 -->
-  <section class="recommend-list" >
+  <section class="recommend-list">
     <h2 class="recommend-list__title" aria-label="추천상품">이 상품 어때요?</h2>
 
     <div class="swiper2">
       <div class="swiper-wrapper">
-
-        <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/tangtang/thumbnail.jpg" alt="" />
-          <div class="recommend-list__product-info">
-            <h3 class="recommend-list__product-name">[풀무원] 탱탱쫄면 (4개입)</h3>
-            <span class="recommend-list__price">4,980 원</span>
-          </div>
-          <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
-          </button>
-        </div>
-        <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/jordy/product02.png" alt="" />
-          <div class="recommend-list__product-info">
-            <h3 class="recommend-list__product-name">[온더바디] 죠르디 시카 자석 선쿠션</h3>
-            <span class="recommend-list__price">32,500 원</span>
-          </div>
-          <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
-          </button>
-        </div>
-        <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/hyunmi/product03.png" alt="" />
-          <div class="recommend-list__product-info">
-            <h3 class="recommend-list__product-name">유기농 밀키퀸 현미 4kg</h3>
-            <span class="recommend-list__price">25,000 원</span>
-          </div>
-          <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
-          </button>
-        </div>
-        <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/baby/product04.png" alt="" />
-          <div class="recommend-list__product-info">
-            <h3 class="recommend-list__product-name">[프로쉬] 베이비 세탁세제</h3>
-            <span class="recommend-list__price">18,900 원</span>
-          </div>
-          <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
-          </button>
-        </div>
-
-        <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/tangtang/thumbnail.jpg" alt="" />
-          <div class="recommend-list__product-info">
-            <h3 class="recommend-list__product-name">[풀무원] 탱탱쫄면 (4개입)</h3>
-            <span class="recommend-list__price">4,980 원</span>
-          </div>
-          <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
-          </button>
-        </div>
-        <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/jordy/product02.png" alt="" />
-          <div class="recommend-list__product-info">
-            <h3 class="recommend-list__product-name">[온더바디] 죠르디 시카 자석 선쿠션</h3>
-            <span class="recommend-list__price">32,500 원</span>
-          </div>
-          <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
-          </button>
-        </div>
-        <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/hyunmi/product03.png" alt="" />
-          <div class="recommend-list__product-info">
-            <h3 class="recommend-list__product-name">유기농 밀키퀸 현미 4kg</h3>
-            <span class="recommend-list__price">25,000 원</span>
-          </div>
-          <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
-          </button>
-        </div>
-        <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/baby/product04.png" alt="" />
-          <div class="recommend-list__product-info">
-            <h3 class="recommend-list__product-name">[프로쉬] 베이비 세탁세제</h3>
-            <span class="recommend-list__price">18,900 원</span>
-          </div>
-          <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
-          </button>
-        </div>
-
-        <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/tangtang/thumbnail.jpg" alt="" />
-          <div class="recommend-list__product-info">
-            <h3 class="recommend-list__product-name">[풀무원] 탱탱쫄면 (4개입)</h3>
-            <span class="recommend-list__price">4,980 원</span>
-          </div>
-          <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
-          </button>
-        </div>
-        <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/jordy/product02.png" alt="" />
-          <div class="recommend-list__product-info">
-            <h3 class="recommend-list__product-name">[온더바디] 죠르디 시카 자석 선쿠션</h3>
-            <span class="recommend-list__price">32,500 원</span>
-          </div>
-          <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
-          </button>
-        </div>
-        <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/hyunmi/product03.png" alt="" />
-          <div class="recommend-list__product-info">
-            <h3 class="recommend-list__product-name">유기농 밀키퀸 현미 4kg</h3>
-            <span class="recommend-list__price">25,000 원</span>
-          </div>
-          <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
-          </button>
-        </div>
-        <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/baby/product04.png" alt="" />
-          <div class="recommend-list__product-info">
-            <h3 class="recommend-list__product-name">[프로쉬] 베이비 세탁세제</h3>
-            <span class="recommend-list__price">18,900 원</span>
-          </div>
-          <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
-          </button>
-        </div>
-      
       </div>
-      
+
     </div>
     <div class="swiper-button-prev a2"></div>
     <div class="swiper-button-next a2"></div>
 
   </section>
-  
+
   <!-- 이벤트 배너 -->
   <h2 class="a11yHidden">이벤트</h2>
   <section class="event-banner">
     <a href="#">
-      <img class="event-banner__img" src="/assets/banner/line-banner 1.png" alt="10월 컬리 퍼플위크 이벤트, 더 높아진 적립률과 3종 쿠폰팩 증정" />
+      <img class="event-banner__img" src="/client/assets/banner/line-banner 1.png"
+        alt="10월 컬리 퍼플위크 이벤트, 더 높아진 적립률과 3종 쿠폰팩 증정" />
     </a>
   </section>
 
   <!-- 추천 리스트 -->
   <section class="recommend-list">
     <h2 class="recommend-list__title" aria-label="특가상품">놓치면 후회할 가격</h2>
-  
+
     <div class="swiper3">
       <div class="swiper-wrapper">
 
         <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/tangtang/thumbnail.jpg" alt="" />
+          <img class="recommend-list__img" src="/client/assets/tangtang/thumbnail.jpg" alt="" />
           <div class="recommend-list__product-info">
             <h3 class="recommend-list__product-name">[풀무원] 탱탱쫄면 (4개입)</h3>
             <span class="recommend-list__price">4,980 원</span>
           </div>
           <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
+            <img src="/client/assets/icons/Icon/Cart.svg" alt="">
           </button>
         </div>
         <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/jordy/product02.png" alt="" />
+          <img class="recommend-list__img" src="/client/assets/jordy/product02.png" alt="" />
           <div class="recommend-list__product-info">
             <h3 class="recommend-list__product-name">[온더바디] 죠르디 시카 자석 선쿠션</h3>
             <span class="recommend-list__price">32,500 원</span>
           </div>
           <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
+            <img src="/client/assets/icons/Icon/Cart.svg" alt="">
           </button>
         </div>
         <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/hyunmi/product03.png" alt="" />
+          <img class="recommend-list__img" src="/client/assets/hyunmi/product03.png" alt="" />
           <div class="recommend-list__product-info">
             <h3 class="recommend-list__product-name">유기농 밀키퀸 현미 4kg</h3>
             <span class="recommend-list__price">25,000 원</span>
           </div>
           <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
+            <img src="/client/assets/icons/Icon/Cart.svg" alt="">
           </button>
         </div>
         <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/baby/product04.png" alt="" />
+          <img class="recommend-list__img" src="/client/assets/baby/product04.png" alt="" />
           <div class="recommend-list__product-info">
             <h3 class="recommend-list__product-name">[프로쉬] 베이비 세탁세제</h3>
             <span class="recommend-list__price">18,900 원</span>
           </div>
           <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
+            <img src="/client/assets/icons/Icon/Cart.svg" alt="">
           </button>
         </div>
 
         <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/tangtang/thumbnail.jpg" alt="" />
+          <img class="recommend-list__img" src="/client/assets/tangtang/thumbnail.jpg" alt="" />
           <div class="recommend-list__product-info">
             <h3 class="recommend-list__product-name">[풀무원] 탱탱쫄면 (4개입)</h3>
             <span class="recommend-list__price">4,980 원</span>
           </div>
           <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
+            <img src="/client/assets/icons/Icon/Cart.svg" alt="">
           </button>
         </div>
         <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/jordy/product02.png" alt="" />
+          <img class="recommend-list__img" src="/client/assets/jordy/product02.png" alt="" />
           <div class="recommend-list__product-info">
             <h3 class="recommend-list__product-name">[온더바디] 죠르디 시카 자석 선쿠션</h3>
             <span class="recommend-list__price">32,500 원</span>
           </div>
           <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
+            <img src="/client/assets/icons/Icon/Cart.svg" alt="">
           </button>
         </div>
         <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/hyunmi/product03.png" alt="" />
+          <img class="recommend-list__img" src="/client/assets/hyunmi/product03.png" alt="" />
           <div class="recommend-list__product-info">
             <h3 class="recommend-list__product-name">유기농 밀키퀸 현미 4kg</h3>
             <span class="recommend-list__price">25,000 원</span>
           </div>
           <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
+            <img src="/client/assets/icons/Icon/Cart.svg" alt="">
           </button>
         </div>
         <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/baby/product04.png" alt="" />
+          <img class="recommend-list__img" src="/client/assets/baby/product04.png" alt="" />
           <div class="recommend-list__product-info">
             <h3 class="recommend-list__product-name">[프로쉬] 베이비 세탁세제</h3>
             <span class="recommend-list__price">18,900 원</span>
           </div>
           <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
+            <img src="/client/assets/icons/Icon/Cart.svg" alt="">
           </button>
         </div>
 
         <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/tangtang/thumbnail.jpg" alt="" />
+          <img class="recommend-list__img" src="/client/assets/tangtang/thumbnail.jpg" alt="" />
           <div class="recommend-list__product-info">
             <h3 class="recommend-list__product-name">[풀무원] 탱탱쫄면 (4개입)</h3>
             <span class="recommend-list__price">4,980 원</span>
           </div>
           <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
+            <img src="/client/assets/icons/Icon/Cart.svg" alt="">
           </button>
         </div>
         <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/jordy/product02.png" alt="" />
+          <img class="recommend-list__img" src="/client/assets/jordy/product02.png" alt="" />
           <div class="recommend-list__product-info">
             <h3 class="recommend-list__product-name">[온더바디] 죠르디 시카 자석 선쿠션</h3>
             <span class="recommend-list__price">32,500 원</span>
           </div>
           <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
+            <img src="/client/assets/icons/Icon/Cart.svg" alt="">
           </button>
         </div>
         <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/hyunmi/product03.png" alt="" />
+          <img class="recommend-list__img" src="/client/assets/hyunmi/product03.png" alt="" />
           <div class="recommend-list__product-info">
             <h3 class="recommend-list__product-name">유기농 밀키퀸 현미 4kg</h3>
             <span class="recommend-list__price">25,000 원</span>
           </div>
           <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
+            <img src="/client/assets/icons/Icon/Cart.svg" alt="">
           </button>
         </div>
         <div class="swiper-slide recommend-list__swiper">
-          <img class="recommend-list__img" src="/assets/baby/product04.png" alt="" />
+          <img class="recommend-list__img" src="/client/assets/baby/product04.png" alt="" />
           <div class="recommend-list__product-info">
             <h3 class="recommend-list__product-name">[프로쉬] 베이비 세탁세제</h3>
             <span class="recommend-list__price">18,900 원</span>
           </div>
           <button class="recommend-list__cart-add" type="button">
-            <img src="/assets/icons/Icon/Cart.svg" alt="">
+            <img src="/client/assets/icons/Icon/Cart.svg" alt="">
           </button>
         </div>
-        
+
         <!-- <div class="swiper-slide recommend-list__swiper">Slide1</div>
         <div class="swiper-slide recommend-list__swiper">Slide2</div>
         <div class="swiper-slide recommend-list__swiper">Slide3</div>
         <div class="swiper-slide recommend-list__swiper">Slide4</div> -->
-      
+
       </div>
     </div>
     <div class="swiper-button-prev a3"></div>
@@ -325,5 +204,20 @@
 
   </section>
 
+  <!-- 장바구니 팝업 -->
+  <div class="cart-popup-wrapper hidden">
+  </div>
+
+  <!-- 팝업 -->
+  <div class="ad-popup ">
+    <a href="">
+      <img class="ad-popup__image" src="/client/assets/icons/Icon/mainpopup.png" alt="">
+    </a>
+    <div class="ad-popup__button-list">
+      <button class="ad-popup__button ad-popup__button--block">오늘 하루 안 보기</button>
+      <button class="ad-popup__button ad-popup__button--close">닫기</button>
+    </div>
+  </div>
 </body>
+
 </html>
