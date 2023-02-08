@@ -48,15 +48,15 @@ main {
   cursor: pointer;
   padding-left: 32px;
   background-repeat: no-repeat;
-  background-image: url(../assets/img/cart/isChecked=true.png);
+  background-image: url(/client/assets/img/cart/isChecked=true.png);
 }
 
 .cartList__select:checked+label {
-  background-image: url(../assets/img/cart/isChecked=false.png);
+  background-image: url(/client/assets/img/cart/isChecked=false.png);
 }
 
 .cartList__select:disabled+label {
-  background-image: url(../assets/img/cart/isChecked=true.png);
+  background-image: url(/client/assets/img/cart/isChecked=true.png);
 }
 
 .cartList__selectLabel {
@@ -102,7 +102,7 @@ main {
 }
 
 .cartList__showListIcon {
-  background-image: url(../assets/img/cart/arrow.png);
+  background-image: url(/client/assets/img/cart/arrow.png);
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
@@ -148,7 +148,7 @@ main {
 }
 
 .cartProduct__minus {
-  background-image: url(../assets/img/cart/minus.png);
+  background-image: url(/client/assets/img/cart/minus.png);
   background-repeat: no-repeat;
   background-position: 0px 0px;
   width: 30px;
@@ -157,7 +157,7 @@ main {
 }
 
 .cartProduct__plus {
-  background-image: url(../assets/img/cart/plus.png);
+  background-image: url(/client/assets/img/cart/plus.png);
   background-repeat: no-repeat;
   background-position: 0px 0px;
   width: 30px;
@@ -172,7 +172,7 @@ main {
 }
 
 .closeIconbtn {
-  background-image: url(../assets/img/cart/Cancel.png);
+  background-image: url(/client/assets/img/cart/Cancel.png);
   background-repeat: no-repeat;
   width: 30px;
   height: 30px;
@@ -192,7 +192,7 @@ main {
 }
 
 .deliveryInfo__title::before {
-  content: url(../assets/img/cart/Location.png);
+  content: url(/client/assets/img/cart/Location.png);
   vertical-align: middle;
 }
 
