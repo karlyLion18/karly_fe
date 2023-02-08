@@ -4,25 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/assets/icons/Icon/karly_logo.ico" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/product_detail.css" />
-
-    <!-- script -->
-    <script defer type="module" src="/js/detail.js"></script>
-
-    <title>칼리 - 상품상세보기</title>
+    <link rel="stylesheet" href="/client//css/main.css" />
+    <link rel="stylesheet" href="/client//css/product_detail.css" />
+    <title>productDetail</title>
   </head>
   <body>
     <article class="article__ad">
       <a href="">지금 가입하고 인기상품 100원에 받아가세요!</a>
-      <button type="button"><img src="/assets/icons/Icon/close.png" alt="닫기버튼" /></button>
+      <button type="button"><img src="/client/assets/icons/Icon/close.png" alt="닫기버튼" /></button>
     </article>
 
     <header class="header">
       <div class="header__main">
         <h1 class="header__logo">
-          <img src="/assets/icons/Icon/logo.svg" alt="칼리 로고" />
+          <img src="../../assets/icons/Icon/logo.svg" alt="칼리 로고" />
         </h1>
         <div class="header__switch">
           <h2><a href="#">마켓칼리</a></h2>
@@ -35,7 +30,7 @@
             <label for="search" class="a11yHidden">검색어</label>
             <input class="header__form-input" id="search" type="search" placeholder="검색어를 입력하세요" />
             <button class="header__form-button" type="submit">
-              <img src="/assets/icons/Icon/search.svg" alt="검색 버튼" />
+              <img src="../../assets/icons/Icon/search.svg" alt="검색 버튼" />
             </button>
           </fieldset>
         </form>
@@ -44,17 +39,17 @@
           <ul class="header__icon-list">
             <li>
               <button class="header__icon-button" type="button">
-                <img class="header__icon-link" src="/assets/icons/Icon/locate.svg" alt="배송지" />
+                <img class="header__icon-link" src="../../assets/icons/Icon/locate.svg" alt="배송지" />
               </button>
             </li>
             <li>
               <button class="header__icon-button" type="button">
-                <img class="header__icon-link" src="/assets/icons/Icon/Heart.svg" alt="좋아요" />
+                <img class="header__icon-link" src="../../assets/icons/Icon/Heart.svg" alt="좋아요" />
               </button>
             </li>
             <li>
               <button class="header__icon-button" type="button">
-                <img class="header__icon-link" src="/assets/icons/Icon/cart_line.svg" alt="장바구니" />
+                <img class="header__icon-link" src="../../assets/icons/Icon/cart_line.svg" alt="장바구니" />
               </button>
             </li>
           </ul>
@@ -63,8 +58,8 @@
 
       <section>
         <ul class="header__customerService">
-          <li><a href="/src/page/register.html">회원가입</a></li>
-          <li><a href="/src/page/login.html">로그인</a></li>
+          <li><a href="/">회원가입</a></li>
+          <li><a href="/">로그인</a></li>
           <li>
             <a href="/">고객센터</a>
             <ul class="header__customerService-submenu a11yHidden">
@@ -128,6 +123,109 @@
 
     <main class="productDetail-frame">
       <!-- 물품 상단 -->
+      <section class="productDetail">
+        <figure class="productDetail-main__photo">
+          <img
+            class="productDetail-main-photo__img"
+            src="/client/assets/tangtang/thumbnail.jpg"
+            alt="상품 썸네일입니다." />
+        </figure>
+        <div>
+          <div class="productDetail-title">
+            <h2 class="productDetail-title__delivery">샛별배송</h2>
+            <h1 class="productDetail-title__name">[풀무원] 탱탱쫄면 (4개입)</h1>
+            <h2 class="productDetail-title__explain">튀기지 않아 부담 없는 매콤함</h2>
+            <h2 class="productDetail-title__price">
+              <span class="productDetail-title-price__number">4,980</span>
+              <span class="productDetail-title-price__won">원</span>
+            </h2>
+            <h2 class="productDetail-title__notice">로그인 후, 적립 혜택이 제공됩니다.</h2>
+          </div>
+          <!-- 물품 설명  -->
+          <div class="productDetail-information">
+            <dl class="productDetail-information__delivery">
+              <dt class="productDetail-information-delivery__normal">배송</dt>
+              <dd>
+                <p class="productDetail-information-delivery__title">샛별배송</p>
+                <p class="productDetail-information-delivery__guide">
+                  23시 전 주문 시 내일 아침 7시 전 도착(대구 부산 울산 샛별배송 운영시간 별도 확인)
+                </p>
+              </dd>
+            </dl>
+            <dl class="productDetail-information__seller">
+              <dt class="productDetail-information-seller__company">판매자</dt>
+              <dd class="productDetail-information-seller__name">
+                <p>칼리</p>
+              </dd>
+            </dl>
+            <dl class="productDetail-information__package">
+              <dt class="productDetail-information-package__type">포장타입</dt>
+              <dd>
+                <p class="productDetail-information-packgage-guide__title">상온 (종이포장)</p>
+                <p class="productDetail-information-package__guide">택배배송은 에코 포장이 스티로폼으로 대체됩니다.</p>
+              </dd>
+            </dl>
+            <dl class="productDetail-information__unit">
+              <dt class="productDetail-information-unit__sell">판매단위</dt>
+              <dd class="productDetail-information-unit__item">
+                <p>1봉</p>
+              </dd>
+            </dl>
+            <dl class="productDetail-information__weight">
+              <dt class="productDetail-information-weight__unit">중량/용량</dt>
+              <dd class="productDetail-information-weight__item">
+                <p>123g * 4봉</p>
+              </dd>
+            </dl>
+            <dl class="productDetail-information__origin">
+              <dt class="productDetail-information-origin__land">원산지</dt>
+              <dd class="productDetail-information-origin__page">
+                <p>상세페이지 별도표기</p>
+              </dd>
+            </dl>
+            <dl class="productDetail-information__allergy">
+              <dt class="productDetail-information-allergy__info">알레르기 정보</dt>
+              <dd class="productDetail-information-allergy__list">
+                <p>-대두, 밀, 쇠고기 함유</p>
+                <p>
+                  -계란, 우유, 메밀, 땅콩, 고등어, 게, 돼지고기, 새우, 복숭아, 토마토, 아황산류, 호두, 잣, 닭고기,
+                  오징어, 조개류(굴, 전복, 홍합 포함)를 사용한 제품과 같은 제조시설에서 제조
+                </p>
+              </dd>
+            </dl>
+            <!-- 수량설정 -->
+            <dl class="productDetail-information__sellect">
+              <dt class="productDetail-information-sellect__item">상품선택</dt>
+              <dd class="productDetail-infromation-sellect__number">
+                <h3 class="productDetail-infromation-sellect-number__name">[풀무원]탱탱쫄면(4개입)</h3>
+                <div>
+                  <div class="divroductDetail-information-sellect__calc">
+                    <button class="productDetail-information-sellect-calc__minusBtn" type="button"></button>
+                    <h3 class="productDetail-infromation-sellect-calc__number">1</h3>
+                    <button class="productDetail-information-sellect-calc__plusBtn" type="button"></button>
+                  </div>
+                </div>
+                <h3 class="productDetail-information-sellect-number__totalPrice">4,980원</h3>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <!-- 좋아요, 알람, 장바구니 -->
+        <div class="productDetail__total">
+          <div class="productDetail-total__bill">
+            <h2 class="productDetail-total-bill__totalPrice">총 상품금액:</h2>
+            <span class="productDetail-total-bill__number">4,980</span>
+            <span class="productDetail-total-bill__won">원</span>
+            <span class="productDetail-total-bill-guide__mile">적립</span>
+            <span class="productDetail-total-bill__guide"> 로그인 후, 적립 혜택 제공 </span>
+          </div>
+          <div class="productDetail__basket">
+            <button class="productDetail-basket__likeBtn" type="button"></button>
+            <button class="productDetail-basket__alarmBtn" type="button"></button>
+            <button class="productDetail-basket__basketBtn" type="button">장바구니 담기</button>
+          </div>
+        </div>
+      </section>
 
       <!-- 상세 설명 -->
       <section class="productDetail__main">
@@ -142,10 +240,7 @@
           </ul>
         </nav>
         <article class="productDetail-main__detail">
-          <img
-            class="productDetail-main-detail__img"
-            src="/assets/tangtang/detail_banner.jpg"
-            alt="상품 사진입니다." />
+          <img class="productDetail-main-detail__img" src="/assets/tangtang/detail_banner.jpg" alt="상품 사진입니다." />
           <div class="productDetail-main-detail__script">
             <h2 class="productDetail-main-detail-script__subtitle">튀기지 않아 부담없는 매콤함</h2>
             <h2 class="productDetail-main-detail-script__title">[풀무원] 탱탱쫄면</h2>
