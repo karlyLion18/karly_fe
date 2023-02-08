@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/icons/Icon/karly_logo.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/client/css/addrPopup.css" />
+
+    <!-- kakao address API -->
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+    <script type="module" src="/client/js/index.js"></script>
+
+    <title>컬리-마켓컬리/뷰티컬리</title>
+  </head>
+  <body onload="window.resizeTo(400,200)">
+    <div class="user__address-popup popup">
+      <input id="member_post" type="text" placeholder="우편번호" readonly />
+      <input id="member_addr" type="text" placeholder="도로명주소" readonly /> <br />
+      <input type="text" placeholder="상세주소" />
+    </div>
+  </body>
+</html>
