@@ -1,3 +1,7 @@
+import { getNode } from '/lib/index.js';
+
+const kakaoPopup = getNode('.popup_btn')
+
 const findAddr = () => {
   new daum.Postcode({
     oncomplete: function (data) {
@@ -16,4 +20,4 @@ const findAddr = () => {
   }).open();
 };
 
-const openKakaoPopup = document.querySelector('.popup_btn').addEventListener('click', findAddr);
+kakaoPopup.addEventListener('click', findAddr);
