@@ -4,8 +4,8 @@
   "main": "main.js",
   "license": "MIT",
   "scripts": {
-    "all": "run-p serve start", 
-    "serve": "npx json-server server/db/data.json",
+    "all": "run-s serve start", 
+    "serve": "npx json-server server/db/data.json --port=5001",
     "start": "npx live-server client --host=localhost --port=8080 --no-browser"
   },
   "devDependencies": {

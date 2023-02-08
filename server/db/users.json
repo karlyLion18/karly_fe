@@ -1,0 +1,56 @@
+{
+  "users": [
+    {
+      "id": "Hong",
+      "name": "홍길동",
+      "password": "123",
+      "email": "Hong@karly.co.kr",
+      "phonenumber": "010-1111-2222",
+      "gender": "M",
+      "birth": "2013.02.02",
+      "tos": "true",
+      "recommend": 2
+    },
+
+    {
+      "id": "Kim",
+      "name": "김영희",
+      "password": "12345",
+      "email": "Kim@karly.co.kr",
+      "phonenumber": "010-5555-7777",
+      "gender": "F",
+      "birth": "2001.02.02",
+      "tos": "false",
+      "recommend": 10
+    },
+
+    {
+      "id": "Lee",
+      "name": "이연진",
+      "password": "12345abc",
+      "email": "Lee@karly.co.kr",
+<<<<<<< HEAD
+      "phonenumber": "010-9999-7777",
+      "gender": "N",
+      "birth": "1991.02.02",
+      "tos": "false",
+      "recommend": 0
+    }
+  ]
+}
+
+    {
+      "id": "Lee",
+      "name": "이연진",
+      "password": "12345abc",
+      "e-mail": "Lee@karly.co.kr",
+=======
+>>>>>>> 2a82a25 (Chore : data.json 내  users 추가)
+      "phonenumber": "010-9999-7777",
+      "gender": "N",
+      "birth": "1991.02.02",
+      "tos": "false",
+      "recommend": 0
+    }
+  ]
+}

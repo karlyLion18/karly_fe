@@ -78,7 +78,6 @@ karlyxios.put = (url, body, options) => {
     url,
     body: JSON.stringify(body),
     method: 'PUT',
-    ...options,
   });
 };
 
