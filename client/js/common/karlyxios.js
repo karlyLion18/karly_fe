@@ -1,19 +1,21 @@
 import { refError } from '/client/lib/error/refError.js';
 
+let body = {
+  id: '',
+  name: '',
+  password: '',
+  email: '',
+  phonenumber: '',
+  gender: 'n',
+  birth: '0000-00-00',
+  tos: '',
+  recommend: 0,
+};
+
 const defaultOptions = {
   method: 'GET',
   mode: 'cors',
-  body: {
-    id: '',
-    name: '',
-    password: '',
-    email: '',
-    phonenumber: '',
-    gender: 'N',
-    birth: 'null',
-    tos: '',
-    recommend: '0',
-  },
+  body: null,
   cache: 'no-cache',
   credential: 'same-origin',
   redirect: 'follow',
@@ -76,7 +78,6 @@ karlyxios.put = (url, body, options) => {
     url,
     body: JSON.stringify(body),
     method: 'PUT',
-    ...options,
   });
 };
 
