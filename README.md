@@ -7,12 +7,12 @@
 
 ## 📅제작 기간 & 팀원💯
 
-📅 2023.01.27 - 2023.00.00
+📅 2023.01.27 - 2023.02.09
 
   |😛김세원|🥰김수호|🤩신정민|😛이유진|😎장도윤
   |:--:|:--:|:--:|:--:|:--:|
-  |할일|할일|할일|할일|할일|
-  |할일|할일|할일|할일|할일|  
+  |product detail|main|login/register|cart/popup|account/login|
+  |header|swiper.js|header/footer|recommend list|product list|  
   
 ## 🔑 실행방법
 #### <img src="https://user-images.githubusercontent.com/83333217/217299675-7eaf6fb1-50ca-4f93-91e2-cef70a3cf6d5.png" width="20" align="center" /> 터미널에 `yarn all` 입력후 [localhost:8080](http://localhost:8080) 으로 들어오세요
