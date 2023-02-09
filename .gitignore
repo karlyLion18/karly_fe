@@ -1,6 +1,11 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,node,visualstudiocode,webstorm,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,node,visualstudiocode,webstorm,windows
 
+#도윤 커스텀 시작
+db-*.json
+.gitignore
+#도윤 커스텀 끝
+
 ### macOS ###
 # General
 .DS_Store
@@ -8,7 +13,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*

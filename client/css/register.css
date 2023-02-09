@@ -1,0 +1,215 @@
+.register {
+  position: relative;
+  margin: 80px 0;
+  color: var(--gray-700);
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.register > h2 {
+  font-size: var(--heading-large);
+  text-align: center;
+  font-weight: 600;
+  margin: 8px 0;
+}
+
+.register > span {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  font-size: var(--label-small);
+  margin: 8px auto;
+}
+
+.register__form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 640px;
+  margin: 0 auto;
+  border-top: 1px solid var(--gray-200);
+}
+
+.user__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 340px;
+  height: 44px;
+  margin-right: 8px;
+  padding-left: 20px;
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+}
+
+.essential::after {
+  content: '*';
+  vertical-align: super;
+  color: var(--info-error);
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.user-box__validation {
+  position: absolute;
+  font-size: var(--paragraph-small);
+  color: red;
+  padding: 5px 3px;
+}
+
+.user-box_validation-toggle {
+  display: none;
+}
+
+.user__label {
+  font-weight: 600;
+  min-width: 140px;
+}
+
+/* 중복확인, 인증번호 버튼 */
+.confirm_button {
+  width: 143px;
+  height: 44px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+/* 주소부분 */
+.address__box {
+  display: flex;
+  flex-direction: column;
+}
+
+.button__sub {
+  width: 340px;
+  height: 44px;
+  background: var(--white);
+  font-weight: 600;
+  color: var(--primary);
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+}
+
+.address__noti {
+  margin-top: 5px;
+  font-size: var(--paragraph-small);
+}
+
+/* 성별 체크 부분 */
+
+.radio {
+  display: flex;
+  align-items: center;
+}
+
+.radio__box {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+}
+
+/* 생년월일 */
+.user__birth--input-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 333px;
+  height: 44px;
+  padding: 10px 20px;
+  border: 1px solid var(--gray-200);
+  border-radius: 4px;
+}
+
+.user__birth--input-box > input {
+  border: none;
+  text-align: center;
+  font-size: var(--paragraph-medium);
+  width: 90px;
+}
+
+/* 추가입력 사항 */
+.user__option input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 이용약관 부분 */
+
+.terms-conditions {
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 20px;
+  border-top: 1px solid var(--gray-100);
+}
+
+.terms-conditions > label {
+  font-weight: 600;
+  width: 140px;
+}
+
+.terms__full {
+  display: flex;
+  flex-direction: column;
+}
+
+.all_check {
+  display: block;
+  font-size: var(--label-large);
+  font-weight: 600;
+}
+
+.all_check-noti {
+  font-size: var(--paragraph-small);
+  color: var(--gray-400);
+  padding-bottom: 10px;
+}
+
+.terms_full {
+  padding: 10px 20px;
+}
+
+.terms {
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  padding: 10px 0;
+}
+
+.terms > a {
+  text-align: right;
+  font-size: var(--paragraph-small);
+  color: var(--primary);
+}
+
+.terms a::after {
+  vertical-align: base-line;
+  content: '≻';
+}
+
+/* button */
+.button__box {
+  display: flex;
+  justify-content: center;
+}
+
+.button_primary {
+  width: 340px;
+  height: 44px;
+  margin: 40px auto;
+  background: var(--primary);
+  font-weight: 600;
+  color: var(--white);
+  border-radius: 4px;
+  border: 1px solid var(--primary);
+  cursor: pointer;
+}
